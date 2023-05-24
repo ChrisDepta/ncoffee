@@ -19,9 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        <div className='h-screen w-screen flex flex-col items-center bg-orange-200'>{children}</div>
-        {/* <Footer />   */}
+        <div className='h-screen w-screen flex flex-col items-center justify-center '>{children}</div>
+        {/* <div className='h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-r from-primary to-[#144271]'>{children}</div> */}
       </body>
     </html>
   )

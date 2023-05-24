@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -11,12 +11,15 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
   }
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,6 +27,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    
 }
 
 button {
@@ -32,4 +36,32 @@ button {
   height: 2em;
   border-radius: .3em;
   background-color: rgba(105, 23, 37, 0.6);
+}
+
+.front {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: 0.5s;
+}
+
+.front:hover {
+  background-color: goldenrod;
+  transform: rotateY(180deg);
+}
+
+.back {
+  visibility: hidden;
+}
+
+.homePage {
+  background-image: url(../../public/sliderNcoffee.webp);
+  background-size: cover;
+}
+
+.card:hover {  
+  transform: rotateY(180deg);  
+  transform-style: preserve-3d;
+}
+.card-back {  
+  transform: rotateY(180deg);
 }
