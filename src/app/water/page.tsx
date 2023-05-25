@@ -8,8 +8,8 @@ import Calculator from "@/components/sections/calc/calc"
 
 export default function About() {
   return (
-  <>
-      <AboutOne />
+      <>
+        <h1 className='text-7xl'>Hello Water</h1>
       </>
   )
 }

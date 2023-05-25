@@ -54,8 +54,10 @@ button {
 }
 
 .homePage {
-  background-image: url(../../public/sliderNcoffee.webp);
-  background-size: cover;
+  background-image: url(../../public/homeLogo.png);
+  background-size: 15%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card:hover {  
