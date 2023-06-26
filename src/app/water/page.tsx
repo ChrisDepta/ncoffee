@@ -9,7 +9,7 @@ import Calculator from "@/components/sections/calc/calc"
 export default function About() {
   return (
       <>
-        <h1 className='text-7xl'>Hello Water</h1>
+        <h1 className='text-7xl text-black'>Hello Water</h1>
       </>
   )
 }

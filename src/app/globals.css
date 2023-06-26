@@ -53,12 +53,13 @@ button {
   visibility: hidden;
 }
 
-.homePage {
+.homePageLogo {
   background-image: url(../../public/homeLogo.png);
   background-size: 15%;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 
 .card:hover {  
   transform: rotateY(180deg);  

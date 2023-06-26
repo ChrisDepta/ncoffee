@@ -15,7 +15,8 @@ module.exports = {
       },
       colors: {
         nbaige: "#f4dcbc",
-        nblue: "#144271"
+        nblue: "#144271",
+        nbraun: "#412717"
       },
     },
   },

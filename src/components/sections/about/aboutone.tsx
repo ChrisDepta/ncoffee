@@ -1,23 +1,20 @@
 import React from 'react'
 import Image from 'next/image'
-import portrait  from "../../../../public/portrait.webp"
+import logoBaige from "@/../public/logoBaige.webp"
 
 type Props = {}
 
 export default function AboutOne({}: Props) {
   return (
-    <>
-    <div className='pt-12 basis-1/2 text-m'>
-        <h1 className='basis-full  pb-5 text-4xl font-bold '>About me:</h1>
-        <p className='tracking-wide leading-6'>Ich Bin ein Webentwickler der motiviert zu lernen ist un sich focusiert 
-          auf neuste und modernste werkzeuge. Ich bin mit Webmastering schon seit 2012
-           beschäftig. Damals habe ich nur für eigene zwecke aangefangen zum lernen. 
-           Habe ich mir selbst HTML5 CSS un SEO beigebracht. Dannach habe ich immer 
-           wieder was neues dazu gelernt. Seit 2020 kann ich auch JavaScrip. Ich liebe
-            Implementieren und alles was weit weg von designen steht.
-            Ich mag sehr mit code zu arbeiten, umso mehr desto besser.</p>
-      </div>
-      <Image src={portrait} alt="homeLogo" width={500} height={500} className='' />
-    </>
+        <div className='w-4/5 flex flex-col justify-start items-center text-nbaige text-xl font-bold'>
+          <Image src={logoBaige} width={200} height={200} className='w-50 mt-36 ' alt={'logoBaige'}/>
+          <p className='w-1/2 text-center my-4'>Od kilku lat zajmujemy się profesjonalnie obsługą klientów biznesowych i indywidualnych. 
+            Zaopatrujemy Was w najlepszą na rynku kawę, niezawodne ekspresy oraz chemię do konserwacji
+            ekspresów.
+          </p>
+          <p className='w-1/2 text-center'>Słuchamy potrzeb i doradzamy, jak wybrać najlepszą kawę i ekspres. Budujemy relacje, spełniamy
+            oczekiwania, i nie zotawiamy naszych klientów w potrzebie - zawsze zapewniamy profesjonalny serwis.
+          </p>
+        </div>
   )
 }

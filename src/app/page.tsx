@@ -8,11 +8,13 @@ import CardWater from '@/components/elements/cardWater'
 
 export default function Home() {
   return (
-    <div className="homePage w-screen flex items-center justify-center ">
-      <main className='h-screen w-10/12 flex items-center justify-around'>
-        <CardCoffe />
-        <CardWater />
-      </main>
-    </div>
+    <div className='bg-gradient-to-br from-nbaige via-white to-nblue'>
+        <div className="homePageLogo w-screen flex items-center justify-center  ">
+          <main className='h-screen w-10/12 flex items-center justify-around '>
+            <CardCoffe />
+            <CardWater />
+          </main>
+        </div>
+      </div>
   )
 }

@@ -5,16 +5,17 @@ import depidevLogo from "../../../public/depidevLogoDark.webp"
 
 function Navbar() {
   return (
-    <nav className='z-10 fixed w-screen mx-auto flex items-center justify-center text-yellow-950'>
-        <ul className='flex justify-evenly mt-4 w-screen text-4xl font-extrabold'>
-          <li>
-          <Link href="/kawa" className=' bg-[#f1cda19a] px-12 py-2 rounded-xl text-5xl text-yellow-950 font-bold my-24 border-2 border-[#f1cda1] drop-shadow-2xl'>Kawa</Link>
-          </li>
-          <li>
-          <Link href="/woda " className='bg-[#f1cda19a] px-6 py-2 rounded-xl text-5xl text-yellow-950 font-bold my-24 border-2 border-[#f1cda1] drop-shadow-2xl'>Woda</Link>
-          </li>
-        </ul>
-      </nav>
+    <header className='backdrop-blur-xl fixed top-0 z-20 w-screen bg-black/50 h-20 flex items-center justify-center '>
+      <div className=' w-3/4 flex justify-evenly items-center text-m text-nbaige pt-2 tracking-wider'>
+      <Link href="/coffee" className='basis-20 text-center'>KAWA</Link>
+      <Link href="/ekspres" className='basis-20 text-center'>EKSPRESY</Link>
+      <Link href="/chemistry" className='basis-20 text-center'>CHEMIA</Link>
+      <Link href="/" className='text-2xl basis-40 text-center font-bold'>N COFFEE</Link>
+      <Link href="/contact" className='basis-20 text-center'>KONTAKT</Link>
+      <Link href="/clients" className='basis-20 text-center'>KLIENCI</Link>
+      <Link href="/login" className='basis-20 text-center'>LOGIN</Link>
+      </div>
+      </header>
   )
 }
 

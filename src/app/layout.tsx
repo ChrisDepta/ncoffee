@@ -1,10 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Raleway } from 'next/font/google'
 
 import Navbar from '@/components/common/navbar'
 import Footer from '@/components/common/footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Raleway({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -19,8 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='h-screen w-screen flex flex-col items-center justify-center  bg-gradient-to-br from-nbaige to-nblue'>{children}</div>
-        {/* <div className='h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-r from-primary to-[#144271]'>{children}</div> */}
+        <div className='bg-nbaige h-screen w-screen flex flex-col items-center justify-start '>{children}</div>
       </body>
     </html>
   )
