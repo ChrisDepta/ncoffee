@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import depidevLogo from "../../../public/depidevLogoDark.webp"
+import Coffee from "../../../public/coffe.webp"
 
 function Footer() {
   return (
-    <div className='flex flex-col items-center bg-black p-12 '>
-      <Image src={depidevLogo} alt="homeLogo" width={400} height={200} className='' />
+    <div className='flex items-center w-screen bg-nbaige py-24'>
+      
     </div>
   )
 }

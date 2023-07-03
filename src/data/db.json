@@ -1,0 +1,186 @@
+{
+    "coffees":[
+        {
+            "id": 1,
+            "title": "vular intensive",
+            "par1": "Kawa o wyrazistym intensywnym smaku i ostrzejszym aromacie. Charakteryzuje się niską kwasowością, a ze względu na odpowiedni proces palenia, wyczuwalny jest jedynie delikatny posmak goryczy. Odpowiedni dobór ziaren pozwolił nam skomponować mocniejszą mieszankę, która wyróżnia się dużą zawartością kofeiny.",
+            "subtitle": "pochodzenie ziaren:",
+            "li1": "brazylia - arabica 70%",
+            "li2": "indie - robusta 30%",
+            "li3": "",
+            "price":"Cena od:",
+            "value": 200,
+            "picture": "logoBaige"
+        },
+        {
+            "id": 2,
+            "title": "prado premium",
+            "par1": "Kawa ma intensywny aromat i subtelną kwasowość, charakteryzuje się słodkim owocowy smakiem z kwiatowo cytrusowymi aromatami. Wypalona została w stopniu średnio ciemnym.",
+            "subtitle": "pochodzenie ziaren:",
+            "li1": "brazylia, honduras",
+            "li2": "etiopia, indonezja",
+            "li3": "kolumbia",
+            "price":"Cena od:",
+            "value": 150,
+            "picture": "homeLogo"
+        },
+        {
+            "id": 3,
+            "title": "cerrado singel",
+            "par1": "Kawa Brazylia Cerrado łączy w sobie to co najlepsze. Kawa ma bogaty i pełny aromat, niską kwasowość i wyczuwalny posmak słodkiego karmelu, nugatu i delikatnej czekolady mlecznej. Kawa Brazylia Cerrado to kawa single origin. Metoda pozyskiwania: naturalna.",
+            "subtitle": "pochodzenie ziaren:",
+            "li1": "brazylia - cerrado mineiro",
+            "li2": "wysokosc upraw - 800-1200m n.p.m.",
+            "li3": "arabica 100%",
+            "price":"Cena od:",
+            "value": 200,
+            "picture": "coffe"
+        },
+        {
+            "id": 4,
+            "title": "alfredo tipo bar",
+            "par1": "Doskonała mieszanka arabiki pochodzącej z Ameryki Południowej i Afryki oraz azjatyckiej robusty daje z orzechową creme. Dzięki średnio palonym ziarnom Alfredo Tipo Bar posiada uniwersalne zastosowanie – świetnie nadaje się do przyrządzenia tradycyjnego espresso, łagodnego latte, klasycznej dużej czarnej czy zmrożonego frappe. Kawa wyróżnia się smakiem charakterystycznym dla środkowych Włoch.",
+            "subtitle": "pochodzenie ziaren:",
+            "li1": "Kwasowość 2/5",
+            "li2": "Stopień Palenia 3,5/5",
+            "li3": "Afryka, Ameryka PŁD, Azja",
+            "price":"Cena od:",
+            "value": 170,
+            "picture": "ncoffeeBlue"
+        },
+        {
+            "id": 5,
+            "title": "alfredo super bar",
+            "par1": "Alfredo Espresso Super Bar to kawa o intensywnym, pobudzającym smaku. Dzięki odpowiedniemu doborowi ziaren – 60% arabik Ameryki Południowej i Afryki oraz 40% azjatyckich robust – oraz silnemu stopniowi ich upalenia posiada właściwości typowe dla klasycznego południowowłoskiego espresso, które charakteryzuje się silnym body, niską kwasowością i wysoką zawartością kofeiny. Po zaparzeniu powstaje napar o bogatym aromacie i grubej cremie.",
+            "subtitle": "pochodzenie ziaren:",
+            "li1": "Ameryka PŁD, Afryka, Azja",
+            "li2": "Stopień Palenia 5/5",
+            "li3": "Kwasowość 2/5",
+            "price":"Cena od:",
+            "value": 200,
+            "picture": "ncoffeeBraun"
+        },
+        {
+            "id": 6,
+            "title": "grano fresco",
+            "par1": "Uniwersalna w smaku mieszanka, cechuje ją niska kwasowość, odpowiednia zawartość kofeiny, zharmonizowany smak i mocny aromat. Wypalona została w stopniu średnio ciemnym. Polecana do espresso i kaw mlecznych.",
+            "subtitle": "pochodzenie ziaren:",
+            "li1": "Brazylia Santos, Wietnam",
+            "li2": "Robusta - 50%",
+            "li3": "Arabica - 50%",
+            "price":"Cena od:",
+            "value": 250,
+            "picture": "ncoffeeWhite"
+        },
+        {
+            "id": 7,
+            "title": "crema espresso",
+            "par1": "Mieszanka stworzona specjalnie dla wielbicieli mocniejszej kawy, o dużej zawartości kofeiny. Kawa ma głęboki i intensywny smak, zachwyca aromatem i gęstą bursztynową cremą. Wypalona została w stopniu średnio ciemnym.",
+            "subtitle": "pochodzenie ziaren:",
+            "li1": "Brazylia, Wietnam, Etiopia, Honduras",
+            "li2": "Robusta - 60%",
+            "li3": "Arabica - 40%",
+            "price":"Cena od:",
+            "value": 200,
+            "picture": "water"
+        }
+    ],
+    "about":[
+        {
+            "id": 1,
+            "text": "Od kilku lat zajmujemy się profesjonalnie obsługą klientów biznesowych i indywidualnych. Zaopatrujemy Was w najlepszą na rynku kawę, niezawodne ekspresy oraz chemię do konserwacji ekspresów."
+        },
+        {
+            "id": 2,
+            "text": "Słuchamy potrzeb i doradzamy, jak wybrać najlepszą kawę i ekspres. Budujemy relacje, spełniamy oczekiwania, i nie zotawiamy naszych klientów w potrzebie - zawsze zapewniamy profesjonalny serwis."
+        },
+        {
+            "id": 3,
+            "text": "Wychodząc naprzeciw oczekiwaniom naszych klientów, postanowiliśmy przygotować naszą niepowtarzalną mieszankę. We współpracy z zawodowoym roadsterem oraz rzemieślniczą palarnią kawy stworzyliśmy wyjątkową kompozycję, która z pewnością trafi w gusta znawców, smakoszy i codziennych amatorów dobrej, mocnej kawy."
+        }
+    ],
+    "chemistry":[
+        {
+            "id": 1,
+            "title": "Płyn do czyszczenia systemu mlecznego Fresco",
+            "par1": "Uniwersalny środek FRESCO przeznaczony do czyszczenia systemu mlecznego. Niezwykle wydajny, ekonomiczny i skoncentrowany. Doskonale czyści spieniacz i przewód mleczny, nie pozostawiając w nim pozostałości po mleku. Zapewnia idealną higienę wewnątrz systemu mlecznego.Doskonale poradzi sobie z usuwaniem pozostałości po mleku i bakterii, które nagromadziły się w ekspresie.",
+            "subtitle": "Charakterystyka:",
+            "li1": "czysci",
+            "li2": "odkamienia",
+            "li3": "odkaza",
+            "price":"Cena od:",
+            "value": 20,
+            "picture": "water"
+        },
+        {
+            "id": 2,
+            "title": "Odkamieniacz do ekspresów do kawy Fresco butelka 1l",
+            "par1": "Odkamieniacz Fresco powodzeniem usuwa kamień nie powodując przy tym uszkodzenia urządzeń. Jest niezwykle wydajny, skuteczny i ekonomiczny. Przeznaczony do ekspresów  wyposażonych w automatyczny program odkamieniania. Precyzyjnie i szybko usuwa kamień z urządzenia, bez narażania go na uszkodzenia. Innowacyjny i nowoczesny preparat",
+            "subtitle": "Charakterystyka:",
+            "li1": "Usuwa kamień z ekspresu do kawy",
+            "li2": "Chroni Twój ekspres",
+            "li3": "Niezwykle wydajny",
+            "price":"Cena od:",
+            "value": 40,
+            "picture": "water"
+        },
+        {
+            "id": 3,
+            "title": "Tabletki do czyszczenia zaparzacza kawy  FRESCO ",
+            "par1": "Tabletki czyszczące do ekspresów automatycznych. Szybko i skutecznie usuwają różne zabrudzenia i pozostałości po kawie, tłuszcze oraz oleje, które z czasem mogą sprawić że kawa staje się gorzka. Zapewniają bezpieczeństwo i ochronę innych podzespołów ekspresu.",
+            "subtitle": "Charakterystyka:",
+            "li1": "Tabletki przeznaczone są do czyszczenia ekspresów różnych marek.",
+            "li2": "Zastosowanie: do czyszczenia bloku zaparzającego, zaworów oraz cienkich rurek",
+            "li3": "Zawartość opakowania: 90 sztuk",
+            "price":"Cena od:",
+            "value": 30,
+            "picture": "water"
+        },
+        {
+            "id": 4,
+            "title": "FILTRY WODNE DO EKSPRESU",
+            "par1": "Stosujemy wysokiej jakości filtry do wody do ekspresów które skutecznie chronią urządzenia przed osadzaniem się kamienia oraz usuwa niechciane substancje, które mogą wpływać na smak i aromat kawy. Najwyższej jakości wypełniacz z węglem aktywnym z wiórów kokosowych oraz technologia żywicy jonowymiennej hamują powstawanie zanieczyszczeń i tworzenie się kamienia.",
+            "subtitle": "Charakterystyka:",
+            "li1": "Stosowanie filtrów znacząco przedłuża żywotność ekspresu ",
+            "li2": "zmniejsza koszty jego eksploatowania.",
+            "li3": "",
+            "price":"Cena od:",
+            "value": 30,
+            "picture": "water"
+        }
+    ],
+    "ekspresy": [
+        {
+            "id": 1,
+            "title": "EKSPRES FRESCO OPIS:",
+            "par1": "FRESCO P2L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Klasyczny i elegancki styl w połączeniu z niezawodnością to słowa które doskonale opisują P2L. Zaprojektowano go tak, aby mógł sprostać nawet największym oczekiwaniom klientów, również w godzinach szczytu. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na kawę ziarnistą. Ceramiczny młynek zmieli aż do 500kg kawy. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością. Dzięki niemu przygotujesz aż do 24 rodzajów kawy takich jak np. espresso, americano, latte, cappuccino.",
+            "subtitle": "Charakterystyka:",
+            "li1": "Idealny do dużych przestrzeni biurowych oraz gastronomicznych.",
+            "li1u": "Wysoka wydajność do 120 filiżanek dziennie sprawia, że nadaje się on idealnie do restauracji, kawiarni, hoteli i w szczególności do biur.",
+            "li2": "Proste czyszczenie i obsługa",
+            "li2u": "Ekspres do kawy Fresco P2L jest prosty w obsłudze oraz czyszczeniu. Panel dotykowy ma intuicyjne menu wyboru. Ekspres posiada również automatyczne programy czyszczenia modułu mlecznego i odkamieniania.",
+            "li3": "Wysoka temperatura spieniania",
+            "li3u": "Temperatura spieniania od 60-70 stopni C, dzięki czemu możemy cieszyć się kremową gęstą pianką aż do ostatniego łyka.",
+            "technical": "Możliwość podłączenia do wody <br /> 2 Grzałki <br /> 2 Pompy <br /> 16 -  Gramowy moduł zaparzacza <br /> Funkcja One Touch Cappuccino <br /> Wyciszony Młynek <br /> Automatyczne płukanie systemu Mleka <br /> Zautomatyzowany program odkamieniania <br /> Pojemność zbiornika na wodę : 2L <br /> Pojemnik na kawę : 1,2kg <br /> Pojemność zbiornika na Fusy do :70 porcji <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
+            "price":"Cena od:",
+            "value": 30,
+            "picture": "water"
+        },
+        {
+            "id": 2,
+            "title": "EKSPRES FRESCO OPIS:",
+            "par1": "FRESCO P2L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Klasyczny i elegancki styl w połączeniu z niezawodnością to słowa które doskonale opisują P2L. Zaprojektowano go tak, aby mógł sprostać nawet największym oczekiwaniom klientów, również w godzinach szczytu. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na kawę ziarnistą. Ceramiczny młynek zmieli aż do 500kg kawy. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością. Dzięki niemu przygotujesz aż do 24 rodzajów kawy takich jak np. espresso, americano, latte, cappuccino.",
+            "subtitle": "Charakterystyka:",
+            "li1": "Idealny do dużych przestrzeni biurowych oraz gastronomicznych.",
+            "li1u": "Wysoka wydajność do 120 filiżanek dziennie sprawia, że nadaje się on idealnie do restauracji, kawiarni, hoteli i w szczególności do biur.",
+            "li2": "Proste czyszczenie i obsługa",
+            "li2u": "Ekspres do kawy Fresco P2L jest prosty w obsłudze oraz czyszczeniu. Panel dotykowy ma intuicyjne menu wyboru. Ekspres posiada również automatyczne programy czyszczenia modułu mlecznego i odkamieniania.",
+            "li3": "Wysoka temperatura spieniania",
+            "li3u": "Temperatura spieniania od 60-70 stopni C, dzięki czemu możemy cieszyć się kremową gęstą pianką aż do ostatniego łyka.",
+            "technical": "Możliwość podłączenia do wody <br /> 2 Grzałki <br /> 2 Pompy <br /> 16 -  Gramowy moduł zaparzacza <br /> Funkcja One Touch Cappuccino <br /> Wyciszony Młynek <br /> Automatyczne płukanie systemu Mleka <br /> Zautomatyzowany program odkamieniania <br /> Pojemność zbiornika na wodę : 2L <br /> Pojemnik na kawę : 1,2kg <br /> Pojemność zbiornika na Fusy do :70 porcji <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
+            "price":"Cena od:",
+            "value": 30,
+            "picture": "water"
+        }
+    ]
+}
