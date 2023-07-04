@@ -31,7 +31,7 @@ export default function CoffeRight({id, title, par1, subtitle, li1, li2, li3, pr
           </div>
           <div className='basis-1/2 flex flex-col justify-start items-center'>
             <h1 className='text-5xl uppercase font-extrabold my-16'>{title}</h1>
-            <Image src={require(`@/../public/${picture}.webp`)} width={400} height={200} className='' alt={picture}/>
+            <Image src={require(`@/../public/${picture}.webp`)} width={250} height={200} className='' alt={picture}/>
           </div>
         </div>
   )

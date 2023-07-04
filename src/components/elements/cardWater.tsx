@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import water  from "../../../public/water.webp"
-import ncoffeeBlue from "../../../public/ncoffeeBlue.webp"
 import Button from "./button"
 
 function CardWater() {
@@ -11,13 +9,13 @@ function CardWater() {
         <div className='group h-full w-full [perspective:1000px]'>
           <div className='relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='absolute inset-0'>
-              <Image src={water} alt="Woda" width={200} height={300} className='h-full w-full rounded-xl object-cover shadow-xl shadow-black/40' />
+              {/* <Image src={} alt="Woda" width={200} height={300} className='h-full w-full rounded-xl object-cover shadow-xl shadow-black/40' /> */}
               <div className='z-10 absolute top-10 bg-white/40 w-full'> 
                <h1 className='text-6xl text-center text-black font-extrabold '>Woda</h1>
               </div>
             </div>
             <Link href="/water" className='z-20 absolute inset-0 h-full w-full rounded-xl bg-white px-12 pt-16 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]'>
-              <Image src={ncoffeeBlue} alt="Woda" width={150} height={300} className='h-auto w-auto rounded-xl object-cover ' />
+              {/* <Image src={} alt="Woda" width={150} height={300} className='h-auto w-auto rounded-xl object-cover ' /> */}
               <Button />
             </Link>
           </div>

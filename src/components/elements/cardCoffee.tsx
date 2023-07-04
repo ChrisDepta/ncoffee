@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import coffe  from "../../../public/coffe.webp"
-import ncoffeeBraun from "../../../public/ncoffeeBraun.webp"
 import Button from './button'
 
 function CardCoffe() {
@@ -11,7 +9,7 @@ function CardCoffe() {
         <div className='group h-full w-full [perspective:1000px]'>
           <div className='relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
             <div className='absolute inset-0'>
-              <Image src={coffe} alt="Woda" width={200} height={300} className='h-full w-full rounded-xl object-cover shadow-xl shadow-black/40' />
+              {/* <Image src={} alt="Woda" width={200} height={300} className='h-full w-full rounded-xl object-cover shadow-xl shadow-black/40' /> */}
               <div className='z-10 absolute top-10 bg-white/40 w-full'> 
                <h1 className='text-6xl text-center text-black font-extrabold '>Kawa</h1>
               </div>

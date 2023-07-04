@@ -10,7 +10,7 @@
             "li3": "",
             "price":"Cena od:",
             "value": 200,
-            "picture": "logoBaige"
+            "picture": "vular"
         },
         {
             "id": 2,
@@ -22,7 +22,7 @@
             "li3": "kolumbia",
             "price":"Cena od:",
             "value": 150,
-            "picture": "homeLogo"
+            "picture": "prado"
         },
         {
             "id": 3,
@@ -34,7 +34,7 @@
             "li3": "arabica 100%",
             "price":"Cena od:",
             "value": 200,
-            "picture": "coffe"
+            "picture": "cerrado"
         },
         {
             "id": 4,
@@ -46,7 +46,7 @@
             "li3": "Afryka, Ameryka PŁD, Azja",
             "price":"Cena od:",
             "value": 170,
-            "picture": "ncoffeeBlue"
+            "picture": "tipo"
         },
         {
             "id": 5,
@@ -58,7 +58,7 @@
             "li3": "Kwasowość 2/5",
             "price":"Cena od:",
             "value": 200,
-            "picture": "ncoffeeBraun"
+            "picture": "super"
         },
         {
             "id": 6,
@@ -70,7 +70,7 @@
             "li3": "Arabica - 50%",
             "price":"Cena od:",
             "value": 250,
-            "picture": "ncoffeeWhite"
+            "picture": "grano"
         },
         {
             "id": 7,
@@ -82,7 +82,7 @@
             "li3": "Arabica - 40%",
             "price":"Cena od:",
             "value": 200,
-            "picture": "water"
+            "picture": "crema"
         }
     ],
     "about":[

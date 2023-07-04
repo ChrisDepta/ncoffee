@@ -4,9 +4,8 @@ import Link from 'next/link'
 import portrait  from "../../../public/portrait.webp"
 import depidevLogo from "../../public/depidevLogoDark.webp"
 import AboutOne from '@/components/sections/about/aboutone'
-import Calculator from "@/components/sections/calc/calc"
 
-export default function About() {
+export default function Water() {
   return (
       <>
         <h1 className='text-7xl text-black'>Hello Water</h1>

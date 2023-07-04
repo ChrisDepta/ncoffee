@@ -54,8 +54,8 @@ button {
 }
 
 .homePageLogo {
-  background-image: url(../../public/homeLogo.png);
-  background-size: 15%;
+  background-image: url(../../public/coffeeSlider1.webp);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
