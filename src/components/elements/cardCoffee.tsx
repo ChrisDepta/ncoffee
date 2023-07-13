@@ -11,11 +11,11 @@ function CardCoffe() {
             <div className='absolute inset-0'>
               {/* <Image src={} alt="Woda" width={200} height={300} className='h-full w-full rounded-xl object-cover shadow-xl shadow-black/40' /> */}
               <div className='z-10 absolute top-10 bg-white/40 w-full'> 
-               <h1 className='text-6xl text-center text-black font-extrabold '>Kawa</h1>
+               <p className='text-6xl text-center text-black font-extrabold '>Kawa</p>
               </div>
             </div>
             <Link href="/coffee" className='z-20 absolute inset-0 h-full w-full rounded-xl bg-white px-12 pt-16 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]'>
-              <h1 className='text-6xl text-black font-extrabold '>Kawa</h1>
+              <p className='text-6xl text-black font-extrabold '>Kawa</p>
               <ul className='text-2xl text-black font-bold text-left m-5 mb-10 list-disc'>
                 <li>Kawy</li>
                 <li>Expresy</li>

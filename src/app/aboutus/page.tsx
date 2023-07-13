@@ -1,5 +1,5 @@
 import React from "react"
-import NavUni from "@/components/common/navUni"
+import NavUni from "@/components/common/navuni"
 import AboutOne from '../../components/sections/about/aboutone' 
 import AboutTwo from "@/components/sections/about/abouttwo"
 

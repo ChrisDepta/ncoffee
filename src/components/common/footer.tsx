@@ -1,14 +1,12 @@
 import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import Coffee from "../../../public/coffe.webp"
+import Condata from '@/components/elements/condata'
+import Conform from '@/components/elements/conform'
 
-function Footer() {
+export default function Footer() {
   return (
-    <div className='flex items-center w-screen bg-nbaige py-24'>
-      
+    <div className='flex items-center w-screen bg-ngreen justify-center'>
+      <Condata />
+      <Conform />
     </div>
   )
 }
-
-export default Footer
