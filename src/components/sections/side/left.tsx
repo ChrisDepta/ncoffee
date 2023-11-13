@@ -14,10 +14,10 @@ type Props = {
   picture: string
 }
 
-export default function CoffeeLeft({id, title, par1, subtitle, li1, li2, li3, price, value, picture}: Props) {
+export default function Left({id, title, par1, subtitle, li1, li2, li3, price, value, picture}: Props) {
   return (
-        <div key={id} className='w-2/3 flex items-start mt-24 text-nbaige text-xl font-bold'>
-          <div className=' my-12 basis-1/2 flex flex-col justify-start items-start'>
+        <div key={id} className='w-3/5 flex items-end justify-around mt-24 text-nbaige text-xl'>
+          <div className=' my-12 basis-1/3 flex flex-col justify-start items-start'>
             <Image src={require(`@/../public/${picture}.webp`)} width={300} height={200} className='' alt={picture}/>
           </div>
           <div className='basis-1/2 my-12'>

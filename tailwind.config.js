@@ -18,7 +18,8 @@ module.exports = {
         nblue: "#144271",
         nbraun: "#412717",
         nlila:  "#B3A9A6",
-        ngreen: "#78C39F"
+        ngreen: "#78C39F",
+        nbluehome: "#012c53"
       },
     },
   },

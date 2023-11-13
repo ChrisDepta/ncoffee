@@ -15,11 +15,11 @@ export default function Condata() {
             NIP: 882 210 61 83
         </p>
 
-        <p className='py-6 text-xl'>
-           <aside className='text-2xl pb-6 font-bold'>Zadzwoń lub napisz</aside>
+        <div className='py-6 text-xl'>
+           <p className='text-2xl pb-6 font-bold'>Zadzwoń lub napisz</p>
             +48 511 388 765 <br />
             biuro.ncoffee@gmail.com
-        </p>
+        </div>
         <Image src={logoBaige} width={300} height={300} className='w-1/3 ml-24 mt-12' alt={'N-COFFEE'}/>
       </div>
         )

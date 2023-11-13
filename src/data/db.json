@@ -99,7 +99,7 @@
             "text": "Wychodząc naprzeciw oczekiwaniom naszych klientów, postanowiliśmy przygotować naszą niepowtarzalną mieszankę. We współpracy z zawodowoym roadsterem oraz rzemieślniczą palarnią kawy stworzyliśmy wyjątkową kompozycję, która z pewnością trafi w gusta znawców, smakoszy i codziennych amatorów dobrej, mocnej kawy."
         }
     ],
-    "chemistry":[
+    "chemistries":[
         {
             "id": 1,
             "title": "Płyn do czyszczenia systemu mlecznego Fresco",
@@ -110,7 +110,7 @@
             "li3": "odkaza",
             "price":"Cena od:",
             "value": 20,
-            "picture": "water"
+            "picture": "vular"
         },
         {
             "id": 2,
@@ -122,7 +122,7 @@
             "li3": "Niezwykle wydajny",
             "price":"Cena od:",
             "value": 40,
-            "picture": "water"
+            "picture": "vular"
         },
         {
             "id": 3,
@@ -134,7 +134,7 @@
             "li3": "Zawartość opakowania: 90 sztuk",
             "price":"Cena od:",
             "value": 30,
-            "picture": "water"
+            "picture": "vular"
         },
         {
             "id": 4,
@@ -146,10 +146,10 @@
             "li3": "",
             "price":"Cena od:",
             "value": 30,
-            "picture": "water"
+            "picture": "vular"
         }
     ],
-    "ekspresy": [
+    "machines": [
         {
             "id": 1,
             "title": "EKSPRES FRESCO OPIS:",
@@ -164,7 +164,7 @@
             "technical": "Możliwość podłączenia do wody <br /> 2 Grzałki <br /> 2 Pompy <br /> 16 -  Gramowy moduł zaparzacza <br /> Funkcja One Touch Cappuccino <br /> Wyciszony Młynek <br /> Automatyczne płukanie systemu Mleka <br /> Zautomatyzowany program odkamieniania <br /> Pojemność zbiornika na wodę : 2L <br /> Pojemnik na kawę : 1,2kg <br /> Pojemność zbiornika na Fusy do :70 porcji <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
             "price":"Cena od:",
             "value": 30,
-            "picture": "water"
+            "picture": "grano"
         },
         {
             "id": 2,
@@ -180,7 +180,41 @@
             "technical": "Możliwość podłączenia do wody <br /> 2 Grzałki <br /> 2 Pompy <br /> 16 -  Gramowy moduł zaparzacza <br /> Funkcja One Touch Cappuccino <br /> Wyciszony Młynek <br /> Automatyczne płukanie systemu Mleka <br /> Zautomatyzowany program odkamieniania <br /> Pojemność zbiornika na wodę : 2L <br /> Pojemnik na kawę : 1,2kg <br /> Pojemność zbiornika na Fusy do :70 porcji <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
             "price":"Cena od:",
             "value": 30,
-            "picture": "water"
+            "picture": "super"
+        }
+    ],
+    "waters": [
+        {
+            "id": 1,
+            "title": "EKSPRES FRESCO OPIS:",
+            "par1": "FRESCO P2L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Klasyczny i elegancki styl w połączeniu z niezawodnością to słowa które doskonale opisują P2L. Zaprojektowano go tak, aby mógł sprostać nawet największym oczekiwaniom klientów, również w godzinach szczytu. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na kawę ziarnistą. Ceramiczny młynek zmieli aż do 500kg kawy. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością. Dzięki niemu przygotujesz aż do 24 rodzajów kawy takich jak np. espresso, americano, latte, cappuccino.",
+            "subtitle": "Charakterystyka:",
+            "li1": "Idealny do dużych przestrzeni biurowych oraz gastronomicznych.",
+            "li1u": "Wysoka wydajność do 120 filiżanek dziennie sprawia, że nadaje się on idealnie do restauracji, kawiarni, hoteli i w szczególności do biur.",
+            "li2": "Proste czyszczenie i obsługa",
+            "li2u": "Ekspres do kawy Fresco P2L jest prosty w obsłudze oraz czyszczeniu. Panel dotykowy ma intuicyjne menu wyboru. Ekspres posiada również automatyczne programy czyszczenia modułu mlecznego i odkamieniania.",
+            "li3": "Wysoka temperatura spieniania",
+            "li3u": "Temperatura spieniania od 60-70 stopni C, dzięki czemu możemy cieszyć się kremową gęstą pianką aż do ostatniego łyka.",
+            "technical": "Możliwość podłączenia do wody <br /> 2 Grzałki <br /> 2 Pompy <br /> 16 -  Gramowy moduł zaparzacza <br /> Funkcja One Touch Cappuccino <br /> Wyciszony Młynek <br /> Automatyczne płukanie systemu Mleka <br /> Zautomatyzowany program odkamieniania <br /> Pojemność zbiornika na wodę : 2L <br /> Pojemnik na kawę : 1,2kg <br /> Pojemność zbiornika na Fusy do :70 porcji <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
+            "price":"Cena od:",
+            "value": 30,
+            "picture": "grano"
+        },
+        {
+            "id": 2,
+            "title": "EKSPRES FRESCO OPIS:",
+            "par1": "FRESCO P2L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Klasyczny i elegancki styl w połączeniu z niezawodnością to słowa które doskonale opisują P2L. Zaprojektowano go tak, aby mógł sprostać nawet największym oczekiwaniom klientów, również w godzinach szczytu. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na kawę ziarnistą. Ceramiczny młynek zmieli aż do 500kg kawy. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością. Dzięki niemu przygotujesz aż do 24 rodzajów kawy takich jak np. espresso, americano, latte, cappuccino.",
+            "subtitle": "Charakterystyka:",
+            "li1": "Idealny do dużych przestrzeni biurowych oraz gastronomicznych.",
+            "li1u": "Wysoka wydajność do 120 filiżanek dziennie sprawia, że nadaje się on idealnie do restauracji, kawiarni, hoteli i w szczególności do biur.",
+            "li2": "Proste czyszczenie i obsługa",
+            "li2u": "Ekspres do kawy Fresco P2L jest prosty w obsłudze oraz czyszczeniu. Panel dotykowy ma intuicyjne menu wyboru. Ekspres posiada również automatyczne programy czyszczenia modułu mlecznego i odkamieniania.",
+            "li3": "Wysoka temperatura spieniania",
+            "li3u": "Temperatura spieniania od 60-70 stopni C, dzięki czemu możemy cieszyć się kremową gęstą pianką aż do ostatniego łyka.",
+            "technical": "Możliwość podłączenia do wody <br /> 2 Grzałki <br /> 2 Pompy <br /> 16 -  Gramowy moduł zaparzacza <br /> Funkcja One Touch Cappuccino <br /> Wyciszony Młynek <br /> Automatyczne płukanie systemu Mleka <br /> Zautomatyzowany program odkamieniania <br /> Pojemność zbiornika na wodę : 2L <br /> Pojemnik na kawę : 1,2kg <br /> Pojemność zbiornika na Fusy do :70 porcji <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
+            "price":"Cena od:",
+            "value": 30,
+            "picture": "super"
         }
     ]
 }

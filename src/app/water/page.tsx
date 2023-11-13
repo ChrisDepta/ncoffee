@@ -1,14 +1,19 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Link from 'next/link'
-import portrait  from "../../../public/portrait.webp"
-import depidevLogo from "../../public/depidevLogoDark.webp"
-import AboutOne from '@/components/sections/about/aboutone'
+import Navbar from "@/components/common/navcoffee"
+import WaterData from "@/components/sections/chemistryData/chemistryData"
+import bgMachine from "@/../public/bgMachine.webp"
+import Footer from '@/components/common/footer'
 
-export default function Water() {
+
+
+export default function Machines() {
   return (
-      <>
-        <h1 className='text-7xl text-black'>Hello Water</h1>
-      </>
-  )
+    <>
+      <Navbar />
+      <Image src={bgMachine} width={800} height={800} className='w-screen ' priority alt={'BgMachine'}/>
+      <WaterData />
+      <Image src={bgMachine} width={800} height={800} className='w-screen ' priority alt={'BgMachine'}/>
+      <Footer />
+    </>
+)
 }

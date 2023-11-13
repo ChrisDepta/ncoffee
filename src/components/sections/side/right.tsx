@@ -14,9 +14,9 @@ type Props = {
   picture: string
 }
 
-export default function CoffeRight({id, title, par1, subtitle, li1, li2, li3, price, value, picture}: Props) {
+export default function Right({id, title, par1, subtitle, li1, li2, li3, price, value, picture}: Props) {
   return (
-    <div key={id} className=' mt-24 w-2/3 flex items-start text-nbaige text-xl font-bold'>
+    <div key={id} className=' mt-24 w-3/5 flex items-end justify-around text-nbaige text-xl'>
           <div className='basis-1/2 my-12'>
             <p className='text-5xl uppercase font-extrabold mb-16'>{title}</p>
             <p className='text-left my-4'>{par1}</p>
@@ -30,7 +30,7 @@ export default function CoffeRight({id, title, par1, subtitle, li1, li2, li3, pr
             {price} <strong className='text-3xl'>{value}</strong><strong>zł.</strong>
             </p>
           </div>
-          <div className='my-12 basis-1/2 flex flex-col justify-start items-end'>
+          <div className='my-12 basis-1/3 flex flex-col justify-start items-end'>
             <Image src={require(`@/../public/${picture}.webp`)} width={300} height={200} className='' alt={picture}/>
           </div>
         </div>
