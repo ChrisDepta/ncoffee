@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Navbar from "@/components/common/navcoffee"
 import MachineData from "@/components/sections/machineData/machineData"
-import bgMachine from "@/../public/bgMachine.webp"
+import bgFresco from "@/../public/bgFresco.webp"
+import bgOffice from "@/../public/bgOffice.webp"
 import Footer from '@/components/common/footer'
 
 
@@ -10,9 +11,9 @@ export default function Machines() {
   return (
     <>
       <Navbar />
-      <Image src={bgMachine} width={800} height={800} className='w-screen ' priority alt={'BgMachine'}/>
+      <Image src={bgFresco} width={800} height={800} className='w-screen ' priority alt={'BgFresco'}/>
       <MachineData />
-      <Image src={bgMachine} width={800} height={800} className='w-screen ' priority alt={'BgMachine'}/>
+      <Image src={bgOffice} width={800} height={800} className='w-screen ' priority alt={'BgOffice'}/>
       <Footer />
     </>
 )

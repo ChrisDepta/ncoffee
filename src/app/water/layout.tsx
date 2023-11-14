@@ -6,6 +6,6 @@ type Props = {
 
 export default function layout({children}: Props) {
   return (
-    <div className='bg-nbraun flex flex-col w-screen items-center overflow-x-hidden overflow-y-visible'>{children}</div>
+    <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white to-nbluehome flex flex-col w-screen items-center overflow-x-hidden overflow-y-visible'>{children}</div>
   )
 }

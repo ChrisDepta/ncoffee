@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '@/data/db.json';
-import Right from '../side/right';
-import Left from '../side/left';
+import Right from '../side/waterRight';
+import Left from '../side/waterLeft';
 
 export default function About() {
   const { waters } = data;

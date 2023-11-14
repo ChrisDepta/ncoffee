@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '@/data/db.json';
-import Right from '../side/right';
-import Left from '../side/left';
+import Right from '../side/chemistryRight';
+import Left from '../side/chemistryLeft';
 
 export default function About() {
   const { chemistries } = data;
