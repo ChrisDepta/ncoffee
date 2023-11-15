@@ -245,6 +245,16 @@
             "li3": "zero kalorii",
             "price":"12zl",
             "picture": "jurajskaLekkiGaz"
+        },
+        {
+            "id": 7,
+            "title": "Kinga Gazowana",
+            "subtitle": "1,5l",
+            "li1": "lekko gazowana",
+            "li2": "duzo magnezu",
+            "li3": "zero kalorii",
+            "price":"12zl",
+            "picture": "jurajskaGaz"
         }
     ]
 }

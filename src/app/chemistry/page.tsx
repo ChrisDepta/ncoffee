@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Navbar from "@/components/common/navcoffee"
+import Navbar from "@/components/common/navuni"
 import ChemistryData from "@/components/sections/chemistryData/chemistryData"
 import bgMachine from "@/../public/bgMachine.webp"
 import Footer from '@/components/common/footer'

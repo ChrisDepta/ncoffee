@@ -4,9 +4,9 @@ import logoBaige from "@/../public/logoBaige.webp"
 
 export default function Condata() {
         return(
-        <div className='basis-1/3 h-screen flex flex-col items-start justify-center text-nbraun'>
+        <div className='basis-1/3 h-screen flex flex-col items-start justify-center'>
         <p className='mt-24 mb-2 text-5xl font-extrabold'>KONTAKT</p>
-        <p className='text-3xl font-bold'>N COFFEE</p>
+        <p className='text-3xl font-bold'>NCOFFEE</p>
         <strong className='text-2xl pt-12'>Biuro</strong>
         <p className='py-6 text-xl'>ul. Sowiogórska 8c/6 <br />
             58-200 Dzierżoniów

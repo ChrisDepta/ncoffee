@@ -14,22 +14,22 @@ type Props = {
 
 export default function waterRight({id, title, subtitle, li1, li2, li3, price, picture}: Props) {
   return (
-    <div key={id} className='bg-black/5 p-12 border-0 border-nbaige rounded-2xl shadow-xl mt-24 w-1/4 flex items-end text-nbaige text-xl font-bold'>
-          <div className='  basis-1/2 my-12'>
-            <p className='text-3xl uppercase font-extrabold mb-16'>{title}</p>
+    <div key={id} className=' h-96 bg-gradient-to-br from-nturkis/20 to-white p-12 mx-16 mt-32 border-0 border-nturkis rounded-xl shadow-2xl basis-80 flex justify-end items-end text-nbaige text-xl font-bold'>
+          <div className='basis-4/5 '>
+            <p className='text-2xl uppercase font-extrabold mb-8'>{title}</p>
             <p className='text-left my-4'>{}</p>
-            <p className='text-left text-3xl capitalize mt-5'>{subtitle}</p>
-            <ul className='mt-1 text-left capitalize'>
+            <p className='text-left capitalize mt-5'>{subtitle}</p>
+            <ul className='mt-1 text-left'>
             <li>{li1}</li>
             <li>{li2}</li>
             <li>{li3}</li>
             </ul>
             <p className='text-2xl mt-5 text-left'>
-            Cena: <strong className='text-3xl'>{price}</strong>
+            Cena: <strong className='text-2xl'>{price}</strong>
             </p>
           </div>
-          <div className='my-12 basis-1/2 flex flex-col justify-start items-end'>
-            <Image src={require(`@/../public/${picture}.webp`)} width={100} height={100} className='' alt={picture}/>
+          <div className=' basis-1/6 '>
+            <Image src={require(`@/../public/${picture}.webp`)} width={50} height={100} className='hover:scale-125 transition' alt={picture} />
           </div>
         </div>
   )

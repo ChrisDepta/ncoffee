@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Navbar from '@/components/common/navcoffee'
+import Navbar from '@/components/common/navuni'
 import Footer from '@/components/common/footer'
 
 import CoffeeData from '@/components/sections/coffeeData/coffeeData'

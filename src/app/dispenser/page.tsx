@@ -1,10 +1,10 @@
-import NavCoffee from "@/components/common/navcoffee"
+import Navbar from "@/components/common/navuni"
 
 
 export default function Dispenser() {
   return (
   <>
-   <NavCoffee />
+   <Navbar />
   
   </>
   )

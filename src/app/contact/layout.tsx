@@ -6,6 +6,6 @@ type Props = {
 
 export default function layout({children}: Props) {
   return (
-    <div className='bg-nbraun flex flex-col w-screen items-center overflow-x-hidden overflow-y-visible'>{children}</div>
+    <div className='mt-32 flex items-center w-screen bg-nturkis justify-center'>{children}</div>
   )
 }
