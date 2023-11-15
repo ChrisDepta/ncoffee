@@ -6,6 +6,6 @@ type Props = {
 
 export default function layout({children}: Props) {
   return (
-    <div className='bg-white flex flex-col w-screen items-center overflow-x-hidden overflow-y-visible'>{children}</div>
+    <div className='flex items-start justify-evenly flex-wrap pt-48 w-8/12'>{children}</div>
   )
 }

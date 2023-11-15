@@ -14,9 +14,9 @@ type Props = {
 
 export default function waterRight({id, title, subtitle, li1, li2, li3, price, picture}: Props) {
   return (
-    <div key={id} className=' mt-24 w-3/5 flex items-end text-nbaige text-xl font-bold'>
-          <div className='basis-1/2 my-12'>
-            <p className='text-5xl uppercase font-extrabold mb-16'>{title}</p>
+    <div key={id} className='bg-black/5 p-12 border-0 border-nbaige rounded-2xl shadow-xl mt-24 w-1/4 flex items-end text-nbaige text-xl font-bold'>
+          <div className='  basis-1/2 my-12'>
+            <p className='text-3xl uppercase font-extrabold mb-16'>{title}</p>
             <p className='text-left my-4'>{}</p>
             <p className='text-left text-3xl capitalize mt-5'>{subtitle}</p>
             <ul className='mt-1 text-left capitalize'>
@@ -29,7 +29,7 @@ export default function waterRight({id, title, subtitle, li1, li2, li3, price, p
             </p>
           </div>
           <div className='my-12 basis-1/2 flex flex-col justify-start items-end'>
-            <Image src={require(`@/../public/${picture}.webp`)} width={200} height={200} className='' alt={picture}/>
+            <Image src={require(`@/../public/${picture}.webp`)} width={100} height={100} className='' alt={picture}/>
           </div>
         </div>
   )
