@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Navbar from "@/components/common/navuni"
+import Navbar from "@/components/common/nav"
 import MachineData from "@/components/sections/machineData/machineData"
 import bgFresco from "@/../public/bgFresco.webp"
 import bgOffice from "@/../public/bgOffice.webp"
