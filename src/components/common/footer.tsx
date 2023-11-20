@@ -10,6 +10,9 @@ import logoturkis from '@/../public/logoTurkis.webp'
 import logoorange from '@/../public/logoOrange.webp'
 import fb from '@/../public/fbIcon.webp'
 import insta from '@/../public/instaIcon.webp'
+import coffeebeanswave from '@/../public/coffeebeansWave.webp'
+import waterwave from "@/../public/waterWave.webp"
+
 
 
 
@@ -17,17 +20,22 @@ export default function Footer() {
   const pathname = usePathname();
   let defaultColor = "";
   let defaultLogo = logoturkis;
+  let defaultwave = waterwave;
   if (pathname === '/coffee' || pathname === '/chemistry' || pathname === '/machines'){
     defaultColor = "text-norange";
     defaultLogo = logoorange;
+    defaultwave = coffeebeanswave;
   } else {
     defaultColor = "text-nturkis";
     defaultLogo = logoturkis;
+    defaultwave = waterwave;
   }
   
 
 
   return (
+    <>
+    <Image src={defaultwave} width={800} height={800} className='w-screen ' priority alt={'BgOffice'}/>
     <div className='text-white px-36 py-24 flex items-start justify-around w-screen bg-black'>
       <div className='flex flex-col items-end'>
       <Image src={defaultLogo} width={120} height={100} className='m-6 mt-16' priority alt={'ncoffee makes your day'}/>
@@ -65,5 +73,6 @@ export default function Footer() {
         </ul>
       </div>
     </div>
+    </>
   )
 }

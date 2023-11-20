@@ -14,10 +14,10 @@ type Props = {
   value: number
 }
 
-export default function MachineCard({id, title, subtitle, li1, li2, li3, price, value, picture, characteristic}: Props) {
+export default function DispenserCard({id, title, subtitle, li1, li2, li3, price, value, picture, characteristic}: Props) {
   return (
-    <div key={id} className=' h-auto basis-96 bg-gradient-to-bl from-nbeige via-nbeige/50 to-nbeige p-8 mx-16 mt-32 border-0 border-nturkis rounded-xl shadow-2xl flex flex-wrap justify-between items-end text-xl font-bold'>
-      <p className='basis-full text-2xl uppercase font-extrabold mb-6 text-norange'>{title}</p>
+    <div key={id} className=' h-auto basis-96 bg-gradient-to-bl from-nturkis/20 via-nturkis/5 to-nturkis/50 p-8 mx-16 mt-32 border-0 border-nturkis rounded-xl shadow-2xl flex flex-wrap justify-between items-end text-xl font-bold'>
+      <p className='basis-full text-2xl uppercase font-extrabold mb-6 text-nturkis'>{title}</p>
       <div className='basis-1/2 '>
         <p className='text-left my-4 hidden'>{characteristic}</p>
         <p className='text-left text-xl capitalize mt-5'>{subtitle}</p>
@@ -27,7 +27,7 @@ export default function MachineCard({id, title, subtitle, li1, li2, li3, price, 
           <li>{li3}</li>
         </ul>
         <p className='text-xl mt-5 text-left '>
-          {price} <strong className='text-2xl text-norange'>{value}</strong><strong> zł.</strong>
+          {price} <strong className='text-2xl text-nturkis'>{value}</strong><strong> zł.</strong>
         </p>
       </div>
       <div className='basis-2/5 flex flex-col justify-end items-end'>

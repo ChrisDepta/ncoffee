@@ -14,7 +14,7 @@ type Props = {
   picture: string
 }
 
-export default function coffeeCard({id, title, par1, subtitle, li1, li2, li3, price, value, picture}: Props) {
+export default function chemistryCard({id, title, par1, subtitle, li1, li2, li3, price, value, picture}: Props) {
   return (
     <div key={id} className=' h-auto basis-96 bg-gradient-to-br from-nbeige to-white p-8 mx-16 mt-32 border-0 border-nturkis rounded-xl shadow-2xl flex flex-wrap justify-between items-end text-xl font-bold'>
       <p className='basis-auto text-2xl uppercase font-extrabold mb-6 text-nbraun'>{title}</p>
@@ -31,7 +31,7 @@ export default function coffeeCard({id, title, par1, subtitle, li1, li2, li3, pr
         </p>
       </div>
       <div className='basis-2/5 flex flex-col justify-end items-end'>
-        <Image src={require(`@/../public/${picture}.webp`)} width={200} height={200} className='hover:scale-110 transition' alt={picture}/>
+        <Image src={require(`@/../public/${picture}.webp`)} width={100} height={200} className='hover:scale-110 transition' alt={picture}/>
       </div>
     </div>
   )

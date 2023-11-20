@@ -12,7 +12,7 @@ type Props = {
   picture: string
 }
 
-export default function waterCard({id, title, subtitle, li1, li2, li3, price, picture}: Props) {
+export default function JuiceCard({id, title, subtitle, li1, li2, li3, price, picture}: Props) {
   return (
     <div key={id} className=' h-96 bg-gradient-to-br from-nturkis/20 to-white p-12 mx-16 mt-32 border-0 border-nturkis rounded-xl shadow-2xl basis-80 flex justify-end items-end text-xl font-bold'>
           <div className='basis-4/5 '>

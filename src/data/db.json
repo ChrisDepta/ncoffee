@@ -1,4 +1,19 @@
 {
+    
+    "about":[
+        {
+            "id": 1,
+            "text": "Od kilku lat zajmujemy się profesjonalnie obsługą klientów biznesowych i indywidualnych. Zaopatrujemy Was w najlepszą na rynku kawę, niezawodne ekspresy oraz chemię do konserwacji ekspresów."
+        },
+        {
+            "id": 2,
+            "text": "Słuchamy potrzeb i doradzamy, jak wybrać najlepszą kawę i ekspres. Budujemy relacje, spełniamy oczekiwania, i nie zotawiamy naszych klientów w potrzebie - zawsze zapewniamy profesjonalny serwis."
+        },
+        {
+            "id": 3,
+            "text": "Wychodząc naprzeciw oczekiwaniom naszych klientów, postanowiliśmy przygotować naszą niepowtarzalną mieszankę. We współpracy z zawodowoym roadsterem oraz rzemieślniczą palarnią kawy stworzyliśmy wyjątkową kompozycję, która z pewnością trafi w gusta znawców, smakoszy i codziennych amatorów dobrej, mocnej kawy."
+        }
+    ],
     "coffees":[
         {
             "id": 1,
@@ -85,20 +100,6 @@
             "picture": "crema"
         }
     ],
-    "about":[
-        {
-            "id": 1,
-            "text": "Od kilku lat zajmujemy się profesjonalnie obsługą klientów biznesowych i indywidualnych. Zaopatrujemy Was w najlepszą na rynku kawę, niezawodne ekspresy oraz chemię do konserwacji ekspresów."
-        },
-        {
-            "id": 2,
-            "text": "Słuchamy potrzeb i doradzamy, jak wybrać najlepszą kawę i ekspres. Budujemy relacje, spełniamy oczekiwania, i nie zotawiamy naszych klientów w potrzebie - zawsze zapewniamy profesjonalny serwis."
-        },
-        {
-            "id": 3,
-            "text": "Wychodząc naprzeciw oczekiwaniom naszych klientów, postanowiliśmy przygotować naszą niepowtarzalną mieszankę. We współpracy z zawodowoym roadsterem oraz rzemieślniczą palarnią kawy stworzyliśmy wyjątkową kompozycję, która z pewnością trafi w gusta znawców, smakoszy i codziennych amatorów dobrej, mocnej kawy."
-        }
-    ],
     "chemistries":[
         {
             "id": 1,
@@ -152,21 +153,6 @@
     "machines": [
         {
             "id": 1,
-            "title": "EKSPRES FRESCO OPIS:",
-            "par1": "FRESCO P2L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Klasyczny i elegancki styl w połączeniu z niezawodnością to słowa które doskonale opisują P2L. Zaprojektowano go tak, aby mógł sprostać nawet największym oczekiwaniom klientów, również w godzinach szczytu. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na kawę ziarnistą. Ceramiczny młynek zmieli aż do 500kg kawy. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością. Dzięki niemu przygotujesz aż do 24 rodzajów kawy takich jak np. espresso, americano, latte, cappuccino.",
-            "subtitle": "Charakterystyka:",
-            "li1": "Idealny do dużych przestrzeni biurowych oraz gastronomicznych.",
-            "li1u": "Wysoka wydajność do 120 filiżanek dziennie sprawia, że nadaje się on idealnie do restauracji, kawiarni, hoteli i w szczególności do biur.",
-            "li2": "Proste czyszczenie i obsługa",
-            "li2u": "Ekspres do kawy Fresco P2L jest prosty w obsłudze oraz czyszczeniu. Panel dotykowy ma intuicyjne menu wyboru. Ekspres posiada również automatyczne programy czyszczenia modułu mlecznego i odkamieniania.",
-            "li3": "Wysoka temperatura spieniania",
-            "li3u": "Temperatura spieniania od 60-70 stopni C, dzięki czemu możemy cieszyć się kremową gęstą pianką aż do ostatniego łyka.",
-            "technical": "Możliwość podłączenia do wody <br /> 2 Grzałki <br /> 2 Pompy <br /> 16 -  Gramowy moduł zaparzacza <br /> Funkcja One Touch Cappuccino <br /> Wyciszony Młynek <br /> Automatyczne płukanie systemu Mleka <br /> Zautomatyzowany program odkamieniania <br /> Pojemność zbiornika na wodę : 2L <br /> Pojemnik na kawę : 1,2kg <br /> Pojemność zbiornika na Fusy do :70 porcji <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
-            "price":"30zł",
-            "picture": "grano"
-        },
-        {
-            "id": 2,
             "title": "Fresco C11",
             "subtitle": "Kompaktowy i niepowtarzalny ",
             "characteristic": "Fresco C11 to bardzo wydajny ekspres dla małych firm lub biur. Zaleacana ilość kaw zrobionych w ciągu jednego dnia to minimum 30 sztuk. Aby uprzyjemnićci użytkowanie wbudowaliśmy możliwość personalizacji wyglądu poprzez możliwość dodawania włąsnych zdjęć. Czyszyczenie zarówno zaparzacza jak i spieniacza do mleka odbzwa się całkowicie automatzcznie co zapewnia więcej czsu na spokojną konsumcję.",
@@ -181,11 +167,187 @@
             "witdh": "25cm",
             "depth": "46cm",
             "weight":"20kg",
-            "price":"30zł",
+            "price":"Cena:",
+            "value": 30,
             "picture": "frescoC11"
+        },
+        {
+            "id": 2,
+            "title": "packshoty schoerer",
+            "subtitle": "Kompaktowy i niepowtarzalny ",
+            "characteristic": "Fresco C11 to bardzo wydajny ekspres dla małych firm lub biur. Zaleacana ilość kaw zrobionych w ciągu jednego dnia to minimum 30 sztuk. Aby uprzyjemnićci użytkowanie wbudowaliśmy możliwość personalizacji wyglądu poprzez możliwość dodawania włąsnych zdjęć. Czyszyczenie zarówno zaparzacza jak i spieniacza do mleka odbzwa się całkowicie automatzcznie co zapewnia więcej czsu na spokojną konsumcję.",
+            "li1": "Możliwość stworzenia aż 8 indywudualnych profilów",
+            "li2": "Możliwość wgrywania własnych zdjęć",
+            "li3": "Automatyczne płukanie spieniacza mleka",
+            "waterContainer":"2l",
+            "coffeeContainer":"300g",
+            "groundsContainer":"16 porcji",
+            "power":"220V~ 50Hz 1400W",
+            "height": "45cm",
+            "witdh": "25cm",
+            "depth": "46cm",
+            "weight":"20kg",
+            "price":"Cena:",
+            "value": 30,
+            "picture": "packshotyschoerer"
+        },
+        {
+            "id": 3,
+            "title": "packshoty 4swiss",
+            "subtitle": "Kompaktowy i niepowtarzalny ",
+            "characteristic": "Fresco C11 to bardzo wydajny ekspres dla małych firm lub biur. Zaleacana ilość kaw zrobionych w ciągu jednego dnia to minimum 30 sztuk. Aby uprzyjemnićci użytkowanie wbudowaliśmy możliwość personalizacji wyglądu poprzez możliwość dodawania włąsnych zdjęć. Czyszyczenie zarówno zaparzacza jak i spieniacza do mleka odbzwa się całkowicie automatzcznie co zapewnia więcej czsu na spokojną konsumcję.",
+            "li1": "Możliwość stworzenia aż 8 indywudualnych profilów",
+            "li2": "Możliwość wgrywania własnych zdjęć",
+            "li3": "Automatyczne płukanie spieniacza mleka",
+            "waterContainer":"2l",
+            "coffeeContainer":"300g",
+            "groundsContainer":"16 porcji",
+            "power":"220V~ 50Hz 1400W",
+            "height": "45cm",
+            "witdh": "25cm",
+            "depth": "46cm",
+            "weight":"20kg",
+            "price":"Cena:",
+            "value": 30,
+            "picture": "packshoty4swiss"
+        }
+    ],
+    
+    "dispensers": [
+        {
+            "id": 1,
+            "title": "ruhens 300 czarny",
+            "subtitle": "Kompaktowy i niepowtarzalny ",
+            "characteristic": "Fresco C11 to bardzo wydajny ekspres dla małych firm lub biur. Zaleacana ilość kaw zrobionych w ciągu jednego dnia to minimum 30 sztuk. Aby uprzyjemnićci użytkowanie wbudowaliśmy możliwość personalizacji wyglądu poprzez możliwość dodawania włąsnych zdjęć. Czyszyczenie zarówno zaparzacza jak i spieniacza do mleka odbzwa się całkowicie automatzcznie co zapewnia więcej czsu na spokojną konsumcję.",
+            "li1": "Możliwość stworzenia aż 8 indywudualnych profilów",
+            "li2": "Możliwość wgrywania własnych zdjęć",
+            "li3": "Automatyczne płukanie spieniacza mleka",
+            "waterContainer":"2l",
+            "coffeeContainer":"300g",
+            "groundsContainer":"16 porcji",
+            "power":"220V~ 50Hz 1400W",
+            "height": "45cm",
+            "witdh": "25cm",
+            "depth": "46cm",
+            "weight":"20kg",
+            "price":"Cena:",
+            "value": 30,
+            "picture": "ruhens300czarny"
+        },
+        {
+            "id": 2,
+            "title": "WHP-8502",
+            "subtitle": "Kompaktowy i niepowtarzalny ",
+            "characteristic": "Fresco C11 to bardzo wydajny ekspres dla małych firm lub biur. Zaleacana ilość kaw zrobionych w ciągu jednego dnia to minimum 30 sztuk. Aby uprzyjemnićci użytkowanie wbudowaliśmy możliwość personalizacji wyglądu poprzez możliwość dodawania włąsnych zdjęć. Czyszyczenie zarówno zaparzacza jak i spieniacza do mleka odbzwa się całkowicie automatzcznie co zapewnia więcej czsu na spokojną konsumcję.",
+            "li1": "Możliwość stworzenia aż 8 indywudualnych profilów",
+            "li2": "Możliwość wgrywania własnych zdjęć",
+            "li3": "Automatyczne płukanie spieniacza mleka",
+            "waterContainer":"2l",
+            "coffeeContainer":"300g",
+            "groundsContainer":"16 porcji",
+            "power":"220V~ 50Hz 1400W",
+            "height": "45cm",
+            "witdh": "25cm",
+            "depth": "46cm",
+            "weight":"20kg",
+            "price":"Cena:",
+            "value": 30,
+            "picture": "WHP-8502"
+        },
+        {
+            "id": 3,
+            "title": "WHP-1670S",
+            "subtitle": "Kompaktowy i niepowtarzalny ",
+            "characteristic": "Fresco C11 to bardzo wydajny ekspres dla małych firm lub biur. Zaleacana ilość kaw zrobionych w ciągu jednego dnia to minimum 30 sztuk. Aby uprzyjemnićci użytkowanie wbudowaliśmy możliwość personalizacji wyglądu poprzez możliwość dodawania włąsnych zdjęć. Czyszyczenie zarówno zaparzacza jak i spieniacza do mleka odbzwa się całkowicie automatzcznie co zapewnia więcej czsu na spokojną konsumcję.",
+            "li1": "Możliwość stworzenia aż 8 indywudualnych profilów",
+            "li2": "Możliwość wgrywania własnych zdjęć",
+            "li3": "Automatyczne płukanie spieniacza mleka",
+            "waterContainer":"2l",
+            "coffeeContainer":"300g",
+            "groundsContainer":"16 porcji",
+            "power":"220V~ 50Hz 1400W",
+            "height": "45cm",
+            "witdh": "25cm",
+            "depth": "46cm",
+            "weight":"20kg",
+            "price":"Cena:",
+            "value": 30,
+            "picture": "WHP-1670S"
         }
     ],
     "waters": [
+        {
+            "id": 1,
+            "title": "Jurajska Gazowana",
+            "subtitle": "0,33l",
+            "li1": "gazowana",
+            "li2": "duzo magnezu",
+            "li3": "zero kalorii",
+            "price":"5zl",
+            "picture": "jurajskaGazMala"
+        },
+        {
+            "id": 2,
+            "title": "Jurajska Gazowana",
+            "subtitle": "1,5l",
+            "li1": "gazowana",
+            "li2": "duzo magnezu",
+            "li3": "zero kalorii",
+            "price":"11zl",
+            "picture": "jurajskaGaz"
+        },
+        {
+            "id": 3,
+            "title": "Jurajska Niegazowana",
+            "subtitle": "0,33l",
+            "li1": "niegazowana",
+            "li2": "duzo magnezu",
+            "li3": "zero kalorii",
+            "price":"5zl",
+            "picture": "jurajskaNiegazMala"
+        },
+        {
+            "id": 4,
+            "title": "Jurajska Niegazowana",
+            "subtitle": "1,5l",
+            "li1": "niegazowana",
+            "li2": "duzo magnezu",
+            "li3": "zero kalorii",
+            "price":"11zl",
+            "picture": "jurajskaNiegaz"
+        },
+        {
+            "id": 5,
+            "title": "Jurajska Lekki Gaz",
+            "subtitle": "0,33l",
+            "li1": "lekko gazowana",
+            "li2": "duzo magnezu",
+            "li3": "zero kalorii",
+            "price":"6zl",
+            "picture": "jurajskaLekkiGazMala"
+        },
+        {
+            "id": 6,
+            "title": "Jurajska Lekki Gaz",
+            "subtitle": "1,5l",
+            "li1": "lekko gazowana",
+            "li2": "duzo magnezu",
+            "li3": "zero kalorii",
+            "price":"12zl",
+            "picture": "jurajskaLekkiGaz"
+        },
+        {
+            "id": 7,
+            "title": "Kinga Gazowana",
+            "subtitle": "1,5l",
+            "li1": "lekko gazowana",
+            "li2": "duzo magnezu",
+            "li3": "zero kalorii",
+            "price":"12zl",
+            "picture": "jurajskaGaz"
+        }
+    ],
+    "juices": [
         {
             "id": 1,
             "title": "Jurajska Gazowana",

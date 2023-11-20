@@ -2,7 +2,7 @@ import React from 'react';
 import data from '@/data/db.json';
 import Card from './waterCard';
 
-export default function About() {
+export default function WaterData() {
   const { waters } = data;
 
   return (

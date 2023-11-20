@@ -1,15 +1,15 @@
 import React from 'react';
 import data from '@/data/db.json';
-import Card from './waterCard';
+import Card from './juiceCard';
 
-export default function About() {
-  const { waters } = data;
+export default function JuiceData() {
+  const { juices } = data;
 
   return (
     <div className='flex flex-wrap justify-around mx-32 pb-32'>
-      {waters.map(water => {
+      {juices.map(juice => {
         const Component = Card;
-        return <Component key={water.id} {...water} />;
+        return <Component key={juice.id} {...juice} />;
       })}
     </div>
   );
