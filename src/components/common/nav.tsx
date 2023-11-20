@@ -1,9 +1,18 @@
 'use client'
-import React, { useState } from 'react';
+
+// Import necessary modules
+import React, { useState, ReactNode } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const DropdownMenu = ({ title, items }) => {
+// Define types for the DropdownMenu component props
+interface DropdownMenuProps {
+  title: string;
+  items: { href: string; label: string }[];
+}
+
+// DropdownMenu component
+const DropdownMenu: React.FC<DropdownMenuProps> = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMouseEnter = () => {
@@ -20,9 +29,9 @@ const DropdownMenu = ({ title, items }) => {
         <p className="text-center hover:text-nlila hover:scale-105 transition-all">{title}</p>
       </div>
       {isOpen && (
-        <div className="w-40 absolute -left-8 mt-0 pt-6 bg-black p-6  rounded shadow-md  transition">
+        <div className="w-40 absolute -left-8 mt-0 pt-6 bg-black p-6 rounded shadow-md transition">
           {items.map((item) => (
-            <Link key={item.href} href={item.href}>
+            <Link key={item.href} href={item.href} passHref>
               <p className="block py-1 hover:text-nlila hover:scale-105 transition">{item.label}</p>
             </Link>
           ))}
@@ -32,20 +41,25 @@ const DropdownMenu = ({ title, items }) => {
   );
 };
 
-export default function NavUni() {
+// Define types for the NavUni component props
+interface NavUniProps {
+  children?: ReactNode;
+}
+
+// NavUni component
+const NavUni: React.FC<NavUniProps> = ({ children }) => {
   const menuItems = [
     { href: '/water', label: 'WODA' },
     { href: '/juice', label: 'SOKI' },
     { href: '/machines', label: 'EKSPRESY' },
     { href: '/dispenser', label: 'DYSTRYBUTORY' },
-    { href: '/coffee', label: 'NASZE KAWY'},
+    { href: '/coffee', label: 'NASZE KAWY' },
     { href: '/chemistry', label: 'CHEMIA' },
-
   ];
 
   const pathname = usePathname();
   let defaultColor = "";
-  if (pathname === '/coffee' || pathname === '/chemistry' || pathname === '/machines'){
+  if (pathname === '/coffee' || pathname === '/chemistry' || pathname === '/machines') {
     defaultColor = "text-norange";
   } else {
     defaultColor = "text-nturkis";
@@ -53,7 +67,7 @@ export default function NavUni() {
 
   return (
     <header className="backdrop-blur-xl fixed top-0 z-20 w-screen bg-black h-20 flex items-center justify-center">
-      <div className=" bg-black w-3/4 flex justify-evenly items-center text-m text-white tracking-wider">
+      <div className="bg-black w-3/4 flex justify-evenly items-center text-m text-white tracking-wider">
         <DropdownMenu title="NAPOJE" items={menuItems.slice(0, 2)} />
         <DropdownMenu title="KAWA" items={menuItems.slice(4, 6)} />
         <DropdownMenu title="URZADZENIA" items={menuItems.slice(2, 4)} />
@@ -72,6 +86,9 @@ export default function NavUni() {
           <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">KONTAKT</p>
         </Link>
       </div>
+      {children}
     </header>
   );
-}
+};
+
+export default NavUni;

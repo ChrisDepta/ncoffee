@@ -5,7 +5,7 @@ import Footer from '@/components/common/footer'
 import CoffeeData from '@/components/sections/coffeeData/coffeeData'
 
 import sliderCoffe from "@/../public/coffeeSlider.webp"
-import bgOffice from "@/../public/bgOffice.webp"
+import coffeebeans from "@/../public/coffeebeanswave.webp"
 
 
 
@@ -18,7 +18,7 @@ export default function Coffee() {
         <Navbar />
         <Image src={sliderCoffe} width={800} height={800} className='w-screen ' priority alt={'SliderNcoffee'}/>
         <CoffeeData />
-        <Image src={bgOffice} width={800} height={800} className='w-screen ' priority alt={'BgOffice'}/>
+        <Image src={coffeebeans} width={800} height={800} className='w-screen ' priority alt={'BgOffice'}/>
         <Footer />
       </>
   )

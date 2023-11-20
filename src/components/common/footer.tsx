@@ -6,7 +6,8 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 
-import logo from '@/../public/logoTurkis.webp'
+import logoturkis from '@/../public/logoTurkis.webp'
+import logoorange from '@/../public/logoOrange.webp'
 import fb from '@/../public/fbIcon.webp'
 import insta from '@/../public/instaIcon.webp'
 
@@ -15,10 +16,13 @@ import insta from '@/../public/instaIcon.webp'
 export default function Footer() {
   const pathname = usePathname();
   let defaultColor = "";
+  let defaultLogo = logoturkis;
   if (pathname === '/coffee' || pathname === '/chemistry' || pathname === '/machines'){
     defaultColor = "text-norange";
+    defaultLogo = logoorange;
   } else {
     defaultColor = "text-nturkis";
+    defaultLogo = logoturkis;
   }
   
 
@@ -26,7 +30,7 @@ export default function Footer() {
   return (
     <div className='text-white px-36 py-24 flex items-start justify-around w-screen bg-black'>
       <div className='flex flex-col items-end'>
-      <Image src={logo} width={120} height={100} className='m-6 mt-16' priority alt={'ncoffee makes your day'}/>
+      <Image src={defaultLogo} width={120} height={100} className='m-6 mt-16' priority alt={'ncoffee makes your day'}/>
       </div>
       <div className='text-xl '>
         <p className={`text-2xl ${defaultColor} font-bold tracking-widest`}>Social</p>
