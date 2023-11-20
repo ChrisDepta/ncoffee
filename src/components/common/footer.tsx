@@ -10,7 +10,7 @@ import logoturkis from '@/../public/logoTurkis.webp'
 import logoorange from '@/../public/logoOrange.webp'
 import fb from '@/../public/fbIcon.webp'
 import insta from '@/../public/instaIcon.webp'
-import coffeebeanswave from '@/../public/coffeebeansWave.webp'
+import coffeebeanswave from '@/../public/coffeebeanswave.webp'
 import waterwave from "@/../public/waterWave.webp"
 
 
