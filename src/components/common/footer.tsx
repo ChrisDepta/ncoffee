@@ -21,7 +21,7 @@ export default function Footer() {
   let defaultColor = "";
   let defaultLogo = logoturkis;
   let defaultwave = waterwave;
-  if (pathname === '/coffee' || pathname === '/chemistry' || pathname === '/machines'){
+  if (pathname === '/coffee' || pathname === '/chemistry' || pathname === '/machines' || pathname === '/contact'){
     defaultColor = "text-norange";
     defaultLogo = logoorange;
     defaultwave = coffeebeanswave;

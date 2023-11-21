@@ -1,13 +1,19 @@
-"use client";
+'use client'
 import React, { useState } from 'react';
 
+interface ConFormProps {}
 
-export default function ConForm() {
+const ConForm: React.FC<ConFormProps> = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isSending, setIsSending] = useState(false);
   const [isSent, setIsSent] = useState(false);
+  const [showPrivacyText, setShowPrivacyText] = useState(false);
+
+  const handlePrivacyToggle = () => {
+    setShowPrivacyText(!showPrivacyText);
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,7 +34,9 @@ export default function ConForm() {
         },
         body: JSON.stringify({ name, email, message }),
       });
+
       console.log(response);
+
       if (response.ok) {
         setIsSent(true);
         setName('');
@@ -46,40 +54,57 @@ export default function ConForm() {
   };
 
   return (
-    <form className="pt-36  basis-1/3 h-screen flex flex-wrap items-start justify-evenly shrink"
-        onSubmit={handleSubmit}>
-      <input className="basis-full text-2xl bg-nbaige border border-white p-2"
+    <form className="text-xl pt-36 basis-1/4 h-1/2 flex flex-wrap justify-start " onSubmit={handleSubmit}>
+      <label>Podaj swoje Imię</label>
+      <input
+        className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
         value={name}
         onChange={(e) => setName(e.target.value)}
         type="text"
         placeholder="Twoje imię"
       />
-      <input className="basis-full text-2xl bg-nbaige border border-white p-2"
+      <label>Podaj swój adres e-mail </label>
+      <input
+        className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         type="email"
         placeholder="Adres e-mail"
       />
-      <textarea className="basis-full text-2xl bg-nbaige border border-white p-2"
+      <label>Napisz wiadomość</label>
+      <textarea
+        className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Napisz wiadomość"
-        rows={5}
+        rows={3}
       ></textarea>
-      <p><input className="mr-4 mt-6" type="checkbox" />
-            Administratorem danych osobowych podanych w formularzu jest
-             NCOFFEE z siedzibą przy ul. Sowiogórska 8c/6, 58-200 Dzierżoniów.
-              Dane te będą przetwarzane w celu odpowiedzi na sprawę opisaną w formularzu. 
-              Podanie danych osobowych wskazanych w formularzu jest dobrowolne, ale ich 
-              niepodanie w zakresie adresu email uniemożliwia kontakt w sprawie załatwienia 
-              sprawy za pośrednictwem powyższego formularza. Powyższe dane nie są 
-              archiwizowane i nie będą używane w celach innych, niż udzielenie odpowiedzi
-               na zapytanie zawarte w formularzu.</p>
-      <button className="bg-nbraun border border-nbaige text-nbaige text-2xl font-bold w-auto px-6 mr-auto mt-6 mb-12"
-         type="submit" disabled={isSending}>
+      <p>
+        <input className="mr-4 mt-6 " type="checkbox" />
+        <span className='text-sm'>Zgoda na przetwarzanie danych osobowych{' '}</span>
+        <span className="cursor-pointer text-norange text-sm hover:text-nbeige" onClick={handlePrivacyToggle}>
+          {showPrivacyText ? 'Czytaj mniej' : 'Czytaj więcej'}
+        </span>
+      </p>
+      {showPrivacyText && (
+        <p className='text-lg'>
+          Administratorem danych osobowych podanych w formularzu jest NCOFFEE z siedzibą przy ul. Sowiogórska 8c/6, 58-200
+          Dzierżoniów. Dane te będą przetwarzane w celu odpowiedzi na sprawę opisaną w formularzu. Podanie danych
+          osobowych wskazanych w formularzu jest dobrowolne, ale ich niepodanie w zakresie adresu email uniemożliwia kontakt
+          w sprawie załatwienia sprawy za pośrednictwem powyższego formularza. Powyższe dane nie są archiwizowane i nie
+          będą używane w celach innych, niż udzielenie odpowiedzi na zapytanie zawarte w formularzu.
+        </p>
+      )}
+      <button
+        className="bg-norange border border-nbaige text-white text-2xl font-bold w-auto px-6 mr-auto mt-6 mb-12"
+        type="submit"
+        disabled={isSending}
+      >
         {isSending ? 'Wysyłanie...' : 'Wyślij'}
       </button>
       {isSent && <p>Wiadomość została wysłana.</p>}
     </form>
   );
-}
+};
+
+export default ConForm;

@@ -1,26 +1,22 @@
 import React from "react";
-import Image from "next/image";
-import logoBaige from "@/../public/logoBaige.webp"
 
 export default function Condata() {
         return(
-        <div className='basis-1/3 h-screen flex flex-col items-start justify-center'>
-        <p className='mt-24 mb-2 text-5xl font-extrabold'>KONTAKT</p>
-        <p className='text-3xl font-bold'>NCOFFEE</p>
-        <strong className='text-2xl pt-12'>Biuro</strong>
-        <p className='py-6 text-xl'>ul. Sowiogórska 8c/6 <br />
+        <div className='basis-1/4 mt-36 pb-36 mr-10 flex flex-col items-start justify-center border-r border-norange'>
+        <p className='text-lg md:text-2xl lg:text-4xl font-extrabold text-norange'>NCOFFEE</p>
+        <strong className='text-xl pt-8'>Biuro</strong>
+        <p className='py-6 text-lg'>ul. Sowiogórska 8c <br />
             58-200 Dzierżoniów
         </p>
-        <p className='py-6 text-xl border-t border-b border-nbaige'>ING BANK ŚLĄSKI 77 1050 1908 1000 0091 2845 0997 <br />
+        <p className='py-6 text-lg border-t border-b border-norange'>ING BANK ŚLĄSKI <br/>77 1050 1908 1000 0091 2845 0997 <br />
             NIP: 882 210 61 83
         </p>
 
-        <div className='py-6 text-xl'>
-           <p className='text-2xl pb-6 font-bold'>Zadzwoń lub napisz</p>
+        <div className='py-6 text-lg'>
+           <p className='text-xl pb-6 font-bold'>Zadzwoń lub napisz</p>
             +48 511 388 765 <br />
             biuro.ncoffee@gmail.com
         </div>
-        <Image src={logoBaige} width={300} height={300} className='w-1/3 ml-24 mt-12' alt={'N-COFFEE'}/>
       </div>
         )
 }
