@@ -1,110 +1,96 @@
-'use client'
-import React, { useState } from 'react';
+'use client';
 
-interface ConFormProps {}
+import { FC, useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { sendEmail } from '@/utils/send-email';
 
-const ConForm: React.FC<ConFormProps> = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [isSending, setIsSending] = useState(false);
-  const [isSent, setIsSent] = useState(false);
+export type FormData = {
+  name: string;
+  email: string;
+  message: string;
+  privacyCheckbox: boolean;
+};
+
+const ContactForm: FC = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
   const [showPrivacyText, setShowPrivacyText] = useState(false);
 
   const handlePrivacyToggle = () => {
     setShowPrivacyText(!showPrivacyText);
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // Walidacja pól formularza
-    if (!name || !email || !message) {
-      alert('Proszę wypełnić wszystkie pola formularza.');
-      return;
-    }
-
-    try {
-      setIsSending(true);
-
-      const response = await fetch('@/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name, email, message }),
-      });
-
-      console.log(response);
-
-      if (response.ok) {
-        setIsSent(true);
-        setName('');
-        setEmail('');
-        setMessage('');
-      } else {
-        throw new Error('Wysłanie wiadomości nie powiodło się.');
-      }
-    } catch (error) {
-      console.error(error);
-      alert('Wysłanie wiadomości nie powiodło się. Spróbuj ponownie później.');
-    } finally {
-      setIsSending(false);
+  const onSubmit = (data: FormData) => {
+    // Check if the privacy checkbox is checked and all fields are filled
+    if (data.privacyCheckbox && !errors.name && !errors.email && !errors.message) {
+      sendEmail(data);
+    } else {
+      // Handle error, e.g., display a message to the user
+      console.error('Please fill in all required fields and agree to the privacy policy.');
     }
   };
 
   return (
-    <form className="text-xl pt-36 basis-1/4 h-1/2 flex flex-wrap justify-start " onSubmit={handleSubmit}>
-      <label>Podaj swoje Imię</label>
-      <input
-        className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        type="text"
-        placeholder="Twoje imię"
-      />
-      <label>Podaj swój adres e-mail </label>
-      <input
-        className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        type="email"
-        placeholder="Adres e-mail"
-      />
-      <label>Napisz wiadomość</label>
-      <textarea
-        className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        placeholder="Napisz wiadomość"
-        rows={3}
-      ></textarea>
-      <p>
-        <input className="mr-4 mt-6 " type="checkbox" />
-        <span className='text-sm'>Zgoda na przetwarzanie danych osobowych{' '}</span>
-        <span className="cursor-pointer text-norange text-sm hover:text-nbeige" onClick={handlePrivacyToggle}>
-          {showPrivacyText ? 'Czytaj mniej' : 'Czytaj więcej'}
-        </span>
-      </p>
+    <form className="text-xl pt-36 basis-1/4 h-auto flex flex-col justify-start items-start " onSubmit={handleSubmit(onSubmit)}>
+      <div className='mb-5'>
+        <label htmlFor='name' className=' block text-base font-medium'>
+        Imię i nazwisko:
+        </label>
+        <input
+          type='text'
+          placeholder='wpisz woje dane'
+          className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
+          {...register('name', { required: true })}
+        />
+      </div>
+      <div className='mb-5'>
+        <label htmlFor='email' className=' block text-base font-medium'>
+          Adres email:
+        </label>
+        <input
+          type='email'
+          placeholder='wpisz swój email'
+          className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
+          {...register('email', { required: true })}
+        />
+      </div>
+      <div className='mb-5'>
+        <label htmlFor='message' className=' block text-base font-medium'>
+          Wiadomość:
+        </label>
+        <textarea
+          rows={4}
+          placeholder='wpisz swoją wiadomość'
+          className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
+          {...register('message', { required: true })}
+        ></textarea>
+      </div>
+      <div className='mb-5'>
+        <input
+          type="checkbox"
+          className="mr-4 mt-6"
+          {...register('privacyCheckbox', { required: true })}
+        />
+        <label className='text-sm'>
+          Zgoda na przetwarzanie danych osobowych{' '}
+          <span className="cursor-pointer text-norange hover:text-nbeige" onClick={handlePrivacyToggle}>
+            {showPrivacyText ? 'Czytaj mniej' : 'Czytaj więcej'}
+          </span>
+        </label>
+      </div>
+      {/* Privacy policy text */}
       {showPrivacyText && (
         <p className='text-lg'>
-          Administratorem danych osobowych podanych w formularzu jest NCOFFEE z siedzibą przy ul. Sowiogórska 8c/6, 58-200
-          Dzierżoniów. Dane te będą przetwarzane w celu odpowiedzi na sprawę opisaną w formularzu. Podanie danych
-          osobowych wskazanych w formularzu jest dobrowolne, ale ich niepodanie w zakresie adresu email uniemożliwia kontakt
-          w sprawie załatwienia sprawy za pośrednictwem powyższego formularza. Powyższe dane nie są archiwizowane i nie
-          będą używane w celach innych, niż udzielenie odpowiedzi na zapytanie zawarte w formularzu.
+          {/* Privacy policy text */}
         </p>
       )}
-      <button
-        className="bg-norange border border-nbaige text-white text-2xl font-bold w-auto px-6 mr-auto mt-6 mb-12"
-        type="submit"
-        disabled={isSending}
-      >
-        {isSending ? 'Wysyłanie...' : 'Wyślij'}
-      </button>
-      {isSent && <p>Wiadomość została wysłana.</p>}
+      {/* Submit button */}
+      <div>
+        <button className="bg-norange border border-nbaige text-white text-2xl font-bold w-auto px-6 mr-auto mt-6 mb-12">
+          Submit
+        </button>
+      </div>
     </form>
   );
 };
 
-export default ConForm;
+export default ContactForm;
