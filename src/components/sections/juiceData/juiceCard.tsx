@@ -29,7 +29,7 @@ export default function JuiceCard({id, title, subtitle, li1, li2, li3, price, pi
             </p>
           </div>
           <div className=' basis-1/6 '>
-            <Image src={require(`@/../public/${picture}.webp`)} width={50} height={100} className='hover:scale-125 transition' alt={picture} />
+            <Image src={require(`@/../public/${picture}.webp`)} width={50} height={100} className='hover:scale-125 transition' alt="picture" />
           </div>
         </div>
   )

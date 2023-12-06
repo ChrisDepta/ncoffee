@@ -292,6 +292,7 @@
             "title": "Ekspres Fresco X65",
 	        "par1": " Fresco X65 to urządzenie o kompaktowych wymiarach,nowoczesny a zarazem prosty wygląd doskonale wpasuje się do każdej przestrzeni. Dzięki wydajności 80 kaw dziennie będzie odpowiedni do mniejszych i większych biur, firm czy restauracji, hoteli oraz innych obiektów gastronomicznych.Zbiornik na fusy również pomieści w sobie sporo, spokojnie nawet do 30 porcji kawy.Fresco X65 posiada intuicyjny i przejrzysty wyświetlacz o przekątnej 7 cali, zautomatyzowane programy czyszczące są proste w obsłudze i szybkie do wykonania",
             "subtitle": "Charakterystyka",
+            "li1": "",
             "li2": "Wydajności 80 kaw",
 	        "li3": "4L zbiornik na wodę",
             "li4": "Automatyczne płukanie spieniacza mleka",
@@ -410,6 +411,7 @@
             "li1": "bogata w magnez",
             "li2": "",
             "li3": "bogata w sód",
+            "price": "",
             "picture": "jurajska 330ML SZKŁO GAZ"
         },
         {
@@ -471,6 +473,7 @@
             "li8": "fluorki [F] 0,3", 
             "li9": "Suma składników mineralnych [mg/l] 540,8",
             "descriptions":"Naturalna woda mineralna, niskosodowa,średniozmineralizowana.Unikalny skład mineralny codziennego spożycia posiada pozytywną opinię Instytutu Matki i Dziecka. ",
+            "price":"",
             "picture": "jurajskaLekkiGaz"
         },
         {
@@ -490,6 +493,7 @@
             "li10": "krzemionka [SiO2] 10,6",  
             "li11": "Suma składników mineralnych [mg/l] 537 ",
             "descriptions":"Naturalnie filtrowana woda, jej smak został nagrodzony trzema złotymi gwiazdkami Superior Taste Award 2023",
+            "price":"",
             "picture": "kingapieninskalekkigaz"
         },
         {
@@ -509,6 +513,7 @@
             "li10": "krzemionka [SiO2] 10,6",  
             "li11": "Suma składników mineralnych [mg/l] 537 ",
             "descriptions":"Naturalnie filtrowana woda, jej smak został nagrodzony trzema złotymi gwiazdkami Superior Taste Award 2023",
+            "price":"",
             "picture": "kingapieninskagaz"
         }
     ],
@@ -521,6 +526,7 @@
             "li1": "bogata w magnez",
             "li2": "",
             "li3": "bogata w sód",
+            "price": "",
             "picture": "jurajska 330ML SZKŁO GAZ"
         },
         {
@@ -582,6 +588,7 @@
             "li8": "fluorki [F] 0,3", 
             "li9": "Suma składników mineralnych [mg/l] 540,8",
             "descriptions":"Naturalna woda mineralna, niskosodowa,średniozmineralizowana.Unikalny skład mineralny codziennego spożycia posiada pozytywną opinię Instytutu Matki i Dziecka. ",
+            "price":"",
             "picture": "jurajskaLekkiGaz"
         },
         {
@@ -601,6 +608,7 @@
             "li10": "krzemionka [SiO2] 10,6",  
             "li11": "Suma składników mineralnych [mg/l] 537 ",
             "descriptions":"Naturalnie filtrowana woda, jej smak został nagrodzony trzema złotymi gwiazdkami Superior Taste Award 2023",
+            "price":"",
             "picture": "kingapieninskalekkigaz"
         },
         {
@@ -620,6 +628,7 @@
             "li10": "krzemionka [SiO2] 10,6",  
             "li11": "Suma składników mineralnych [mg/l] 537 ",
             "descriptions":"Naturalnie filtrowana woda, jej smak został nagrodzony trzema złotymi gwiazdkami Superior Taste Award 2023",
+            "price":"",
             "picture": "kingapieninskagaz"
         }
     ]
