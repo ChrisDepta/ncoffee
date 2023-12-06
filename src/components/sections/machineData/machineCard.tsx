@@ -10,7 +10,7 @@ type Props = {
   li3: string,
   price: string,
   picture: string,
-  value: number
+  value: string
 }
 
 export default function MachineCard({id, title, subtitle, li1, li2, li3, price, value, picture}: Props) {

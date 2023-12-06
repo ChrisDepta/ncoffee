@@ -11,7 +11,7 @@ type Props = {
   price: string,
   picture: string,
   characteristic: string,
-  value: number
+  value: string
 }
 
 export default function DispenserCard({id, title, subtitle, li1, li2, li3, price, value, picture, characteristic}: Props) {
