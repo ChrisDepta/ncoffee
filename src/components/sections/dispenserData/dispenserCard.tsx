@@ -10,16 +10,15 @@ type Props = {
   li3: string,
   price: string,
   picture: string,
-  characteristic: string,
   value: string
 }
 
-export default function DispenserCard({id, title, subtitle, li1, li2, li3, price, value, picture, characteristic}: Props) {
+export default function DispenserCard({id, title, subtitle, li1, li2, li3, price, value, picture}: Props) {
   return (
     <div key={id} className=' h-auto basis-96 bg-gradient-to-bl from-nturkis/20 via-nturkis/5 to-nturkis/50 p-8 mx-16 mt-32 border-0 border-nturkis rounded-xl shadow-2xl flex flex-wrap justify-between items-end text-xl font-bold'>
       <p className='basis-full text-2xl uppercase font-extrabold mb-6 text-nturkis'>{title}</p>
       <div className='basis-1/2 '>
-        <p className='text-left my-4 hidden'>{characteristic}</p>
+        <p className='text-left my-4 hidden'>{title}</p>
         <p className='text-left text-xl capitalize mt-5'>{subtitle}</p>
         <ul className='mt-1 text-left capitalize'>
           <li>{li1}</li>
