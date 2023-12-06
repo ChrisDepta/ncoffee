@@ -12,7 +12,7 @@
 	        "li5": "Moc 6/6",
             "price": "Cena: ",
             "value": "",
-            "picture": "vular 1"
+            "picture": "vular"
         },
         {
             "id": 2,
@@ -26,7 +26,7 @@
 	        "li5": "Moc 2/6",
             "price": "Cena: ",
             "value": "",
-            "picture": "prado 2"
+            "picture": "prado"
         },
         {
             "id": 3,
@@ -40,7 +40,7 @@
 	        "li5": "Moc 2/6",
             "price": "Cena: ",
             "value": "",
-            "picture": "cerrado 3"
+            "picture": "cerrado"
         },
         {
             "id": 4,
@@ -54,7 +54,7 @@
             "li5": "",
             "price": "Cena: ",
             "value": "",
-            "picture": "tipo 4"
+            "picture": "tipo"
         },
         {
             "id": 5,
@@ -68,7 +68,7 @@
             "li5": "",
             "price": "Cena: ",
             "value": "",
-            "picture": "super 5"
+            "picture": "super"
         },
         {
             "id": 6,
@@ -82,7 +82,7 @@
             "li5": "",
             "price": "Cena: ",
             "value": "",
-            "picture": "grano 6"
+            "picture": "grano"
         },
         {
             "id": 7,
@@ -96,7 +96,7 @@
             "li5": "",
             "price": "Cena: ",
             "value": "",
-            "picture": "crema 7"
+            "picture": "crema"
         }
     ],
     "about":[
@@ -124,7 +124,7 @@
             "li3": "",
             "price":"Cena od:",
             "value": "69,99",
-            "picture": "płyn do mleka "
+            "picture": "plynDoMleka"
         },
         {
             "id": 2,
@@ -136,7 +136,7 @@
             "li3": "Zwiększa zywotność ekspresu",
             "price":"Cena od:",
             "value": "69,99",
-            "picture": "odkamieniacz "
+            "picture": "odkamieniacz"
         },
         {
             "id": 3,
@@ -148,7 +148,7 @@
             "li3": "Ogranicza usterki w ekspresie ",
             "price":"Cena od:",
             "value": "99,99",
-            "picture": "tabletki "
+            "picture": "tabletki"
         },
         {
             "id": 4,
@@ -160,7 +160,7 @@
             "li3": "",
             "price":"Usuwa osady i tłuszcz z mleka",
             "value": "",
-            "picture": "Płyn do mleka Ebarista 1"
+            "picture": "plynDoMlekaEbarista1"
         },
         {
             "id": 5,
@@ -172,7 +172,7 @@
             "li3": "Zwiększa zywotność ekspresu",
             "price":"Cena od:",
             "value": "",
-            "picture": "Tab 1"
+            "picture": "Tab1"
         },
         {
             "id": 6,
@@ -184,7 +184,7 @@
             "li3": "",
             "price":"Cena od:",
             "value": "",
-            "picture": "Tab 2"
+            "picture": "Tab2"
         }
     ],
     "filters": [
@@ -199,7 +199,7 @@
 	        "li4": "Przeznaczony do ekspresu: Fresco P-8LS, P8LS Plus, P8LB",
             "price":"Cena od:",
             "value": "",
-            "picture": "filtr do wody fresco 1"
+            "picture": "filtrDoWodyFresco1"
         },
  	    {
             "id": 2,
@@ -212,7 +212,7 @@
             "li4": "",
             "price":"Cena od:",
             "value": "",
-            "picture": "filtr fresco P"
+            "picture": "filtrFrescoP"
         },
 	    {
             "id": 3,
@@ -225,7 +225,7 @@
             "li4": "",
             "price":"Cena od:",
             "value": "",
-            "picture": "filtr brita c50"
+            "picture": "filtrBritaC50"
         },
 	    {
             "id": 4,
@@ -238,7 +238,7 @@
             "li4": "",
             "price":"Cena od:",
             "value": "",
-            "picture": "filtr brita c150"
+            "picture": "filtrBritaC150"
         },
 	    {
             "id": 5,
@@ -251,7 +251,7 @@
             "li4": "",
             "price":"Cena od:",
             "value": "",
-            "picture": "Głowica "
+            "picture": "glowica"
         }
     ],
     "machines": [
@@ -269,7 +269,7 @@
             "technical": "P-2l posiada możliwość podłączenia do wody.<br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
             "price":"",
             "value": "",
-            "picture": "fresco p2l"
+            "picture": "frescoP2l"
         },
 	{
             "id": 2,
@@ -285,7 +285,7 @@
             "technical": "wysokość wylewki:80-165 mm <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 41 cm x gł. 50 cm ",
             "price":"",
             "value": "",
-            "picture": "fresco p8l"
+            "picture": "frescoP8l"
         },
 	{
             "id": 3,
@@ -305,7 +305,8 @@
             "weight":"15kg",
             "price":"",
             "value": "",
-            "picture": "fresco x65"
+            "picture": "frescoP8l",
+            "picture2": "frescoX65"
         },
         {
             "id": 4,
@@ -343,7 +344,7 @@
             "technical": "P-2l posiada możliwość podłączenia do wody.<br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
             "price":"",
             "value": "",
-            "picture": "fresco p2l"
+            "picture": "frescoP2l"
         },
 	{
             "id": 2,
@@ -359,7 +360,7 @@
             "technical": "wysokość wylewki:80-165 mm <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 41 cm x gł. 50 cm ",
             "price":"",
             "value": "",
-            "picture": "fresco p8l"
+            "picture": "frescoP8l"
         },
 	{
             "id": 3,
@@ -379,7 +380,8 @@
             "weight":"15kg",
             "price":"",
             "value": "",
-            "picture": "fresco x65"
+            "picture": "frescoP8l",
+            "picture2": "frescoX65"
         },
         {
             "id": 4,
@@ -412,7 +414,7 @@
             "li2": "",
             "li3": "bogata w sód",
             "price": "",
-            "picture": "jurajska 330ML SZKŁO GAZ"
+            "picture": "jurajska330MLSzkloGaz"
         },
         {
             "id": 2,
@@ -423,7 +425,7 @@
             "li2": "bogata w sód",
             "li3": "",
             "price":"",
-            "picture": "jurajska 330 ML SZKŁO LEKKI GAZ"
+            "picture": "jurajska330MLSzkloLekkiGaz"
         },
         {
             "id": 3,
@@ -434,7 +436,7 @@
             "li2": "bogata w sód",
             "li3": "",
             "price":"",
-            "picture": "jurajskaGaz 1,5L"
+            "picture": "jurajskaGaz1,5L"
         },
         {
             "id": 4,
@@ -445,7 +447,7 @@
             "li2": "bogata w sód",
             "li3": "",
             "price":"",
-            "picture": "jurajskaNiegaz 1,5L "
+            "picture": "jurajskaNiegaz1,5L"
         },
         {
             "id": 5,
@@ -478,9 +480,9 @@
         },
         {
             "id": 7,
-            "title": "Kinga Pienińska woda mineralna klasy premium - Lekko Gazowana",
+            "title": "Kinga Pienińska woda mineralna klasy premium - Niegazowana",
             "subtitle": "0,33l 0,07l",
-            "type": "Lekko Gazowana",
+            "type": "niegazowana",
             "li1": "HO.RE.CA Linia Biała",
             "li2": "wapń [Ca2+] 81,32",  
             "li3": "wodorowęglany [HCO3] 372,21",  
@@ -494,7 +496,7 @@
             "li11": "Suma składników mineralnych [mg/l] 537 ",
             "descriptions":"Naturalnie filtrowana woda, jej smak został nagrodzony trzema złotymi gwiazdkami Superior Taste Award 2023",
             "price":"",
-            "picture": "kingapieninskalekkigaz"
+            "picture": "kingaPieninskaNiegaz"
         },
         {
             "id": 8,
@@ -514,7 +516,7 @@
             "li11": "Suma składników mineralnych [mg/l] 537 ",
             "descriptions":"Naturalnie filtrowana woda, jej smak został nagrodzony trzema złotymi gwiazdkami Superior Taste Award 2023",
             "price":"",
-            "picture": "kingapieninskagaz"
+            "picture": "kingaPieninskaGaz"
         }
     ],
     "juices": [
@@ -527,7 +529,7 @@
             "li2": "",
             "li3": "bogata w sód",
             "price": "",
-            "picture": "jurajska 330ML SZKŁO GAZ"
+            "picture": "jurajska330MLSzkloGaz"
         },
         {
             "id": 2,
@@ -538,7 +540,7 @@
             "li2": "bogata w sód",
             "li3": "",
             "price":"",
-            "picture": "jurajska 330 ML SZKŁO LEKKI GAZ"
+            "picture": "jurajska330MLSzkloLekkiGaz"
         },
         {
             "id": 3,
@@ -549,7 +551,7 @@
             "li2": "bogata w sód",
             "li3": "",
             "price":"",
-            "picture": "jurajskaGaz 1,5L"
+            "picture": "jurajskaGaz1,5L"
         },
         {
             "id": 4,
@@ -560,7 +562,7 @@
             "li2": "bogata w sód",
             "li3": "",
             "price":"",
-            "picture": "jurajskaNiegaz 1,5L "
+            "picture": "jurajskaNiegaz1,5L"
         },
         {
             "id": 5,
@@ -593,9 +595,9 @@
         },
         {
             "id": 7,
-            "title": "Kinga Pienińska woda mineralna klasy premium - Lekko Gazowana",
+            "title": "Kinga Pienińska woda mineralna klasy premium - Niegazowana",
             "subtitle": "0,33l 0,07l",
-            "type": "Lekko Gazowana",
+            "type": "niegazowana",
             "li1": "HO.RE.CA Linia Biała",
             "li2": "wapń [Ca2+] 81,32",  
             "li3": "wodorowęglany [HCO3] 372,21",  
@@ -609,7 +611,7 @@
             "li11": "Suma składników mineralnych [mg/l] 537 ",
             "descriptions":"Naturalnie filtrowana woda, jej smak został nagrodzony trzema złotymi gwiazdkami Superior Taste Award 2023",
             "price":"",
-            "picture": "kingapieninskalekkigaz"
+            "picture": "kingaPieninskaNiegaz"
         },
         {
             "id": 8,
@@ -629,7 +631,7 @@
             "li11": "Suma składników mineralnych [mg/l] 537 ",
             "descriptions":"Naturalnie filtrowana woda, jej smak został nagrodzony trzema złotymi gwiazdkami Superior Taste Award 2023",
             "price":"",
-            "picture": "kingapieninskagaz"
+            "picture": "kingaPieninskaGaz"
         }
     ]
 }
