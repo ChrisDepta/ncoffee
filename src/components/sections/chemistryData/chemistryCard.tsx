@@ -10,7 +10,7 @@ type Props = {
   li2: string,
   li3: string,
   price: string,
-  value: number,
+  value: string,
   picture: string
 }
 
