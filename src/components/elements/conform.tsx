@@ -1,8 +1,7 @@
 'use client'
-
 // Importe
 import React, { FC, useState } from 'react';
-import { useForm } from 'react-hook-form';
+import  { useForm } from 'react-hook-form'
 import { sendEmail } from '@/utils/send-email';
 
 // Definieren der FormData
