@@ -172,7 +172,7 @@
             "li3": "Zwiększa zywotność ekspresu",
             "price":"Cena od:",
             "value": "",
-            "picture": "Tab1"
+            "picture": "tab1"
         },
         {
             "id": 6,
@@ -184,7 +184,7 @@
             "li3": "",
             "price":"Cena od:",
             "value": "",
-            "picture": "Tab2"
+            "picture": "tab2"
         }
     ],
     "filters": [
