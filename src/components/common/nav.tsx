@@ -76,7 +76,7 @@ const NavUni: React.FC<NavUniProps> = ({ children }) => {
             NCOFFEE
           </p>
         </Link>
-        <Link href="/aboutus" passHref>
+        <Link href="/abouts" passHref>
           <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">O NAS</p>
         </Link>
         <Link href="/clients" passHref>
