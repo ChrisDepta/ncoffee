@@ -10,6 +10,8 @@
             "li3": "Kwasowść 1/6",
  	        "li4": "Intensywność 6/6",
 	        "li5": "Moc 6/6",
+            "price": "Cena: ",
+            "value": "",
             "picture": "vular 1"
         },
         {
@@ -22,6 +24,8 @@
             "li3": "Kwasowość 1/6",
 	        "li4": "Intensywność 4/6",
 	        "li5": "Moc 2/6",
+            "price": "Cena: ",
+            "value": "",
             "picture": "prado 2"
         },
         {
@@ -34,6 +38,8 @@
             "li3": "Kwasowość 2/6",
 	        "li4": "Intensywność 3/6",
 	        "li5": "Moc 2/6",
+            "price": "Cena: ",
+            "value": "",
             "picture": "cerrado 3"
         },
         {
@@ -44,6 +50,10 @@
             "li1": "Afryka, Ameryka PŁD, Azja",
             "li2": "Stopień Palenia 3/5",
             "li3": "Kwasowość 2/5 ",
+            "li4": "",
+            "li5": "",
+            "price": "Cena: ",
+            "value": "",
             "picture": "tipo 4"
         },
         {
@@ -54,6 +64,10 @@
             "li1": "Ameryka PŁD, Afryka, Azja",
             "li2": "St. Palenia 5/5",
             "li3": "Kwasowość 2/5",
+            "li4": "",
+            "li5": "",
+            "price": "Cena: ",
+            "value": "",
             "picture": "super 5"
         },
         {
@@ -65,6 +79,9 @@
             "li2": "Robusta - 50% Arabica - 50%",
             "li3": "St.Palenia 3/5",
 	        "li4": "Kwasowość 2/5",
+            "li5": "",
+            "price": "Cena: ",
+            "value": "",
             "picture": "grano 6"
         },
         {
@@ -76,6 +93,9 @@
             "li2": "Robusta - 60%,Arabica - 40%",
             "li3": "St.Palenia 3/5 ",
 	        "li4": "Kwasowość 2/5",
+            "li5": "",
+            "price": "Cena: ",
+            "value": "",
             "picture": "crema 7"
         }
     ],
@@ -101,6 +121,7 @@
             "subtitle": "Przeznaczenie :",
             "li1": "Dezynfekuje układ mleczny",
 	        "li2": "Usuwa osady i tłuszcz z mleka",
+            "li3": "",
             "price":"Cena od:",
             "value": 69.99,
             "picture": "płyn do mleka "
@@ -136,6 +157,7 @@
             "subtitle": "Przeznaczenie:",
             "li1": "Usuwa osady i tłuszcz z mleka",
             "li2": "Usuwa osad wapienny,pozwala pozbyć się resztek kawy",
+            "li3": "",
             "price":"Usuwa osady i tłuszcz z mleka",
             "value": "",
             "picture": "Płyn do mleka Ebarista 1"
@@ -159,6 +181,7 @@
             "subtitle": "Przeznaczenie:",
             "li1": "Usuwa osad wapienny,pozwala pozbyć się resztek kawy",         
             "li2": "Ogranicza usterki w ekspresies",
+            "li3": "",
             "price":"Cena od:",
             "value": "",
             "picture": "Tab 2"
@@ -186,6 +209,7 @@
             "li1": "Stosowanie filtrów znacząco przedłuża żywotność ekspresu ",
             "li2": "Zmniejsza koszty jego eksploatowania.",
             "li3": "Zalecana wymiana co 200l lub 3 miesięce ",
+            "li4": "",
             "price":"Cena od:",
             "value": "",
             "picture": "filtr fresco P"
@@ -198,6 +222,7 @@
             "li1": "Czteroetapowa technologia filtracji dekarbonizuje wodę. ",
             "li2": "Wydajność (z głowicą ze zmiennym obejściem 40%): do 960 litrów (przy 10⁰KH).",
             "li3": "Wydajność (z głowicą ze stałym obejściem 30%): do 831 litrów (przy 10⁰KH) ",
+            "li4": "",
             "price":"Cena od:",
             "value": "",
             "picture": "filtr brita c50"
@@ -210,6 +235,7 @@
             "li1": "Czteroetapowa technologia filtracji dekarbonizuje wodę. ",
             "li2": "Wydajność (z głowicą ze zmiennym obejściem 40%): do 2408 litrów (przy 10⁰KH).",
             "li3": "Wydajność (z głowicą ze stałym obejściem 30%): do 2086 litrów (przy 10⁰KH)",
+            "li4": "",
             "price":"Cena od:",
             "value": "",
             "picture": "filtr brita c150"
@@ -222,6 +248,7 @@
             "li1": "Regulowany by-pass: 30% ",
             "li2": "Zawór: płuczący suwakowy.",
             "li3": "Głowica pasuje do wszystkich filtrów z rodziny PURITY C",
+            "li4": "",
             "price":"Cena od:",
             "value": "",
             "picture": "Głowica "
@@ -241,6 +268,7 @@
             "li6": "Automatyczne programy czyszczenia i odkamieniania.",
             "technical": "P-2l posiada możliwość podłączenia do wody.<br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
             "price":"",
+            "value": "",
             "picture": "fresco p2l"
         },
 	{
@@ -256,6 +284,7 @@
             "li6": "Automatyczne programy czyszczenia i odkamieniania.",
             "technical": "wysokość wylewki:80-165 mm <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 41 cm x gł. 50 cm ",
             "price":"",
+            "value": "",
             "picture": "fresco p8l"
         },
 	{
@@ -274,13 +303,14 @@
             "depth": "50cm",
             "weight":"15kg",
             "price":"",
+            "value": "",
             "picture": "fresco x65"
         },
         {
             "id": 4,
             "title": "Fresco C11",
             "subtitle": "Kompaktowy i niepowtarzalny ",
-            "characteristic": "Fresco C11 to bardzo wydajny ekspres dla małych firm lub biur. Zaleacana ilość kaw zrobionych w ciągu jednego dnia to minimum 30 sztuk. Aby uprzyjemnićci użytkowanie wbudowaliśmy możliwość personalizacji wyglądu poprzez możliwość dodawania włąsnych zdjęć. Czyszyczenie zarówno zaparzacza jak i spieniacza do mleka odbzwa się całkowicie automatzcznie co zapewnia więcej czsu na spokojną konsumcję.",
+            "technical": "Fresco C11 to bardzo wydajny ekspres dla małych firm lub biur. Zaleacana ilość kaw zrobionych w ciągu jednego dnia to minimum 30 sztuk. Aby uprzyjemnićci użytkowanie wbudowaliśmy możliwość personalizacji wyglądu poprzez możliwość dodawania włąsnych zdjęć. Czyszyczenie zarówno zaparzacza jak i spieniacza do mleka odbzwa się całkowicie automatzcznie co zapewnia więcej czsu na spokojną konsumcję.",
             "li1": "Możliwość stworzenia aż 8 indywudualnych profilów",
             "li2": "Możliwość wgrywania własnych zdjęć",
             "li3": "Automatyczne płukanie spieniacza mleka",
@@ -293,6 +323,7 @@
             "depth": "46cm",
             "weight":"20kg",
             "price":"",
+            "value": "",
             "picture": "frescoC11"
         }
 	],

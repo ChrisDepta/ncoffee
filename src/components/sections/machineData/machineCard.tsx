@@ -10,16 +10,15 @@ type Props = {
   li3: string,
   price: string,
   picture: string,
-  characteristic: string,
   value: number
 }
 
-export default function MachineCard({id, title, subtitle, li1, li2, li3, price, value, picture, characteristic}: Props) {
+export default function MachineCard({id, title, subtitle, li1, li2, li3, price, value, picture}: Props) {
   return (
     <div key={id} className=' h-auto basis-96 bg-gradient-to-bl from-nbeige via-nbeige/50 to-nbeige p-8 mx-16 mt-32 border-0 border-nturkis rounded-xl shadow-2xl flex flex-wrap justify-between items-end text-xl font-bold'>
       <p className='basis-full text-2xl uppercase font-extrabold mb-6 text-norange'>{title}</p>
       <div className='basis-2/3 '>
-        <p className='text-left my-4 hidden'>{characteristic}</p>
+        <p className='text-left my-4 hidden'>{subtitle}</p>
         <p className='text-left text-xl capitalize mt-5'>{subtitle}</p>
         <ul className='mt-1 text-left text-lg capitalize'>
           <li>{li1}</li>
