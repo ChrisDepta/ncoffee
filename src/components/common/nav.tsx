@@ -29,7 +29,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ title, items }) => {
         <p className="text-center hover:text-nlila hover:scale-105 transition-all">{title}</p>
       </div>
       {isOpen && (
-        <div className="w-40 absolute -left-8 mt-0 pt-6 bg-black p-6 rounded shadow-md transition">
+        <div className="w-48 absolute top-full -left-4 mt-0 pt-6 bg-black p-6 rounded-xl shadow-xl transition-all duration-300 ease-in-out">
           {items.map((item) => (
             <Link key={item.href} href={item.href} passHref>
               <p className="block py-1 hover:text-nlila hover:scale-105 transition">{item.label}</p>
@@ -41,6 +41,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ title, items }) => {
   );
 };
 
+
 // Define types for the NavUni component props
 interface NavUniProps {
   children?: ReactNode;
@@ -50,10 +51,10 @@ interface NavUniProps {
 const NavUni: React.FC<NavUniProps> = ({ children }) => {
   const menuItems = [
     { href: '/water', label: 'WODA' },
-    { href: '/juice', label: 'SOKI' },
+    { href: 'https://oryginalnysok.pl/', label: 'SOKI' },
     { href: '/machines', label: 'EKSPRESY' },
     { href: '/dispenser', label: 'DYSTRYBUTORY' },
-    { href: '/coffee', label: 'NASZE KAWY' },
+    { href: '/coffee', label: 'KAWY' },
     { href: '/chemistry', label: 'CHEMIA' },
   ];
 

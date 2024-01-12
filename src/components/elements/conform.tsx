@@ -1,10 +1,10 @@
 'use client'
-// Importe
-import React, { FC, useState } from 'react';
-import  { useForm } from 'react-hook-form'
-import { sendEmail } from '@/utils/send-email';
 
-// Definieren der FormData
+import React, { FC, useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { sendEmail } from '@/utils/send-email';
+import ReactDOM from 'react-dom';
+
 export type FormData = {
   name: string;
   email: string;
@@ -12,40 +12,51 @@ export type FormData = {
   privacyCheckbox: boolean;
 };
 
-// Komponente des Formulars
-const ContactForm: FC = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset, // Hinzugefügt: reset-Funktion
-  } = useForm<FormData>();
-  const [showPrivacyText, setShowPrivacyText] = useState(false);
+interface ModalProps {
+  onClose: () => void;
+}
 
-  // Funktion zum Anzeigen/Verstecken des Texts zur Zustimmung zur Datenschutzrichtlinie
+const PrivacyModal: FC<ModalProps> = ({ onClose }) => {
+  return ReactDOM.createPortal(
+    <div className="fixed top-36 w-96 h-auto flex items-center justify-center border border-norange outline-nbeige rounded-xl shadow-xl">
+      <div className="bg-white p-6 rounded-xl">
+        <p className="text-lg">
+          Administratorem danych osobowych podanych w formularzu jest NCOFFEE z siedzibą przy ul. Sowiogórska 8c/6, 58-200 Dzierżoniów. Dane te będą przetwarzane w celu odpowiedzi na sprawę opisaną w formularzu. Podanie danych osobowych wskazanych w formularzu jest dobrowolne, ale ich niepodanie w zakresie adresu email uniemożliwia kontakt w sprawie załatwienia sprawy za pośrednictwem powyższego formularza. Powyższe dane nie są archiwizowane i nie będą używane w celach innych, niż udzielenie odpowiedzi na zapytanie zawarte w formularzu.
+        </p>
+        <button className="bg-norange border border-nbaige hover:bg-white hover:border-norange hover:text-norange transition-all text-white text-2xl font-bold w-auto px-6 mr-auto mt-6" onClick={onClose}>
+          Zamknij
+        </button>
+      </div>
+    </div>,
+    document.getElementById('modal-root') as HTMLElement
+  );
+};
+
+const ContactForm: FC = () => {
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const [showPrivacyModal, setShowPrivacyModal] = useState(false);
+
   const handlePrivacyToggle = () => {
-    setShowPrivacyText(!showPrivacyText);
+    setShowPrivacyModal(!showPrivacyModal);
   };
 
-  // Funktion zum Behandeln des Absendens des Formulars
-  const onSubmit = (data: FormData) => {
-    // Überprüfen, ob das Kontrollkästchen aktiviert ist und alle Felder ausgefüllt sind
+  const closePrivacyModal = () => {
+    setShowPrivacyModal(false);
+  };
+
+  const onSubmit = (data: any) => {
     if (data.privacyCheckbox && !errors.name && !errors.email && !errors.message) {
-      // Aufrufen der Funktion zum Senden der E-Mail
       sendEmail(data);
-      
-      // Hinzugefügt: Formular zurücksetzen
       reset();
     } else {
-      // Hinzugefügt: Alert bei Fehler
-      alert('Please fill in all required fields and agree to the privacy policy.');
+      alert('Wypełnij wszystkie pola formularza oraz wyraź zgodę na przetwarzanie danych osobowych.');
     }
   };
 
-  // Rendern des Formulars
   return (
-    <form className="text-xl pt-36 basis-1/4 h-auto flex flex-col justify-start items-start " onSubmit={handleSubmit(onSubmit)}>
-      {/* Imei und Nachname */}
+    <div>
+      <form className="text-xl xs:pt-8 lg:pt-36 xs:basis-screen lg:basis-1/4 h-auto flex flex-col justify-start xs:items-center lg:items-start " onSubmit={handleSubmit(onSubmit)}>
+      <h3 className='text-2xl text-norange -ml-10 pb-8 font-bold lg:hidden '>Napisz do nas!</h3>
       <div className='mb-5'>
         <label htmlFor='name' className=' block text-base font-medium'>
           Imię i nazwisko:
@@ -53,7 +64,7 @@ const ContactForm: FC = () => {
         <input
           type='text'
           placeholder='Wpisz swoje dane'
-          className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
+          className="mt-2 mb-4 w-96 border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
           {...register('name', { required: true })}
         />
       </div>
@@ -65,7 +76,7 @@ const ContactForm: FC = () => {
         <input
           type='email'
           placeholder='Wpisz swój email'
-          className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
+          className="mt-2 mb-4 w-96 border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
           {...register('email', { required: true })}
         />
       </div>
@@ -77,39 +88,34 @@ const ContactForm: FC = () => {
         <textarea
           rows={4}
           placeholder='Wpisz swoją wiadomość'
-          className="mt-2 mb-4 basis-full border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
+          className="mt-2 mb-4 w-96 border border-norange outline-nbeige rounded-xl p-1 shadow-xl"
           {...register('message', { required: true })}
         ></textarea>
       </div>
-      {/* Checkbox na zgodę na przetwarzanie danych osobowych */}
-      <div className='mb-5'>
-        <input
-          type="checkbox"
-          className="mr-4 mt-6"
-          {...register('privacyCheckbox', { required: true })}
-        />
-        <label className='text-sm'>
-          Zgoda na przetwarzanie danych osobowych{' '}
-          <span className="cursor-pointer text-norange hover:text-nbeige" onClick={handlePrivacyToggle}>
-            {showPrivacyText ? 'Czytaj mniej' : 'Czytaj więcej'}
-          </span>
-        </label>
-      </div>
-      {/* Tekst o zgodzie na przetwarzanie danych osobowych */}
-      {showPrivacyText && (
-        <p className='text-lg'>
-          {/* ... (dein Text zur Datenschutzrichtlinie) */}
-        </p>
-      )}
-      {/* Przycisk submit */}
+        {/* Checkbox for privacy consent */}
+        <div className='mb-5'>
+          <input type="checkbox" className="mr-4 mt-6" {...register('privacyCheckbox', { required: true })} />
+          <label className='text-sm'>
+            Zgoda na przetwarzanie danych osobowych{' '}
+            <br />
+            <span className=" ml-8 cursor-pointer text-norange hover:text-nbeige" onClick={handlePrivacyToggle}>
+              {showPrivacyModal ? 'Czytaj mniej' : 'Czytaj więcej'}
+            </span>
+          </label>
+          {showPrivacyModal && <PrivacyModal onClose={closePrivacyModal} />}
+        </div>
+          {/* Przycisk submit */}
       <div>
         <button className="bg-norange border border-nbaige hover:bg-white hover:border-norange hover:text-norange transition-all text-white text-2xl font-bold w-auto px-6 mr-auto mt-6 mb-12">
           Submit
         </button>
       </div>
-    </form>
+      </form>
+
+      {/* Container for modal portal */}
+      <div id="modal-root"></div>
+    </div>
   );
 };
 
-// Export der Formularkomponente
 export default ContactForm;

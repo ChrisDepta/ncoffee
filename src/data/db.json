@@ -1,4 +1,19 @@
 {
+    
+    "about":[
+        {
+            "id": 1,
+            "text": "Od kilku lat zajmujemy się profesjonalnie obsługą klientów gastronomicznych HO.RE.CA, biznesowych oraz indywidualnych. Zaopatrujemy Was w najlepszą na rynku kawę, niezawodne ekspresy oraz chemię do konserwacji ekspresów."
+        },
+        {
+            "id": 2,
+            "text": "Słuchamy potrzeb i doradzamy, jak wybrać najlepszą kawę i ekspres. Budujemy relacje, spełniamy wasze oczekiwania, i nie zostawiamy naszych klientów w potrzebie - zawsze zapewniamy profesjonalny SERWIS."
+        },
+        {
+            "id": 3,
+            "text": "Wychodząc naprzeciw oczekiwaniom naszych klientów, postanowiliśmy przygotować kilka naszych niepowtarzalnych mieszanek kaw. We współpracy z zawodowoym roadsterem oraz rzemieślniczą palarnią kawy stworzyliśmy wyjątkowe kompozycje NCOFFEE VULAR, PRADO, CERRADO, które z pewnością trafią w gusta znawców, smakoszy i codziennych amatorów dobrej, mocnej kawy."
+        }
+    ],
     "coffees":[
         {
             "id": 1,
@@ -19,7 +34,7 @@
             "title": "Prado Premium 100% Arabica Blend",
             "par1": "Kawa ma intensywny aromat i subtelną kwasowość, charakteryzuje się słodkim owocowy smakiem z kwiatowo cytrusowymi aromatami.",
             "subtitle": "Pochodzenie Ziarna:",
-            "li1": "Brazylia,Honduras,Etiopia,Indonezja,Costa Rica",
+            "li1": "Brazylia, Honduras, Etiopia, Indonezja, Costa Rica",
             "li2": "ST.Palenia 3/6",
             "li3": "Kwasowość 1/6",
 	        "li4": "Intensywność 4/6",
@@ -97,20 +112,6 @@
             "price": "Cena: ",
             "value": "",
             "picture": "crema"
-        }
-    ],
-    "about":[
-        {
-            "id": 1,
-            "text": "Od kilku lat zajmujemy się profesjonalnie obsługą klientów gastronomicznych HO.RE.CA, biznesowych oraz indywidualnych. Zaopatrujemy Was w najlepszą na rynku kawę, niezawodne ekspresy oraz chemię do konserwacji ekspresów."
-        },
-        {
-            "id": 2,
-            "text": "Słuchamy potrzeb i doradzamy, jak wybrać najlepszą kawę i ekspres. Budujemy relacje, spełniamy wasze oczekiwania, i nie zostawiamy naszych klientów w potrzebie - zawsze zapewniamy profesjonalny SERWIS."
-        },
-        {
-            "id": 3,
-            "text": "Wychodząc naprzeciw oczekiwaniom naszych klientów, postanowiliśmy przygotować kilka naszych niepowtarzalnych mieszanek kaw. We współpracy z zawodowoym roadsterem oraz rzemieślniczą palarnią kawy stworzyliśmy wyjątkowe kompozycje NCOFFEE VULAR, PRADO, CERRADO, które z pewnością trafią w gusta znawców, smakoszy i codziennych amatorów dobrej, mocnej kawy."
         }
     ],
     "chemistries":[
@@ -305,8 +306,7 @@
             "weight":"15kg",
             "price":"",
             "value": "",
-            "picture": "frescoP8l",
-            "picture2": "frescoX65"
+            "picture": "frescoX65"
         },
         {
             "id": 4,
@@ -332,7 +332,7 @@
     "dispensers": [
         {
             "id": 1,
-            "title": " Ekspres FRESCO P-2L :",
+            "title": "Ruhens 300 i CO2",
             "par1": "FRESCO P2L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na kawę o pojemności 1,2 kg oraz powiększony zbiornik na fusy do :70 porcji. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością.W ciągu godziny ekspres jest w stanie przygotować aż do 120 filiżanek espresso lub do 80 kubków cappuccino .",
             "subtitle": "Charakterystyka:",
             "li1": "Nowoczesny, wyciszony młynek.",
@@ -344,11 +344,11 @@
             "technical": "P-2l posiada możliwość podłączenia do wody.<br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
             "price":"",
             "value": "",
-            "picture": "frescoP2l"
+            "picture": "ruhens300iCO2"
         },
 	{
             "id": 2,
-            "title": "Ekspres FRESCO P-8L :",
+            "title": "WHP - 1670",
             "par1": "FRESCO P8L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na wodę 8l, na kawę o pojemności 1,2 kg oraz powiększony zbiornik na fusy do :70 porcji. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością.W ciągu godziny ekspres jest w stanie przygotować aż do 120 filiżanek espresso lub do 100 kubków cappuccino .",
             "subtitle": "Charakterystyka:",
             "li1": "Nowoczesny, wyciszony młynek.",
@@ -360,11 +360,11 @@
             "technical": "wysokość wylewki:80-165 mm <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 41 cm x gł. 50 cm ",
             "price":"",
             "value": "",
-            "picture": "frescoP8l"
+            "picture": "WHP-1670"
         },
 	{
             "id": 3,
-            "title": "Ekspres Fresco X65",
+            "title": "WHP - 1670s",
 	        "par1": " Fresco X65 to urządzenie o kompaktowych wymiarach,nowoczesny a zarazem prosty wygląd doskonale wpasuje się do każdej przestrzeni. Dzięki wydajności 80 kaw dziennie będzie odpowiedni do mniejszych i większych biur, firm czy restauracji, hoteli oraz innych obiektów gastronomicznych.Zbiornik na fusy również pomieści w sobie sporo, spokojnie nawet do 30 porcji kawy.Fresco X65 posiada intuicyjny i przejrzysty wyświetlacz o przekątnej 7 cali, zautomatyzowane programy czyszczące są proste w obsłudze i szybkie do wykonania",
             "subtitle": "Charakterystyka",
             "li1": "",
@@ -380,12 +380,11 @@
             "weight":"15kg",
             "price":"",
             "value": "",
-            "picture": "frescoP8l",
-            "picture2": "frescoX65"
+            "picture": "WHP-1670S"
         },
         {
             "id": 4,
-            "title": "Fresco C11",
+            "title": "WHP - 8502",
             "subtitle": "Kompaktowy i niepowtarzalny ",
             "technical": "Fresco C11 to bardzo wydajny ekspres dla małych firm lub biur. Zaleacana ilość kaw zrobionych w ciągu jednego dnia to minimum 30 sztuk. Aby uprzyjemnićci użytkowanie wbudowaliśmy możliwość personalizacji wyglądu poprzez możliwość dodawania włąsnych zdjęć. Czyszyczenie zarówno zaparzacza jak i spieniacza do mleka odbzwa się całkowicie automatzcznie co zapewnia więcej czsu na spokojną konsumcję.",
             "li1": "Możliwość stworzenia aż 8 indywudualnych profilów",
@@ -401,125 +400,10 @@
             "weight":"20kg",
             "price":"",
             "value": "",
-            "picture": "frescoC11"
+            "picture": "WHP-8502"
         }
 	],
     "waters": [
-        {
-            "id": 1,
-            "title": "Jurajska Gazowana",
-            "subtitle": "Szkło 0,33l",
-            "type": "Gazowana",
-            "li1": "bogata w magnez",
-            "li2": "",
-            "li3": "bogata w sód",
-            "price": "",
-            "picture": "jurajska330MLSzkloGaz"
-        },
-        {
-            "id": 2,
-            "title": "Jurajska Lekki Gaz",
-            "subtitle": "0,33l",
-            "type": "lekko gazowana",
-            "li1": "bogata w magnez",
-            "li2": "bogata w sód",
-            "li3": "",
-            "price":"",
-            "picture": "jurajska330MLSzkloLekkiGaz"
-        },
-        {
-            "id": 3,
-            "title": "Jurajska Gazowana",
-            "subtitle": "0,5L, 1,5l",
-            "type": "gazowana",
-            "li1": "bogata w magnez",
-            "li2": "bogata w sód",
-            "li3": "",
-            "price":"",
-            "picture": "jurajskaGaz1,5L"
-        },
-        {
-            "id": 4,
-            "title": "Jurajska Niegazowana",
-            "subtitle": "0,5L, 1,5l",
-            "type": "niegazowana",
-            "li1": "bogata w magnez",
-            "li2": "bogata w sód",
-            "li3": "",
-            "price":"",
-            "picture": "jurajskaNiegaz1,5L"
-        },
-        {
-            "id": 5,
-            "title": "Jurajska Lekki Gaz",
-            "subtitle": "0,33l",
-            "type": "lekko gazowana",
-            "li1": "bogata w magnez",
-            "li2": "bogata w sód",
-            "li3": "",
-            "price":"",
-            "picture": "jurajskaLekkiGazMala"
-        },
-        {
-            "id": 6,
-            "title": "Jurajska Lekki Gaz",
-            "subtitle": "1,5l",
-            "type": "Lekko Gazowana",
-            "li1": "Magnez [Mg2+] 32,9",
-            "li2": "wapń [Ca2+]  66,3",
-            "li3": "wodorowęglany [HCO3] 342,0",
-            "li4": "siarczany [SO42] 39,0", 
-            "li5": "sód [Na+] 10,1",
-            "li6": "chlorki [Cl] 7,9", 
-            "li7": "potas [K+] 3,3", 
-            "li8": "fluorki [F] 0,3", 
-            "li9": "Suma składników mineralnych [mg/l] 540,8",
-            "descriptions":"Naturalna woda mineralna, niskosodowa,średniozmineralizowana.Unikalny skład mineralny codziennego spożycia posiada pozytywną opinię Instytutu Matki i Dziecka. ",
-            "price":"",
-            "picture": "jurajskaLekkiGaz"
-        },
-        {
-            "id": 7,
-            "title": "Kinga Pienińska woda mineralna klasy premium - Niegazowana",
-            "subtitle": "0,33l 0,07l",
-            "type": "niegazowana",
-            "li1": "HO.RE.CA Linia Biała",
-            "li2": "wapń [Ca2+] 81,32",  
-            "li3": "wodorowęglany [HCO3] 372,21",  
-            "li4": "magnez [Mg2+] 20,94", 
-            "li5": "siarczany [SO42] 19,90",  
-            "li6": "sód [Na+] 14,06", 
-    	    "li7": "chlorki [Cl] 7,09", 
-            "li8": "potas [K+] 2,20", 
-            "li9": "fluorki [F] 0,05",  
-            "li10": "krzemionka [SiO2] 10,6",  
-            "li11": "Suma składników mineralnych [mg/l] 537 ",
-            "descriptions":"Naturalnie filtrowana woda, jej smak został nagrodzony trzema złotymi gwiazdkami Superior Taste Award 2023",
-            "price":"",
-            "picture": "kingaPieninskaNiegaz"
-        },
-        {
-            "id": 8,
-            "title": "Kinga Pienińska woda mineralna klasy premium - Gazowana",
-            "subtitle": "0,33l 0,07l",
-            "type": "Gazowana",
-            "li1": "HO.RE.CA Linia Biała",
-            "li2": "wapń [Ca2+] 81,32",  
-            "li3": "wodorowęglany [HCO3] 372,21",  
-            "li4": "magnez [Mg2+] 20,94", 
-            "li5": "siarczany [SO42] 19,90",  
-            "li6": "sód [Na+] 14,06", 
-            "li7": "chlorki [Cl] 7,09", 
-            "li8": "potas [K+] 2,20", 
-            "li9": "fluorki [F] 0,05",  
-            "li10": "krzemionka [SiO2] 10,6",  
-            "li11": "Suma składników mineralnych [mg/l] 537 ",
-            "descriptions":"Naturalnie filtrowana woda, jej smak został nagrodzony trzema złotymi gwiazdkami Superior Taste Award 2023",
-            "price":"",
-            "picture": "kingaPieninskaGaz"
-        }
-    ],
-    "juices": [
         {
             "id": 1,
             "title": "Jurajska Gazowana",
