@@ -53,13 +53,24 @@ button {
   visibility: hidden;
 }
 
-.homePageLogo {
-  background-image: url(../../public/coffeeSlider1.webp);
+.homePageLogoHorizontal {
+  background-image: url(../../public/coffeeSliderHorizontal.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.homePageLogoVertical {
+  background-image: url(../../public/coffeeSliderVertical.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (orientation: landscape) {
+  .bg-mobile {
+    background-image: none; /* Dla ekranów poziomych, usuń tło dla wersji portrait */
+  }
+}
 
 .card:hover {  
   transform: rotateY(180deg);  
