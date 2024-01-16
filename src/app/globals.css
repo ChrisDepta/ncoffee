@@ -67,8 +67,8 @@ button {
   background-position: center;
 }
 @media (orientation: landscape) {
-  .bg-mobile {
-    background-image: none; /* Dla ekranów poziomych, usuń tło dla wersji portrait */
+  .homePageLogoVertical {
+    background-image: url(../../public/coffeeSliderHorizontal.webp);/* Dla ekranów poziomych, usuń tło dla wersji portrait */
   }
 }
 
