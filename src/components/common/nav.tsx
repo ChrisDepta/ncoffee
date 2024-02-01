@@ -67,7 +67,7 @@ const NavUni: React.FC<NavUniProps> = ({ children }) => {
   }
 
   return (
-    <header className="backdrop-blur-xl fixed top-0 z-20 w-screen bg-black h-20 flex items-center justify-center">
+    <header className="backdrop-blur-xl fixed top-0 z-40 w-screen bg-black h-20 flex items-center justify-center">
       <div className="bg-black w-3/4 flex justify-evenly items-center text-m text-white tracking-wider">
         <DropdownMenu title="NAPOJE" items={menuItems.slice(0, 2)} />
         <DropdownMenu title="KAWA" items={menuItems.slice(4, 6)} />
