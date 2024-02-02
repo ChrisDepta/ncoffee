@@ -60,10 +60,10 @@ const NavUni: React.FC<NavUniProps> = ({ children }) => {
 
   const pathname = usePathname();
   let defaultColor = "";
-  if (pathname === '/coffee' || pathname === '/chemistry' || pathname === '/machines' || pathname === '/contact') {
-    defaultColor = "text-norange";
-  } else {
+  if (pathname === '/water' || pathname === '/dispenser' || pathname === '/') {
     defaultColor = "text-nturkis";
+  } else {
+    defaultColor = "text-norange";
   }
 
   return (
