@@ -21,7 +21,7 @@ export default function Footer() {
   let defaultColor = "";
   let defaultLogo = logoturkis;
   let defaultwave = waterwave;
-  if (pathname === '/coffee' || pathname === '/water ' || pathname === '/dispenser'){
+  if (pathname === '/water' || pathname === '/dispenser'){
     defaultColor = "text-nturkis";
     defaultLogo = logoturkis;
     defaultwave = waterwave;
@@ -38,7 +38,7 @@ export default function Footer() {
     <Image src={defaultwave} width={800} height={800} className='overflow-x-hidden z-10 w-screen ' priority alt={'BgOffice'}/>
     <div className=' overflow-x-hidden z-10 text-white px-36 py-24 flex flex-wrap items-start justify-around w-screen bg-black'>
       <div className='flex flex-col items-end'>
-      <Image src={defaultLogo} width={150} height={100} className=' m-0 sm:m-6 mt-2' priority alt={'ncoffee makes your day'}/>
+      <Image src={defaultLogo} width={100} height={100} className=' m-0 sm:m-6 mt-2 w-auto h-auto' priority alt={'ncoffee makes your day'}/>
       </div>
       <div className='text-xl mt-8 sm:mt-0 sm:ml-2'>
         <p className={`text-2xl hidden sm:block  ${defaultColor} font-bold tracking-widest`}>Social</p>

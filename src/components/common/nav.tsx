@@ -50,12 +50,12 @@ interface NavUniProps {
 // NavUni component
 const NavUni: React.FC<NavUniProps> = ({ children }) => {
   const menuItems = [
-    { href: '/water', label: 'WODA' },
-    { href: 'https://oryginalnysok.pl/', label: 'SOKI' },
-    { href: '/machines', label: 'EKSPRESY' },
-    { href: '/dispenser', label: 'DYSTRYBUTORY' },
-    { href: '/coffee', label: 'KAWY' },
-    { href: '/chemistry', label: 'CHEMIA' },
+    { href: '/water', label: 'Woda' },
+    { href: 'https://oryginalnysok.pl/', label: 'Soki' },
+    { href: '/machines', label: 'Ekspresy' },
+    { href: '/dispenser', label: 'Dystrybutory' },
+    { href: '/coffee', label: 'Kawy' },
+    { href: '/chemistry', label: 'Chemia' },
   ];
 
   const pathname = usePathname();
@@ -67,24 +67,26 @@ const NavUni: React.FC<NavUniProps> = ({ children }) => {
   }
 
   return (
-    <header className="backdrop-blur-xl fixed top-0 z-40 w-screen bg-black h-20 flex items-center justify-center">
-      <div className="bg-black w-3/4 flex justify-evenly items-center text-m text-white tracking-wider">
-        <DropdownMenu title="NAPOJE" items={menuItems.slice(0, 2)} />
-        <DropdownMenu title="KAWA" items={menuItems.slice(4, 6)} />
-        <DropdownMenu title="URZADZENIA" items={menuItems.slice(2, 4)} />
-        <Link href="/" passHref>
+    <header className="backdrop-blur-xl fixed top-0 px-72 z-40 w-screen bg-black h-20 flex items-center justify-between">
+      <div>
+      <Link href="/" passHref>
           <p className={`${defaultColor} text-2xl basis-40 text-center font-bold hover:text-nlila hover:scale-105 transition-all`}>
             NCOFFEE
           </p>
         </Link>
+      </div>
+      <div className="bg-black w-3/4 flex justify-evenly items-center text-m text-white tracking-wider">
+        <DropdownMenu title="Napoje" items={menuItems.slice(0, 2)} />
+        <DropdownMenu title="Kawa" items={menuItems.slice(4, 6)} />
+        <DropdownMenu title="Urządyenia" items={menuItems.slice(2, 4)} />
         <Link href="/abouts" passHref>
-          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">O NAS</p>
+          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">O nas</p>
         </Link>
         <Link href="/clients" passHref>
-          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">KLIENCI</p>
+          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">Klienci</p>
         </Link>
         <Link href="/contact" passHref>
-          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">KONTAKT</p>
+          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">Kontakt</p>
         </Link>
       </div>
       {children}

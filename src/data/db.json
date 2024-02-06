@@ -14,6 +14,46 @@
             "text": "Wychodząc naprzeciw oczekiwaniom naszych klientów, postanowiliśmy przygotować kilka naszych niepowtarzalnych mieszanek kaw. We współpracy z zawodowoym roadsterem oraz rzemieślniczą palarnią kawy stworzyliśmy wyjątkowe kompozycje NCOFFEE VULAR, PRADO, CERRADO, które z pewnością trafią w gusta znawców, smakoszy i codziennych amatorów dobrej, mocnej kawy."
         }
     ],
+
+    "carouselItems":[
+        {   
+            "id": 1,
+            "src": "bgFresco", 
+            "alt": "img1", 
+            "author": "Chris", 
+            "title": "Jurajska", 
+            "topic": "cos tam", 
+            "des": "Mineralna woda gazowana 0,33l"
+        },
+        {   
+            "id": 2,
+            "src": "bgMachine", 
+            "alt": "img2", 
+            "author": "Chris", 
+            "title": "Jurajska", 
+            "topic": "cos tam", 
+            "des": "Mineralna woda gazowana 0,33l"
+        },
+        {   
+            "id": 3,
+            "src": "bgOffice", 
+            "alt": "img3", 
+            "author": "Chris", 
+            "title": "Jurajska", 
+            "topic": "cos tam", 
+            "des": "Mineralna woda gazowana 0,33l"
+        },
+        {   
+            "id": 4,
+            "src": "bgSchaerer", 
+            "alt": "img4", 
+            "author": "Chris", 
+            "title": "Jurajska", 
+            "topic": "cos tam", 
+            "des": "Mineralna woda gazowana 0,33l"
+        }
+    ],
+
     "coffees":[
         {
             "id": 1,
