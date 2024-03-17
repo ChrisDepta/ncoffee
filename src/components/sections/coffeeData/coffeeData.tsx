@@ -6,7 +6,7 @@ export default function CoffeeData() {
   const { coffees } = data;
 
   return (
-    <div className='flex flex-wrap justify-around mx-32 pb-32'>
+    <div className='w-full z-10 mt-[100vh] overflow-x-hidden gap-6 px-32 bg-white flex flex-wrap justify-center pb-32'>
       {coffees.map(coffee => {
         const Component = Card;
         return <Component key={coffee.id} {...coffee} />;

@@ -6,7 +6,7 @@ export default function WaterData() {
   const { waters } = data;
 
   return (
-    <div className='z-10 mt-[100vh] overflow-x-hidden bg-white flex flex-wrap justify-around pb-32'>
+    <div className='w-full z-10 mt-[100vh] overflow-x-hidden gap-6 px-32 bg-white flex flex-wrap justify-center pb-32'>
       {waters.map(water => {
         const Component = Card;
         return <Component key={water.id} {...water} />;

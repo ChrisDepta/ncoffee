@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Navbar from '@/components/common/nav'
 import Footer from '@/components/common/footer'
 
-import CoffeeData from '@/components/sections/coffeeData/coffeeData'
+import bgImage from "@/../public/coffeeSlider.webp"
 
-import sliderCoffe from "@/../public/coffeeSlider.webp"
+import CoffeeData from '@/components/sections/coffeeData/coffeeData'
 
 
 export default function Coffee() {
@@ -12,7 +12,7 @@ export default function Coffee() {
   return (
       <>
         <Navbar />
-        <Image src={sliderCoffe} width={800} height={800} className='w-screen ' priority alt={'SliderNcoffee'}/>
+        <Image src={bgImage} width={800} height={800} className='z-0 w-full fixed  ' priority alt={'SliderNcoffee'}/>
         <CoffeeData />
         <Footer />
       </>

@@ -1,7 +1,7 @@
 'use client'
 
 // Import necessary modules
-import React, { useState, ReactNode } from 'react';
+import React, { useState, ReactNode, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -14,7 +14,7 @@ interface DropdownMenuProps {
 // DropdownMenu component
 const DropdownMenu: React.FC<DropdownMenuProps> = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   const handleMouseEnter = () => {
     setIsOpen(true);
   };
@@ -26,10 +26,10 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ title, items }) => {
   return (
     <div className="relative group" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <div>
-        <p className="text-center hover:text-nlila hover:scale-105 transition-all">{title}</p>
+        <p className="flex items-center h-14 leading-10 text-center hover:text-nlila hover:scale-105 transition-all">{title}</p>
       </div>
       {isOpen && (
-        <div className="w-48 absolute top-full -left-4 mt-0 pt-6 bg-black p-6 rounded-xl shadow-xl transition-all duration-300 ease-in-out">
+        <div className="backdrop-blur mt-0 w-auto absolute top-full -left-4 bg-black/80 px-6 pb-4 rounded-b-xl shadow-xl transition-all duration-300 ease-in-out">
           {items.map((item) => (
             <Link key={item.href} href={item.href} passHref>
               <p className="block py-1 hover:text-nlila hover:scale-105 transition">{item.label}</p>
@@ -40,7 +40,6 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ title, items }) => {
     </div>
   );
 };
-
 
 // Define types for the NavUni component props
 interface NavUniProps {
@@ -58,6 +57,29 @@ const NavUni: React.FC<NavUniProps> = ({ children }) => {
     { href: '/chemistry', label: 'Chemia' },
   ];
 
+  const [scrollDirection, setScrollDirection] = useState(false);
+  const [lastPageOffset, setLastPageOffset] = useState(0);
+
+const handleDirection = () => {
+  if(window.pageYOffset > lastPageOffset){
+    setScrollDirection(true);
+  }else if(window.pageYOffset < lastPageOffset){
+    setScrollDirection(false);
+  }
+};
+
+  const handleScroll = () => {
+    handleDirection();
+    setLastPageOffset(window.pageYOffset);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
+
   const pathname = usePathname();
   let defaultColor = "";
   if (pathname === '/water' || pathname === '/dispenser' || pathname === '/') {
@@ -67,7 +89,7 @@ const NavUni: React.FC<NavUniProps> = ({ children }) => {
   }
 
   return (
-    <header className="backdrop-blur-xl fixed top-0 px-72 z-40 w-screen bg-black h-20 flex items-center justify-between">
+    <header className={` ${scrollDirection ? "-translate-y-48" : "translate-y-0" } bg-black/80 backdrop-blur fixed top-0 tran px-72 z-50 w-screen  h-14 flex items-center justify-between transition-all duration-1000`}>
       <div>
       <Link href="/" passHref>
           <p className={`${defaultColor} text-2xl basis-40 text-center font-bold hover:text-nlila hover:scale-105 transition-all`}>
@@ -75,12 +97,12 @@ const NavUni: React.FC<NavUniProps> = ({ children }) => {
           </p>
         </Link>
       </div>
-      <div className="bg-black w-3/4 flex justify-evenly items-center text-m text-white tracking-wider">
+      <div className=" w-3/4 flex justify-evenly items-center text-m text-white tracking-wider">
         <DropdownMenu title="Napoje" items={menuItems.slice(0, 2)} />
         <DropdownMenu title="Kawa" items={menuItems.slice(4, 6)} />
-        <DropdownMenu title="Urządyenia" items={menuItems.slice(2, 4)} />
+        <DropdownMenu title="Urządzenia" items={menuItems.slice(2, 4)} />
         <Link href="/abouts" passHref>
-          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">O nas</p>
+          <p className=" basis-20 text-center hover:text-nlila hover:scale-105 transition-all">O nas</p>
         </Link>
         <Link href="/clients" passHref>
           <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">Klienci</p>
@@ -95,3 +117,7 @@ const NavUni: React.FC<NavUniProps> = ({ children }) => {
 };
 
 export default NavUni;
+function setIsOpen(arg0: boolean) {
+  throw new Error('Function not implemented.');
+}
+

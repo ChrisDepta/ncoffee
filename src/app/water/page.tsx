@@ -1,8 +1,12 @@
 import Image from 'next/image'
 import Navbar from "@/components/common/nav"
-import WaterData from "@/components/sections/waterData/waterData"
-import bgImage from "@/../public/bgWaterHand.webp"
 import Footer from '@/components/common/footer'
+
+import bgImage from "@/../public/bgWaterHand.webp"
+
+import WaterData from "@/components/sections/waterData/waterData"
+
+
 
 export default function Machines() {
   return (
