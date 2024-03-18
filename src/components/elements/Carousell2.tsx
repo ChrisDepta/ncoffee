@@ -2,12 +2,20 @@
 // Import necessary dependencies
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import db from "@/data/db.json";
 import Description from "@/components/elements/Description";
 
-const carouselItems = db.carouselItems; // Use data from db.json
+// Define the interface for each item in the carousel
+interface CarouselItem {
+  src: string;
+  alt: string;
+}
 
-const Carousell = () => {
+// Define the props for the Carousell component
+interface CarousellProps {
+  carouselItems: CarouselItem[];
+}
+
+const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
   const [activeImage, setActiveImage] = useState(0);
 
   const clickNext = () => {
@@ -60,6 +68,7 @@ const Carousell = () => {
           activeImgIndex={activeImage}
           clickNext={clickNext}
           clickPrev={clickPrev}
+          carouselItems={carouselItems}
         />
       </div>
     </div>

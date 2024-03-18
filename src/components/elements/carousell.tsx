@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import db from '@/data/db.json'
 
-const carouselItems = db.carouselItems; // Użycie danych z db.json
+const carouselItems = db.carouselClients; // Użycie danych z db.json
 
 const Carousel: React.FC = () => { 
   const nextRef = useRef<HTMLButtonElement>(null);
@@ -68,7 +68,7 @@ const Carousel: React.FC = () => {
           <div key={index} className={`item ${index === currentIndex ? 'active' : ''}`}>
             <Image src={require(`@/../public/${item.src}.webp`)} alt={item.alt} />
             <div className="content">
-              <div className="author">{item.author}</div>
+              <div className="author">{item.logo}</div>
               <div className="title">{item.title}</div>
               <div className="topic">{item.topic}</div>
               <div className="des">{item.des}</div>

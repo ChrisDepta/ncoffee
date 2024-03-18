@@ -15,51 +15,69 @@
         }
     ],
 
-    "carouselItems":[
+    "carouselClients":[
         {   
             "id": 1,
-            "src": "bgFresco", 
-            "alt": "img1", 
-            "author": "Chris", 
-            "title": "Jurajska", 
-            "topic": "cos tam", 
-            "des": "Mineralna Kawa ma intensywny aromat i subtelną kwasowość, charakteryzuje się słodkim owocowy smakiem z kwiatowo cytrusowymi aromatamiwoda gazowana 0,33l"
+            "src": "podium", 
+            "alt": "podium", 
+            "logo": "podiumLogo", 
+            "title": "Kawiarnia Podium", 
+            "topic": "", 
+            "des": "Podium Cafe to klimatyczna kawiarnia znajdująca się w centrum treningowym Podium w Oławie, oferująca przepyszną kawę oraz miejsce na relaks przed i po treningu. W menu znajdziesz klasyczne espresso, smakowe latte, flat white, a także sezonowe herbaty, świeżo wyciskane soki czy koktajle. Dostępne są także pyszne naleśniki, bajgle, sałatki, ciasta i desery. Podium Cafe stawia na jakość produktów i obsługę, oferując idealne miejsce na odetchnięcie i naładowanie baterii ."
         },
         {   
             "id": 2,
-            "src": "bgMachine", 
-            "alt": "img2", 
-            "author": "Chris", 
-            "title": "Kinga", 
-            "topic": "cos tam", 
-            "des": "Mineralna wodaywnym smaku i ostrzejszym aromacie. Charakteryzuje się niską kwasowością, a ze względu na odpowiedni proces palenia, wyczuwalny jest jedynie delikatny posmak goryczy. Odpowiedni dobór ziaren pozwolił nam skomponować mocniejszą mieszankę, która wyróżnia się dużą zawartością kofeiny gazowana 0,33l"
+            "src": "trojan", 
+            "alt": "trojan", 
+            "logo": "trojanLogo", 
+            "title": "Hotel Trojan", 
+            "topic": "", 
+            "des": "Hotel Trojan to obiekt położony u podnóża góry Trojak, w malowniczej i najstarszej polskiej miejscowości uzdrowiskowej Lądek-Zdrój. Specjalizuje się w leczeniu chorób reumatycznych, narządów ruchu, układu nerwowego i układu krążenia, znajdując się jednocześnie w bliskim sąsiedztwie największej pijalni wód Wojciech. Hotel oferuje również szerokie możliwości turystyczne, w tym dostęp do stacji narciarskiej Lądek-Zdrój oraz Czarną Górę, i stanowi doskonałe miejsce na wypoczynek zarówno dla osób szukających relaksu, jak i aktywnie spędzających czas."
         },
         {   
             "id": 3,
-            "src": "bgOffice", 
-            "alt": "img3", 
-            "author": "Chris", 
-            "title": "Jurajska", 
-            "topic": "cos tam", 
-            "des": "Mineralna woda gazowana 0,33l Kawa ma intensywny aromat i subtelną kwasowość, charakteryzuje się słodkim owocowy smakiem z kwiatowo cytrusowymi aromatami"
+            "src": "wolowina", 
+            "alt": "wolowina", 
+            "logo": "wolowinaLogo", 
+            "title": "Restauracja Wołowina", 
+            "topic": "", 
+            "des": "Restauracja WołoWina w Świdnicy to wyjątkowe miejsce, które łączy w sobie smaki z różnych stron świata, oferując bogate menu inspirowane kuchnią amerykańską, włoską, śródziemnomorską oraz wiele innych. Kładzie szczególny nacisk na street-food oraz wysokiej jakości steki podawane na gorącym kamieniu. Elegancki, aczkolwiek surowy wystrój tworzy idealne tło do skupienia się na kulinarnej przygodzie, która czeka na gości. Restauracja stanowi doskonałe miejsce na romantyczną kolację we dwoje jak i spotkanie w większym gronie ."
         },
         {   
             "id": 4,
-            "src": "bgSchaerer", 
-            "alt": "img4", 
-            "author": "Chris", 
-            "title": "Kinga", 
-            "topic": "cos tam", 
-            "des": "Kawa o wyrazistym intensywnym smaku i ostrzejszym aromacie. Charakteryzuje się niską kwasowością, a ze względu na odpowiedni proces palenia, wyczuwalny jest jedynie delikatny posmak goryczy. Odpowiedni dobór ziaren pozwolił nam skomponować mocniejszą mieszankę, która wyróżnia się dużą zawartością kofeiny"
+            "src": "dolnoslaska", 
+            "alt": "dolnoslaska", 
+            "logo": "dolnosloskaLogo", 
+            "title": "Restauracja Dolnośląska", 
+            "topic": "", 
+            "des": "Restauracja Dolnośląska w Ząbkowicach Śląskich to ekskluzywne miejsce znane z przytulnych pokoi, wspaniałej kuchni i przystępnych cen. Położona w centrum miasta, oferuje łatwy dostęp z głównych dróg. Restauracja słynie z bogatego wyboru potraw kuchni europejskiej, gwarantując miłą obsługę oraz wygodę i domową atmosferę. Jest idealnym miejscem dla tych, którzy cenią sobie jakość i komfort."
         },
         {   
             "id": 5,
-            "src": "bgMachine", 
-            "alt": "img5", 
-            "author": "Chris", 
-            "title": "Pienińska", 
-            "topic": "cos tam", 
-            "des": "bizrf iruf2 ufg2h4ug2 ufnhh39uf2 3ufnhi3ubf 3iubf9u3f 39iurbfiquf9qu3hf9u3 3ufh93qf 398ufhjb vierh vier eiurgbe i iuerer ierbgieurg iruzgeiruq rgieubgiueqrj fgqubg9i"
+            "src": "biezynski", 
+            "alt": "biezynski", 
+            "logo": "biezynskiLogo", 
+            "title": "Piekarnia Bieżyński", 
+            "topic": "", 
+            "des": "Piekarnia Bieżyński zaangażowana jest w dostarczanie wysokiej jakości pieczywa, zaspokajając podstawowe potrzeby żywieniowe społeczeństwa. Skupiając się na zdrowiu, smaku i wygodzie klientów, piekarnia podkreśla swoje zobowiązanie do produkcji wyrobów, które wzbogacają codzienną dietę. Kluczowym celem jest oferowanie produktów, które wspierają dobre samopoczucie i satysfakcję konsumentów, podtrzymując jednocześnie tradycję rzemieślniczą i innowacyjność."
+        },
+        {   
+            "id": 6,
+            "src": "oferteo", 
+            "alt": "oferteo", 
+            "logo": "oferteoLogo", 
+            "title": "Oferteo", 
+            "topic": "", 
+            "des": "Oferteo to platforma łącząca zleceniodawców z firmami oferującymi różnorodne usługi i produkty. Ułatwia znalezienie wykonawców dla szerokiego zakresu zleceń – od budowlanych, przez usługi dla firm, finanse, aż po edukację i urodę. Użytkownicy mogą porównywać oferty i wybierać te, które najlepiej odpowiadają ich potrzebom. Oferteo jest miejscem, gdzie można szybko i efektywnie znaleźć odpowiedniego specjalistę do realizacji planowanego projektu, oszczędzając czas i zasoby."
+        },
+        {   
+            "id": 7,
+            "src": "palacJugowice", 
+            "alt": "palacJugowice", 
+            "logo": "palacJugowiceLogo", 
+            "title": "Pałac Jugowice", 
+            "topic": "", 
+            "des": "Pałac Jugowice, dziewiętnastowieczny pruski pałacyk myśliwski zlokalizowany w Górach Sowich, oferuje unikatowe połączenie luksusu, historii i relaksu. Położony zaledwie godzinę od Wrocławia, stanowi doskonałe miejsce dla osób poszukujących wytchnienia. Z 27 stylowymi pokojami, zewnętrzną strefą saun i basenem, ofertą SPA, przestronnymi salami bankietowymi, restauracją Bystra, oraz możliwością aktywnego spędzania czasu, w tym wypożyczalnią rowerów elektrycznych i udogodnieniami dla psów, zapewnia kompleksowe doświadczenie odpoczynku."
         }
     ],
 

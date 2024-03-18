@@ -1,30 +1,30 @@
 "use client";
 import React from "react";
-import db from "@/data/db.json";
 import Image from "next/image";
 import left from "@/../public/left.png";
 import right from "@/../public/right.png";
 import { motion } from "framer-motion";
 
-const carousellItems = db.carouselItems;
 
 type Props = {
   clickNext: any;
   clickPrev: any;
   activeImgIndex: any;
+  carouselItems: any;
 };
 
 export const Description = ({
   clickNext,
   clickPrev,
   activeImgIndex,
+  carouselItems,
 }: Props) => {
   return (
     <div className="grid place-items-start w-full bg-white relative rounded-tr-3xl rounded-br-3xl">
-      <div className="absolute right-6 top-4 text-2xl text-norange italic uppercase underline underline-offset-4 tracking-wider font-bold">
+      <div className="absolute right-6 top-4 text-2xl text-norange uppercase tracking-wider font-bold">
         NCOFFEE
       </div>
-      {carousellItems.map((pic, idx) => (
+      {carouselItems.map((pic: { title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; des: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | React.PromiseLikeOfReactNode | null | undefined; }, idx: React.Key | null | undefined) => (
         <div
           key={idx}
           className={
@@ -49,14 +49,14 @@ export const Description = ({
             }}
             className="w-full"
           >
-            <div className="py-16 text-5xl font-extrabold">{pic.title}</div>
+            <div className="py-10 text-3xl font-extrabold">{pic.title}</div>
             <div className="leading-relaxed font-medium text-base tracking-wide h-40 italic text-gray-800">
               {pic.des}
             </div>
           </motion.div>
-          <button className="absolute bottom-2 bg-norange text-white uppercase px-4 py-2 rounded-md my-10 w-auto h-auto">
+          {/* <button className="absolute bottom-2 bg-norange text-white uppercase px-4 py-2 rounded-md my-10 w-auto h-auto">
             order now
-          </button>
+          </button> */}
           <div className="absolute bottom-1 -right-20 w-full flex justify-center items-center ">
             <div
               onClick={clickPrev}
