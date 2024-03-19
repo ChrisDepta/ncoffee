@@ -12,7 +12,7 @@ export default function Machines() {
   return (
     <>
       <Navbar />
-      <Image src={bgImage} width={800} height={800} className=' z-0 w-full fixed ' priority alt={'bgImage'}/>
+      <Image src={bgImage} width={800} height={800} className=' z-0 h-[70vh] w-full object-cover fixed ' priority alt={'bgImage'}/>
       <WaterData />
       <Footer />
     </>

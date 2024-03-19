@@ -105,7 +105,7 @@ const handleDirection = () => {
           <p className=" basis-20 text-center hover:text-nlila hover:scale-105 transition-all">O nas</p>
         </Link>
         <Link href="/clients" passHref>
-          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">Klienci</p>
+          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">Partnerzy</p>
         </Link>
         <Link href="/contact" passHref>
           <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">Kontakt</p>

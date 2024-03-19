@@ -11,7 +11,7 @@ export default function Machines() {
   return (
       <>
         <Navbar />
-        <Image src={slider} width={800} height={800} className='w-screen ' priority alt={'SliderNcoffee'}/>
+        <Image src={slider} width={800} height={800} className='z-0 h-[70vh] w-full object-cover object-top fixed ' priority alt={'SliderNcoffee'}/>
         <MachineData />
         <Footer />
       </>

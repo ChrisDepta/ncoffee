@@ -10,7 +10,7 @@ export default function Machines() {
   return (
     <>
       <Navbar />
-      <Image src={slider} width={800} height={800} className='w-screen ' priority alt={'BgWaterHand'}/>
+      <Image src={slider} width={800} height={800} className='z-0 h-[70vh] w-full object-cover object-bottom fixed' priority alt={'BgWaterHand'}/>
       <DispenserData />
       <Footer />
     </>

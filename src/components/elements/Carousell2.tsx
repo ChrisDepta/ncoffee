@@ -8,6 +8,7 @@ import Description from "@/components/elements/Description";
 interface CarouselItem {
   src: string;
   alt: string;
+  logo: string;
 }
 
 // Define the props for the Carousell component
@@ -49,7 +50,7 @@ const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
             <div
               className={
                 idx === activeImage
-                  ? `block w-full h-[80svh] object-cover transition-all duration-500 ease-in-out`
+                  ? `relative flex items-center justify-end w-full h-[80svh] object-cover transition-all duration-500 ease-in-out`
                   : "hidden"
               }
               key={idx}
@@ -61,6 +62,13 @@ const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
                 height={400}
                 className="w-full h-full object-cover rounded-tl-3xl rounded-bl-3xl"
               />
+              <div className="bg-white w-[90%] absolute bottom-14 h-28 flex justify-center items-center rounded-bl-2xl">
+              <Image
+                src={require(`@/../public/${pic.logo}.webp`)}
+                alt={pic.alt}
+                className="object-fit h-[90%] w-auto"
+              />
+              </div>
             </div>
           ))}
         </div>

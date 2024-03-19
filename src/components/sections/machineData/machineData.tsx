@@ -3,14 +3,26 @@ import data from '@/data/db.json';
 import Card from './machineCard';
 
 export default function MachineData() {
-  const { machines } = data;
+  const { gourmetMachines, houseMachines } = data;
 
   return (
-    <div className='flex flex-wrap justify-around mx-32 pb-32'>
-      {machines.map(machine => {
+    <div className='z-10 mt-[70vh] bg-white flex flex-col justify-start items-center w-full'>
+    <div className='pt-12 flex flex-col justify-start items-start w-[70%]'>
+    <p className='text-5xl font-extrabold tracking-wider text-norange'>Ekspresy domowe</p>
+    <div className='overflow-x-hidden gap-8 flex flex-wrap justify-center pb-32 p-12'>
+      {houseMachines.map(machine => {
         const Component = Card;
         return <Component key={machine.id} {...machine} />;
       })}
+    </div>
+    <p className='text-5xl font-extrabold tracking-wider text-norange'>Ekspresy gastronomiczne</p>
+    <div className='overflow-x-hidden gap-8 flex flex-wrap justify-center pb-32 p-12'>
+      {gourmetMachines.map(machine => {
+        const Component = Card;
+        return <Component key={machine.id} {...machine} />;
+      })}
+    </div>
+    </div>
     </div>
   );
 }
