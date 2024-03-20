@@ -1,16 +1,58 @@
 {
-  "about": [
+  "carouselAbout": [
     {
       "id": 1,
-      "text": "Od kilku lat zajmujemy się profesjonalnie obsługą klientów gastronomicznych HO.RE.CA, biznesowych oraz indywidualnych. Zaopatrujemy Was w najlepszą na rynku kawę, niezawodne ekspresy oraz chemię do konserwacji ekspresów."
+      "src": "bgCupPortrait",
+      "alt": "bgCup",
+      "logo": "ncoffeeOrange",
+      "title": "Klient nasz Pan...",
+      "topic": "",
+      "des": "Nasza firma od lat specjalizuje się w dostarczaniu kompleksowych rozwiązań dla sektora gastronomicznego, biznesowego i klientów indywidualnych, skupiając się na sektorze HO.RE.CA. Przez ten czas zdobyliśmy zaufanie wielu klientów, oferując im nie tylko wysokiej jakości kawę, ale również niezawodne ekspresy oraz niezbędne produkty do ich konserwacji. Dzięki temu, nasi klienci mogą cieszyć się doskonałym smakiem kawy bez obaw o stan techniczny urządzeń, co jest dla nas priorytetem. Nasze usługi charakteryzuje indywidualne podejście do każdego klienta, a nasza oferta jest stale dostosowywana do rosnących wymagań rynku."
     },
     {
       "id": 2,
-      "text": "Słuchamy potrzeb i doradzamy, jak wybrać najlepszą kawę i ekspres. Budujemy relacje, spełniamy wasze oczekiwania, i nie zostawiamy naszych klientów w potrzebie - zawsze zapewniamy profesjonalny SERWIS."
+      "src": "bgWaterGlassPortrait",
+      "alt": "bgWater",
+      "logo": "ncoffeeTurkis",
+      "title": "Słuchamy i doradzamy...",
+      "topic": "",
+      "des": "Nasze podejście opiera się na głębokim zrozumieniu potrzeb klientów oraz dostarczaniu profesjonalnych usług serwisowych, które gwarantują satysfakcję i bezproblemowe użytkowanie produktów. Stawiamy na osobiste doradztwo w wyborze kawy i ekspresów, aby każda chwila z filiżanką kawy była wyjątkowa. Nasz zespół to eksperci, którzy nie tylko pomagają wybrać idealny produkt, ale także zapewniają wsparcie po zakupie, co świadczy o naszym zaangażowaniu w budowanie trwałych relacji z klientami."
     },
     {
       "id": 3,
-      "text": "Wychodząc naprzeciw oczekiwaniom naszych klientów, postanowiliśmy przygotować kilka naszych niepowtarzalnych mieszanek kaw. We współpracy z zawodowoym roadsterem oraz rzemieślniczą palarnią kawy stworzyliśmy wyjątkowe kompozycje NCOFFEE VULAR, PRADO, CERRADO, które z pewnością trafią w gusta znawców, smakoszy i codziennych amatorów dobrej, mocnej kawy."
+      "src": "bgCoffeePortrait",
+      "alt": "bgCoffee",
+      "logo": "ncoffeeOrange",
+      "title": "Kawy Rzemieślnicze...",
+      "topic": "",
+      "des": "Dążąc do spełnienia oczekiwań klientów, nasza firma we współpracy z profesjonalnymi specjalistami z branży kawowej, stworzyła unikatowe mieszanki kaw: NCOFFEE VULAR, PRADO i CERRADO. Każda z nich jest owocem współpracy z doświadczonymi roastmasterami i rzemieślniczą palarnią kawy, oferując bogactwo smaku i aromatu, które zadowolą nawet najbardziej wymagających koneserów. Przy ich tworzeniu kładliśmy nacisk na jakość i świeżość ziaren, co czyni każdą filiżankę kawy nie tylko smakowitym, ale i niepowtarzalnym doświadczeniem."
+    },
+    {
+      "id": 4,
+      "src": "bgFrescoPortrait",
+      "alt": "bgFresco",
+      "logo": "ncoffeeOrange",
+      "title": "Ekspresy do wynajęcia...",
+      "topic": "",
+      "des": "Nasza oferta obejmuje ekspresy do kawy dostępne w leasingu od renomowanych marek Fresco i 4swiss, zapewniając naszym klientom nie tylko wygodę, ale także pełne wsparcie i bezpieczeństwo. Każdy wynajęty ekspres objęty jest gwarancją i stałym serwisem, co gwarantuje niezawodność i ciągłość działania urządzeń, a co za tym idzie - doskonałą kawę każdego dnia."
+    },
+    {
+      "id": 5,
+      "src": "bgWaterGlassPortrait",
+      "alt": "bgWater",
+      "logo": "ncoffeeTurkis",
+      "title": "Słuchamy i doradzamy...",
+      "topic": "",
+      "des": "Nasze podejście opiera się na głębokim zrozumieniu potrzeb klientów oraz dostarczaniu profesjonalnych usług serwisowych, które gwarantują satysfakcję i bezproblemowe użytkowanie produktów. Stawiamy na osobiste doradztwo w wyborze kawy i ekspresów, aby każda chwila z filiżanką kawy była wyjątkowa. Nasz zespół to eksperci, którzy nie tylko pomagają wybrać idealny produkt, ale także zapewniają wsparcie po zakupie, co świadczy o naszym zaangażowaniu w budowanie trwałych relacji z klientami."
+    },
+    {
+      "id": 6,
+      "src": "bgCoffeePortrait",
+      "alt": "bgCoffee",
+      "logo": "ncoffeeOrange",
+      "title": "Kawy Rzemieślnicze...",
+      "topic": "",
+      "des": "Dążąc do spełnienia oczekiwań klientów, nasza firma we współpracy z profesjonalnymi specjalistami z branży kawowej, stworzyła unikatowe mieszanki kaw: NCOFFEE VULAR, PRADO i CERRADO. Każda z nich jest owocem współpracy z doświadczonymi roastmasterami i rzemieślniczą palarnią kawy, oferując bogactwo smaku i aromatu, które zadowolą nawet najbardziej wymagających koneserów. Przy ich tworzeniu kładliśmy nacisk na jakość i świeżość ziaren, co czyni każdą filiżankę kawy nie tylko smakowitym, ale i niepowtarzalnym doświadczeniem."
     }
   ],
   "carouselClients": [
