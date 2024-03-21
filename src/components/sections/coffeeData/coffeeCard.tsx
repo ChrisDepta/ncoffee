@@ -16,11 +16,11 @@ type Props = {
 
 export default function coffeeCard({id, title, par1, subtitle, li1, li2, li3, price, value, picture}: Props) {
   return (
-    <div key={id} className=' h-auto bg-gradient-to-br from-nbeige/70 to-white mt-32 border-0 border-nturkis rounded-xl shadow-2xl basis-auto flex flex-col justify-center items-center text-xl font-bold'>
+    <div key={id} className=' h-auto bg-gradient-to-br from-nbeige/70 to-white md:mt-32 border-none md:border-0 border-nturkis rounded-none md:rounded-xl shadow-none md:shadow-2xl basis-full md:basis:auto flex flex-col justify-center items-center text-xl font-bold'>
           <div className=' basis-full  w-64 flex justify-center items-end p-6 '>
-            <Image src={require(`@/../public/${picture}.webp`)} width={800} height={100} className='h-48 w-auto hover:scale-110 transition ' alt={picture} />
+            <Image src={require(`@/../public/coffees/${picture}.webp`)} width={800} height={100} className='h-48 w-auto hover:scale-110 transition ' alt={picture} />
           </div>
-          <div className='basis-auto w-full bg-white rounded-b-xl flex flex-col justify-end items-center'>
+          <div className='basis-auto w-full bg-white rounded-none md:rounded-b-xl flex flex-col justify-end items-center'>
             <p className='text-xl text-norange uppercase font-extrabold m-4'>{title}</p>
             <p className='capitalize mb-4'>{subtitle}</p>
           </div>
