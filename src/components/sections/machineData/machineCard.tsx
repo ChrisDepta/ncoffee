@@ -9,15 +9,18 @@ type Props = {
   li2: string,
   li3: string,
   price: string,
-  picture: string,
+  picture1: string,
+  picture2: string,
+  picture3: string,
+  picture4: string,
   value: string
 }
 
-export default function MachineCard({id, title, subtitle, li1, li2, li3, price, value, picture}: Props) {
+export default function MachineCard({id, title, subtitle, li1, li2, li3, price, value, picture1 }: Props) {
   return (
     <div key={id} className=' h-auto bg-gradient-to-br from-nbeige/70 to-white mt-32 border-0 border-nturkis rounded-xl shadow-2xl basis-auto flex flex-col justify-center items-center text-xl font-bold'>
           <div className=' basis-full  w-64 flex justify-center items-end p-6 '>
-            <Image src={require(`@/../public/${picture}.webp`)} width={800} height={100} className='h-48 w-auto hover:scale-110 transition ' alt={picture} />
+            <Image src={require(`@/../public/machines/${picture1}.webp`)} width={800} height={100} className='h-48 w-auto hover:scale-110 transition ' alt={picture1} />
           </div>
           <div className='basis-auto w-full bg-white rounded-b-xl flex flex-col justify-end items-center'>
             <p className='text-xl text-norange uppercase font-extrabold m-4'>{title}</p>

@@ -383,7 +383,10 @@
       "weight": "20kg",
       "price": "",
       "value": "",
-      "picture": "frescoC11"
+      "picture1": "h2_1-x550-b46",
+      "picture2": "h2_2-x550-2b8",
+      "picture3": "h2_3-x550-2b8",
+      "picture4": ""
     },
     {
       "id": 2,
@@ -403,11 +406,14 @@
       "weight": "15kg",
       "price": "",
       "value": "",
-      "picture": "frescoX65"
+      "picture1": "h2_11-x550-e2e",
+      "picture2": "h2_21-x550-e2e",
+      "picture3": "h2_31-x550-d6d",
+      "picture4": ""
     },
     {
       "id": 3,
-      "title": "Ekspres 4swiss",
+      "title": "Ekspres 4swiss Torino Home",
       "par1": " Fresco X65 to urządzenie o kompaktowych wymiarach,nowoczesny a zarazem prosty wygląd doskonale wpasuje się do każdej przestrzeni. Dzięki wydajności 80 kaw dziennie będzie odpowiedni do mniejszych i większych biur, firm czy restauracji, hoteli oraz innych obiektów gastronomicznych.Zbiornik na fusy również pomieści w sobie sporo, spokojnie nawet do 30 porcji kawy.Fresco X65 posiada intuicyjny i przejrzysty wyświetlacz o przekątnej 7 cali, zautomatyzowane programy czyszczące są proste w obsłudze i szybkie do wykonania",
       "subtitle": "Charakterystyka",
       "li1": "",
@@ -423,7 +429,33 @@
       "weight": "15kg",
       "price": "",
       "value": "",
-      "picture": "frescoX65"
+      "picture1": "4Swiss-Torino-A12-Home-White-1",
+      "picture2": "4Swiss-Torino-A12-Home-White-2",
+      "picture3": "4Swiss-Torino-A12-Home-Black-1",
+      "picture4": "4Swiss-Torino-A12-Home-Black-2"
+    },
+    {
+      "id": 4,
+      "title": "Ekspres 4swiss Torino Pro",
+      "par1": " Fresco X65 to urządzenie o kompaktowych wymiarach,nowoczesny a zarazem prosty wygląd doskonale wpasuje się do każdej przestrzeni. Dzięki wydajności 80 kaw dziennie będzie odpowiedni do mniejszych i większych biur, firm czy restauracji, hoteli oraz innych obiektów gastronomicznych.Zbiornik na fusy również pomieści w sobie sporo, spokojnie nawet do 30 porcji kawy.Fresco X65 posiada intuicyjny i przejrzysty wyświetlacz o przekątnej 7 cali, zautomatyzowane programy czyszczące są proste w obsłudze i szybkie do wykonania",
+      "subtitle": "Charakterystyka",
+      "li1": "",
+      "li2": "Wydajności 80 kaw",
+      "li3": "4L zbiornik na wodę",
+      "li4": "Automatyczne płukanie spieniacza mleka",
+      "coffeeContainer": "500g",
+      "groundsContainer": "30 porcji",
+      "power": "220V~ 50Hz 1400W",
+      "height": "50cm",
+      "witdh": "35cm",
+      "depth": "50cm",
+      "weight": "15kg",
+      "price": "",
+      "value": "",
+      "picture1": "4Swiss-Torino-A12-PRO-White-1",
+      "picture2": "4Swiss-Torino-A12-PRO-White-2",
+      "picture3": "4Swiss-Torino-A12-Pro-Black-1",
+      "picture4": ""
     }
   ],
   "gourmetMachines": [
@@ -445,7 +477,10 @@
       "weight": "20kg",
       "price": "",
       "value": "",
-      "picture": "frescoC11"
+      "picture1": "ekspres-do-kawy-fresco-c11",
+      "picture2": "ekspres-do-kawy-fresco-c11-2",
+      "picture3": "ekspres-do-kawy-fresco-c11-1",
+      "picture4": "ekspres-do-kawy-fresco-c11-zbiornik-ziarna"
     },
     {
       "id": 2,
@@ -465,7 +500,10 @@
       "weight": "15kg",
       "price": "",
       "value": "",
-      "picture": "frescoX65"
+      "picture1": "ekspres-do-kawy-fresco-x65-3",
+      "picture2": "ekspres-do-kawy-fresco-x65-plus-3",
+      "picture3": "",
+      "picture4": ""
     },
     {
       "id": 3,
@@ -485,7 +523,10 @@
       "weight": "15kg",
       "price": "",
       "value": "",
-      "picture": "frescoX65"
+      "picture1": "ekspres-do-kawy-fresco-xl80-plus-1",
+      "picture2": "ekspres-do-kawy-fresco-xl80-plus-3",
+      "picture3": "ekspres-do-kawy-fresco-xl80-plus-5",
+      "picture4": ""
     },
     {
       "id": 4,
@@ -505,7 +546,10 @@
       "weight": "15kg",
       "price": "",
       "value": "",
-      "picture": "frescoX65"
+      "picture1": "ekspres-do-kawy-fresco-xl80-plus-1",
+      "picture2": "ekspres-do-kawy-fresco-xl80-plus-3",
+      "picture3": "ekspres-do-kawy-fresco-xl80-plus-5",
+      "picture4": "ekspres-do-kawy-fresco-xl80-plus-6"
     },
     {
       "id": 5,
@@ -521,11 +565,14 @@
       "technical": "P-2l posiada możliwość podłączenia do wody.<br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 30 cm x gł. 50 cm",
       "price": "",
       "value": "",
-      "picture": "frescoP2l"
+      "picture1": "ekspres-do-kawy-fresco-p2-czarny-1",
+      "picture2": "ekspres-do-kawy-fresco-p2-czarny-2",
+      "picture3": "ekspres-do-kawy-fresco-p2-czarny-3",
+      "picture4": ""
     },
     {
       "id": 6,
-      "title": "Ekspres FRESCO P-8L :",
+      "title": "Ekspres FRESCO P-8L czarny",
       "par1": "FRESCO P8L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na wodę 8l, na kawę o pojemności 1,2 kg oraz powiększony zbiornik na fusy do :70 porcji. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością.W ciągu godziny ekspres jest w stanie przygotować aż do 120 filiżanek espresso lub do 100 kubków cappuccino .",
       "subtitle": "Charakterystyka:",
       "li1": "Nowoczesny, wyciszony młynek.",
@@ -537,7 +584,29 @@
       "technical": "wysokość wylewki:80-165 mm <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 41 cm x gł. 50 cm ",
       "price": "",
       "value": "",
-      "picture": "frescoP8l"
+      "picture1": "ekspres-do-kawy-fresco-p8-czarny-2",
+      "picture2": "ekspres-do-kawy-fresco-p8-czarny-a",
+      "picture3": "ekspres-do-kawy-fresco-p8-plus-srebrny-4",
+      "picture4": "ekspres-do-kawy-fresco-p8-plus-srebrny-5"
+    },
+    {
+      "id": 7,
+      "title": "Ekspres FRESCO P-8L srebrny",
+      "par1": "FRESCO P8L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na wodę 8l, na kawę o pojemności 1,2 kg oraz powiększony zbiornik na fusy do :70 porcji. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością.W ciągu godziny ekspres jest w stanie przygotować aż do 120 filiżanek espresso lub do 100 kubków cappuccino .",
+      "subtitle": "Charakterystyka:",
+      "li1": "Nowoczesny, wyciszony młynek.",
+      "li2": "9 rodzajów mielenia .",
+      "li3": "2 pompy wody oraz 2 grzałki",
+      "li4": "Intuicyjne menu wyboru.",
+      "li5": "Wysoka temperatura spieniania (60-70℃)",
+      "li6": "Automatyczne programy czyszczenia i odkamieniania.",
+      "technical": "wysokość wylewki:80-165 mm <br /> Moc : 220V ~ 50 Hz/ 2900W <br /> Wymiary : wys. 60 cm x szer. 41 cm x gł. 50 cm ",
+      "price": "",
+      "value": "",
+      "picture1": "ekspres-do-kawy-fresco-p8-plus-srebrny-3",
+      "picture2": "ekspres-do-kawy-fresco-p8-plus-srebrny-4",
+      "picture3": "ekspres-do-kawy-fresco-p8-plus-srebrny-5",
+      "picture4": ""
     }
   ],
   "bottledDispensers": [
