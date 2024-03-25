@@ -124,6 +124,7 @@
   "artisanCoffees": [
     {
       "id": 1,
+      "path": "artisanCoffees-1",
       "title": "Vular Intensive",
       "par1": "Kawa o wyrazistym intensywnym smaku i ostrzejszym aromacie. Charakteryzuje się niską kwasowością, a ze względu na odpowiedni proces palenia, wyczuwalny jest jedynie delikatny posmak goryczy. Odpowiedni dobór ziaren pozwolił nam skomponować mocniejszą mieszankę, która wyróżnia się dużą zawartością kofeiny.",
       "subtitle": "1kg",
@@ -138,6 +139,7 @@
     },
     {
       "id": 2,
+      "path": "artisanCoffees-2",
       "title": "Prado Premium",
       "par1": "Kawa ma intensywny aromat i subtelną kwasowość, charakteryzuje się słodkim owocowy smakiem z kwiatowo cytrusowymi aromatami.",
       "subtitle": "1kg",
@@ -152,6 +154,7 @@
     },
     {
       "id": 3,
+      "path": "artisanCoffees-3",
       "title": "Cerrado Singel",
       "par1": "Kawa Brazylia Cerrado łączy w sobie to co najlepsze, bogaty i pełny aromat, niska kwasowość i wyczuwalny posmak słodkiego karmelu, nugatu i delikatnej czekolady mlecznej. Metoda pozyskiwania: naturalna - ręcznie zbierana.Wysokosc upraw - 800-1200m n.p.m",
       "subtitle": "1kg",
@@ -167,7 +170,8 @@
   ],
   "gourmetCoffees": [
     {
-      "id": 4,
+      "id": 1,
+      "path": "gourmetCoffees-1",
       "title": "alfredo tipo bar",
       "par1": "Doskonała mieszanka arabiki pochodzącej z Ameryki Południowej i Afryki oraz azjatyckiej robusty daje z orzechową creme. Dzięki średnio palonym ziarnom Alfredo Tipo Bar posiada uniwersalne zastosowanie – świetnie nadaje się do przyrządzenia tradycyjnego espresso, łagodnego latte, klasycznej dużej czarnej czy zmrożonego frappe. Kawa wyróżnia się smakiem charakterystycznym dla środkowych Włoch.",
       "subtitle": "1kg",
@@ -181,7 +185,8 @@
       "picture": "tipo"
     },
     {
-      "id": 5,
+      "id": 2,
+      "path": "gourmetCoffees-2",
       "title": "Alfredo Super Bar",
       "par1": "Alfredo Espresso Super Bar to kawa o intensywnym, pobudzającym smaku. Dzięki odpowiedniemu doborowi ziaren – 60% arabik Ameryki Południowej i Afryki oraz 40% azjatyckich robust – oraz silnemu stopniowi ich upalenia posiada właściwości typowe dla klasycznego południowowłoskiego espresso, które charakteryzuje się silnym body, niską kwasowością i wysoką zawartością kofeiny. Po zaparzeniu powstaje napar o bogatym aromacie i grubej cremie.",
       "subtitle": "1kg",
@@ -195,7 +200,8 @@
       "picture": "super"
     },
     {
-      "id": 6,
+      "id": 3,
+      "path": "gourmetCoffees-3",
       "title": "Grano Fresco",
       "par1": "Uniwersalna w smaku mieszanka, cechuje ją niska kwasowość, odpowiednia zawartość kofeiny, zharmonizowany smak i mocny aromat. Wypalona została w stopniu średnio ciemnym. Polecana do espresso i kaw mlecznych.",
       "subtitle": "1kg",
@@ -209,7 +215,8 @@
       "picture": "grano"
     },
     {
-      "id": 7,
+      "id": 4,
+      "path": "gourmetCoffees-4",
       "title": "Crema Espresso",
       "par1": "Mieszanka stworzona specjalnie dla wielbicieli mocniejszej kawy, o dużej zawartości kofeiny. Kawa ma głęboki i intensywny smak, zachwyca aromatem i gęstą bursztynową cremą. Wypalona została w stopniu średnio ciemnym.",
       "subtitle": "1kg",
@@ -367,8 +374,8 @@
   "houseMachines": [
     {
       "id": 1,
-      "title": "Ekspres H2 Black",
-      "subtitle": "Kompaktowy i niepowtarzalny ",
+      "title": "Fresco H2 Black",
+      "subtitle": "Charakterystyka",
       "technical": "Fresco C11 to bardzo wydajny ekspres dla małych firm lub biur. Zaleacana ilość kaw zrobionych w ciągu jednego dnia to minimum 30 sztuk. Aby uprzyjemnićci użytkowanie wbudowaliśmy możliwość personalizacji wyglądu poprzez możliwość dodawania włąsnych zdjęć. Czyszyczenie zarówno zaparzacza jak i spieniacza do mleka odbzwa się całkowicie automatzcznie co zapewnia więcej czsu na spokojną konsumcję.",
       "li1": "Możliwość stworzenia aż 8 indywudualnych profilów",
       "li2": "Możliwość wgrywania własnych zdjęć",
@@ -390,7 +397,7 @@
     },
     {
       "id": 2,
-      "title": "Ekspres H2 White",
+      "title": "Fresco H2 White",
       "par1": " Fresco X65 to urządzenie o kompaktowych wymiarach,nowoczesny a zarazem prosty wygląd doskonale wpasuje się do każdej przestrzeni. Dzięki wydajności 80 kaw dziennie będzie odpowiedni do mniejszych i większych biur, firm czy restauracji, hoteli oraz innych obiektów gastronomicznych.Zbiornik na fusy również pomieści w sobie sporo, spokojnie nawet do 30 porcji kawy.Fresco X65 posiada intuicyjny i przejrzysty wyświetlacz o przekątnej 7 cali, zautomatyzowane programy czyszczące są proste w obsłudze i szybkie do wykonania",
       "subtitle": "Charakterystyka",
       "li1": "",
@@ -413,7 +420,7 @@
     },
     {
       "id": 3,
-      "title": "Ekspres 4swiss Torino Home",
+      "title": "4swiss Torino Home",
       "par1": " Fresco X65 to urządzenie o kompaktowych wymiarach,nowoczesny a zarazem prosty wygląd doskonale wpasuje się do każdej przestrzeni. Dzięki wydajności 80 kaw dziennie będzie odpowiedni do mniejszych i większych biur, firm czy restauracji, hoteli oraz innych obiektów gastronomicznych.Zbiornik na fusy również pomieści w sobie sporo, spokojnie nawet do 30 porcji kawy.Fresco X65 posiada intuicyjny i przejrzysty wyświetlacz o przekątnej 7 cali, zautomatyzowane programy czyszczące są proste w obsłudze i szybkie do wykonania",
       "subtitle": "Charakterystyka",
       "li1": "",
@@ -436,7 +443,7 @@
     },
     {
       "id": 4,
-      "title": "Ekspres 4swiss Torino Pro",
+      "title": "4swiss Torino Pro",
       "par1": " Fresco X65 to urządzenie o kompaktowych wymiarach,nowoczesny a zarazem prosty wygląd doskonale wpasuje się do każdej przestrzeni. Dzięki wydajności 80 kaw dziennie będzie odpowiedni do mniejszych i większych biur, firm czy restauracji, hoteli oraz innych obiektów gastronomicznych.Zbiornik na fusy również pomieści w sobie sporo, spokojnie nawet do 30 porcji kawy.Fresco X65 posiada intuicyjny i przejrzysty wyświetlacz o przekątnej 7 cali, zautomatyzowane programy czyszczące są proste w obsłudze i szybkie do wykonania",
       "subtitle": "Charakterystyka",
       "li1": "",
@@ -462,7 +469,7 @@
     {
       "id": 1,
       "title": "Fresco C11",
-      "subtitle": "Kompaktowy i niepowtarzalny ",
+      "subtitle": "Charakterystyka",
       "technical": "Fresco C11 to bardzo wydajny ekspres dla małych firm lub biur. Zaleacana ilość kaw zrobionych w ciągu jednego dnia to minimum 30 sztuk. Aby uprzyjemnićci użytkowanie wbudowaliśmy możliwość personalizacji wyglądu poprzez możliwość dodawania włąsnych zdjęć. Czyszyczenie zarówno zaparzacza jak i spieniacza do mleka odbzwa się całkowicie automatzcznie co zapewnia więcej czsu na spokojną konsumcję.",
       "li1": "Możliwość stworzenia aż 8 indywudualnych profilów",
       "li2": "Możliwość wgrywania własnych zdjęć",
@@ -484,7 +491,7 @@
     },
     {
       "id": 2,
-      "title": "Ekspres Fresco X65",
+      "title": "Fresco X65",
       "par1": " Fresco X65 to urządzenie o kompaktowych wymiarach,nowoczesny a zarazem prosty wygląd doskonale wpasuje się do każdej przestrzeni. Dzięki wydajności 80 kaw dziennie będzie odpowiedni do mniejszych i większych biur, firm czy restauracji, hoteli oraz innych obiektów gastronomicznych.Zbiornik na fusy również pomieści w sobie sporo, spokojnie nawet do 30 porcji kawy.Fresco X65 posiada intuicyjny i przejrzysty wyświetlacz o przekątnej 7 cali, zautomatyzowane programy czyszczące są proste w obsłudze i szybkie do wykonania",
       "subtitle": "Charakterystyka",
       "li1": "",
@@ -507,7 +514,7 @@
     },
     {
       "id": 3,
-      "title": "Ekspres Fresco X85",
+      "title": "Fresco X85",
       "par1": " Fresco X65 to urządzenie o kompaktowych wymiarach,nowoczesny a zarazem prosty wygląd doskonale wpasuje się do każdej przestrzeni. Dzięki wydajności 80 kaw dziennie będzie odpowiedni do mniejszych i większych biur, firm czy restauracji, hoteli oraz innych obiektów gastronomicznych.Zbiornik na fusy również pomieści w sobie sporo, spokojnie nawet do 30 porcji kawy.Fresco X65 posiada intuicyjny i przejrzysty wyświetlacz o przekątnej 7 cali, zautomatyzowane programy czyszczące są proste w obsłudze i szybkie do wykonania",
       "subtitle": "Charakterystyka",
       "li1": "",
@@ -530,7 +537,7 @@
     },
     {
       "id": 4,
-      "title": "Ekspres Fresco X85 plus",
+      "title": "Fresco X85 plus",
       "par1": " Fresco X65 to urządzenie o kompaktowych wymiarach,nowoczesny a zarazem prosty wygląd doskonale wpasuje się do każdej przestrzeni. Dzięki wydajności 80 kaw dziennie będzie odpowiedni do mniejszych i większych biur, firm czy restauracji, hoteli oraz innych obiektów gastronomicznych.Zbiornik na fusy również pomieści w sobie sporo, spokojnie nawet do 30 porcji kawy.Fresco X65 posiada intuicyjny i przejrzysty wyświetlacz o przekątnej 7 cali, zautomatyzowane programy czyszczące są proste w obsłudze i szybkie do wykonania",
       "subtitle": "Charakterystyka",
       "li1": "",
@@ -553,7 +560,7 @@
     },
     {
       "id": 5,
-      "title": "Ekspres FRESCO P-2L :",
+      "title": "FRESCO P-2L :",
       "par1": "FRESCO P2L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na kawę o pojemności 1,2 kg oraz powiększony zbiornik na fusy do :70 porcji. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością.W ciągu godziny ekspres jest w stanie przygotować aż do 120 filiżanek espresso lub do 80 kubków cappuccino .",
       "subtitle": "Charakterystyka:",
       "li1": "Nowoczesny, wyciszony młynek.",
@@ -572,7 +579,7 @@
     },
     {
       "id": 6,
-      "title": "Ekspres FRESCO P-8L czarny",
+      "title": "FRESCO P-8L czarny",
       "par1": "FRESCO P8L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na wodę 8l, na kawę o pojemności 1,2 kg oraz powiększony zbiornik na fusy do :70 porcji. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością.W ciągu godziny ekspres jest w stanie przygotować aż do 120 filiżanek espresso lub do 100 kubków cappuccino .",
       "subtitle": "Charakterystyka:",
       "li1": "Nowoczesny, wyciszony młynek.",
@@ -591,7 +598,7 @@
     },
     {
       "id": 7,
-      "title": "Ekspres FRESCO P-8L srebrny",
+      "title": "FRESCO P-8L srebrny",
       "par1": "FRESCO P8L to w pełni automatyczny, komercyjny ekspres do kawy. Idealnie nadaje się do sektora HoReCa, dzięki wysokiej wydajności i prostej obsłudze. Polecany głównie do dużych biur, restauracji, kawiarni czy hoteli. Posiada powiększony zbiornik na wodę 8l, na kawę o pojemności 1,2 kg oraz powiększony zbiornik na fusy do :70 porcji. Niezwykle intuicyjny i nowoczesny system sprawi, że korzystanie z niego będzie czystą przyjemnością.W ciągu godziny ekspres jest w stanie przygotować aż do 120 filiżanek espresso lub do 100 kubków cappuccino .",
       "subtitle": "Charakterystyka:",
       "li1": "Nowoczesny, wyciszony młynek.",
