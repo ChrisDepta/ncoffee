@@ -373,3 +373,13 @@ button {
   display: block; /* Wyświetla tylko aktywny element */
   /* ewentualne dodatkowe style dla aktywnego elementu */
 }
+/* Ukryj paski przewijania dla wszystkich elementów i przeglądarek */
+.custom-scroll::-webkit-scrollbar {
+  display: none; /* dla WebKit (Safari, Chrome) */
+}
+
+/* Dla Internet Explorer, Edge, i Firefox */
+.custom-scroll {
+  -ms-overflow-style: none; /* dla IE i Edge */
+  scrollbar-width: none; /* dla Firefox */
+}
