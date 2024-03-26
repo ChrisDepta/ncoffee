@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '@/data/db.json';
-import Card from './waterCard';
+import Card from '@/components/elements/card';
 
 export default function WaterData() {
   const { houseWaters, gourmetWaters } = data;

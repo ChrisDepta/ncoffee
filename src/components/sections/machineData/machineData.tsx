@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '@/data/db.json';
-import Card from './machineCard';
+import Card from '@/components/elements/card';
 
 export default function MachineData() {
   const { gourmetMachines, houseMachines } = data;

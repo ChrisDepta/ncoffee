@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '@/data/db.json';
-import Card from './dispenserCard';
+import Card from '@/components/elements/card';
 
 export default function DispenserData() {
   const { bottledDispensers, networkDispensers } = data;
