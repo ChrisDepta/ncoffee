@@ -48,7 +48,7 @@ export default function ArticlePage({ id, folderName = '', path, title, par1, su
   };
 
   return (
-    <div className='z-40 bg-white flex justify-center items-center w-full min-h-[100vh] mb-[70svh]'>
+    <div className='z-40 bg-white flex justify-center items-center w-full min-h-[100vh]'>
     <div className=' flex justify-center items-start '>
       <div className='basis-1/12 max-h-[30vw] flex flex-col justify-start items-center gap-12 mr-12 overflow-y-scroll custom-scroll'>
         <Image onClick={changePicture(picture1)} src={require(`@/../public/${folderName}/${picture1}.webp`)} alt="title" width={100} height={200} className=' bg-black/10 p-2 hover:scale-105 transition-all' />
