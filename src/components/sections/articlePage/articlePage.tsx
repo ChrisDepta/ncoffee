@@ -25,18 +25,18 @@ interface Props {
   picture2: string;
   picture3: string;
   picture4: string;
-  technical: string;
-  descriptions: string;
-  waterContainer: string;
-  coffeeContainer: string;
-  groundsContainer: string;
-  power: string;
-  height: string;
-  witdh: string;
-  depth: string;
-  weight: string;
+  technical?: string;
+  descriptions?: string;
+  waterContainer?: string;
+  coffeeContainer?: string;
+  groundsContainer?: string;
+  power?: string;
+  height?: string;
+  witdh?: string;
+  depth?: string;
+  weight?: string;
   path: string;
-  folderName?: string;
+  folderName: string;
 }
 
 export default function ArticlePage({
@@ -102,15 +102,15 @@ export default function ArticlePage({
 
   return (
     <div className="z-40 bg-white flex justify-center items-center w-full min-h-[100vh]">
-      <div className=" flex justify-center items-start ">
-        <div className="basis-1/12 max-h-[30vw] flex flex-col justify-start items-center gap-12 mr-12 overflow-y-scroll custom-scroll">
+      <div className="mt-20 md:mt-0 flex flex-wrap md:flex-nowrap justify-center items-start ">
+        <div className=" scroll-smooth basis-screen md:basis-1/12 max-h-[30vw] flex flex-row md:flex-col justify-start items-center gap-12 mx-4 md:mx-0 mb-4 md:mr-12 overflow-y-scroll custom-scroll">
           <Image
             onClick={changePicture(picture1)}
             src={require(`@/../public/${folderName}/${picture1}.webp`)}
             alt="title"
             width={100}
             height={200}
-            className=" bg-black/10 p-2 hover:scale-105 transition-all"
+            className=" bg-black/10 object-contain w-32 h-32 p-2 hover:scale-105 transition-all"
           />
           {picture2 !== "" && (
             <Image
@@ -119,7 +119,7 @@ export default function ArticlePage({
               alt="title"
               width={100}
               height={200}
-              className=" bg-black/10 p-2 hover:scale-105 transition-all"
+              className=" bg-black/10 object-contain w-32 h-32 p-2 hover:scale-105 transition-all"
             />
           )}
           {picture3 !== "" && (
@@ -129,7 +129,7 @@ export default function ArticlePage({
               alt="title"
               width={100}
               height={200}
-              className=" bg-black/10 p-2 hover:scale-105 transition-all"
+              className=" bg-black/10 object-contain w-32 h-32 p-2 hover:scale-105 transition-all"
             />
           )}
           {picture4 !== "" && (
@@ -139,11 +139,11 @@ export default function ArticlePage({
               alt="title"
               width={100}
               height={200}
-              className=" bg-black/10 p-2 hover:scale-105 transition-all"
+              className=" bg-black/10 object-contain w-32 h-32 p-2 hover:scale-105 transition-all"
             />
           )}
         </div>
-        <div className="basis-[30vw] h-[30vw] bg-black/10 border flex items-center justify-center p-8 mr-12">
+        <div className=" basis-screen md:basis-[30vw] h-auto md:h-[30vw] bg-black/10 border flex items-center justify-center p-8 mx-0 md:mr-12">
           <Image
             onClick={openModal(true)}
             src={require(`@/../public/${folderName}/${activePicture}.webp`)}
@@ -175,7 +175,7 @@ export default function ArticlePage({
             </div>
           )}
         </div>
-        <div className="text-lg basis-1/3 flex flex-col items-start justify-start">
+        <div className="p-4 md:p-0 text-lg text-justify basis-screen md:basis-1/3 flex flex-col items-center md:items-start justify-start">
           <p className="text-2xl font-extrabold border-b border-norange">
             {title}
           </p>
@@ -195,6 +195,7 @@ export default function ArticlePage({
           <p className="my-1 font-bold">{li11}</p>
           <p className="my-2">{price}</p>
           <p className="my-2">{value}</p>
+          <p className="my-2">{technical}</p>
         </div>
       </div>
     </div>

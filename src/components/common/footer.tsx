@@ -17,7 +17,7 @@ export default function Footer() {
   let defaultColor = "";
   let defaultLogo = logoturkis;
   let defaultwave = waterwave;
-  if (pathname === "/water" || pathname === "/dispenser") {
+  if (pathname === "/water" || pathname === "/dispenser" || pathname.includes('Waters') || pathname.includes('Dispensers')) {
     defaultColor = "text-nturkis";
     defaultLogo = logoturkis;
     defaultwave = waterwave;
