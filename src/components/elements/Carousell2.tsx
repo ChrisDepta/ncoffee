@@ -11,6 +11,7 @@ interface CarouselItem {
   logo: string;
 }
 
+let time = 15000;
 // Define the props for the Carousell component
 interface CarousellProps {
   carouselItems: CarouselItem[];
@@ -34,23 +35,26 @@ const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       clickNext();
-    }, 5000);
+    }, time);
     return () => {
       clearTimeout(timer);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeImage]);
 
-  console.log(carouselItems);
+  const clickActiveIdx = (index: number) => {
+    setActiveImage(index);
+  };
+
   return (
-    <div className="z-40  h-[100svh] w-full flex items-center justify-center">
-      <div className="grid place-items-center grid-cols-2 w-full mx-auto max-w-5xl shadow-2xl rounded-2xl">
-        <div className="w-full flex justify-center items-center gap-4 trasition-transform ease-in-out duration-500 rounded-2xl">
+    <div className="z-40 h-[100svh] w-full flex items-center justify-center mb-32">
+      <div className="grid place-items-center grid-cols-2 w-full mx-auto h-screen">
+        <div className="w-full flex justify-center items-center gap-4 trasition-transform ease-in-out duration-500">
           {carouselItems.map((pic, idx) => (
             <div
               className={
                 idx === activeImage
-                  ? `relative flex items-center justify-end w-full h-[80svh] object-cover transition-all duration-500 ease-in-out`
+                  ? `relative flex items-center justify-end w-full h-[100svh] object-cover transition-all duration-500 ease-in-out`
                   : "hidden"
               }
               key={idx}
@@ -60,9 +64,9 @@ const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
                 alt={pic.alt}
                 width={400}
                 height={400}
-                className="w-full h-full object-cover rounded-tl-3xl rounded-bl-3xl"
+                className="w-full h-full object-cover "
               />
-              <div className="bg-white w-[90%] absolute bottom-14 h-28 flex justify-center items-center rounded-bl-2xl">
+              <div className="bg-white w-[90%] absolute bottom-24 h-28 flex justify-center items-center rounded-bl-2xl">
               <Image
                 src={require(`@/../public/${pic.logo}.webp`)}
                 alt={pic.alt}
@@ -77,6 +81,7 @@ const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
           clickNext={clickNext}
           clickPrev={clickPrev}
           carouselItems={carouselItems}
+          clickActiveIdx={clickActiveIdx}
         />
       </div>
     </div>

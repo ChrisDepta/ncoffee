@@ -5,6 +5,10 @@ import React, { useState, ReactNode, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import BurgerButton from '../elements/burgerButton';
+import Image from 'next/image';
+
+import logoturkis from "@/../public/ncoffeeTurkis.webp";
+import logoorange from "@/../public/ncoffeeOrange.webp";
 
 // Define types for the DropdownMenu component props
 interface DropdownMenuProps {
@@ -83,19 +87,27 @@ const handleDirection = () => {
 
   const pathname = usePathname();
   let defaultColor = "";
+  let defaultLogo = null;
   if (pathname === '/water' || pathname === '/dispenser' || pathname === '/' || pathname.includes('Waters') || pathname.includes('Dispensers')) {
     defaultColor = "text-nturkis";
+    defaultLogo = logoturkis;
   } else {
     defaultColor = "text-norange";
+    defaultLogo = logoorange;
   }
 
   return (
     <header className={` ${scrollDirection ? "-translate-y-48" : "translate-y-0" } bg-black md:bg-black/80 backdrop-blur fixed top-0 tran px-4 md:px-72 z-50 w-screen  h-14 flex items-center justify-between transition-all duration-1000`}>
       <div>
       <Link href="/" passHref>
-          <p className={`${defaultColor} text-2xl basis-40 text-center font-bold hover:text-nlila hover:scale-105 transition-all`}>
-            NCOFFEE
-          </p>
+      <Image
+            src={defaultLogo}
+            width={100}
+            height={100}
+            className=" m-0 sm:m-6 mt-2 w-auto h-auto"
+            priority
+            alt={"ncoffee makes your day"}
+          />
         </Link>
       </div>
       <div>
