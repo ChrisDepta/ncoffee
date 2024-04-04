@@ -103,6 +103,7 @@ export default function ArticlePage({
   return (
     <div className="z-40 bg-white flex justify-center items-center w-full min-h-[100vh]">
       <div className="mt-20 md:mt-0 flex flex-wrap md:flex-nowrap justify-center items-start ">
+      {picture2 !== "" && (
         <div className=" scroll-smooth basis-screen md:basis-1/12 max-h-[30vw] flex flex-row md:flex-col justify-start items-center gap-12 mx-4 md:mx-0 mb-4 md:mr-12 overflow-y-scroll custom-scroll">
           <Image
             onClick={changePicture(picture1)}
@@ -143,6 +144,7 @@ export default function ArticlePage({
             />
           )}
         </div>
+        )}
         <div className=" basis-screen md:basis-[30vw] h-auto md:h-[30vw] bg-black/10 border flex items-center justify-center p-8 mx-0 md:mr-12">
           <Image
             onClick={openModal(true)}
@@ -150,21 +152,21 @@ export default function ArticlePage({
             alt="title"
             width={300}
             height={200}
-            className="h-full w-auto "
+            className="h:screen md:h-full w-screen md:w-auto object-scale-down"
           />
           {activeModal && (
             <div
               className="fixed inset-0 bg-black bg-opacity-90 backdrop-blur flex justify-center items-center"
               onClick={closeModal}>
               <div
-                className=" h-[90svh] mt-16 flex items-start gap-32"
+                className=" h-[90svh] mt-16 flex items-center gap-32"
                 onClick={(e) => e.stopPropagation()}>
                 <Image
                   src={require(`@/../public/${folderName}/${activePicture}.webp`)}
                   alt="title"
                   width={600}
                   height={400}
-                  className="h-full w-auto"
+                  className="h:screen md:h-full w-screen md:w-auto object-contain"
                 />
                 <button
                   onClick={closeModal}
