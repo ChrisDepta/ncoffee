@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
 // Import necessary modules
-import React, { useState, ReactNode, useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import BurgerButton from '../elements/burgerButton';
-import Image from 'next/image';
+import React, { useState, ReactNode, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import BurgerButton from "../elements/burgerButton";
+import Image from "next/image";
 
 import logoturkis from "@/../public/ncoffeeTurkis.webp";
 import logoorange from "@/../public/ncoffeeOrange.webp";
@@ -19,7 +19,7 @@ interface DropdownMenuProps {
 // DropdownMenu component
 const DropdownMenu: React.FC<DropdownMenuProps> = ({ title, items }) => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const handleMouseEnter = () => {
     setIsOpen(true);
   };
@@ -29,15 +29,23 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ title, items }) => {
   };
 
   return (
-    <div className="relative group" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div
+      className="relative group"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <div>
-        <p className="flex items-center h-14 leading-10 text-center hover:text-nlila hover:scale-105 transition-all">{title}</p>
+        <p className="flex items-center h-14 leading-10 text-center hover:text-nlila hover:scale-105 transition-all">
+          {title}
+        </p>
       </div>
       {isOpen && (
         <div className="backdrop-blur mt-0 w-auto absolute top-full -left-4 bg-black/80 px-6 pb-4 rounded-b-xl shadow-xl transition-all duration-300 ease-in-out">
           {items.map((item) => (
             <Link key={item.href} href={item.href} passHref>
-              <p className="block py-1 hover:text-nlila hover:scale-105 transition">{item.label}</p>
+              <p className="block py-1 hover:text-nlila hover:scale-105 transition">
+                {item.label}
+              </p>
             </Link>
           ))}
         </div>
@@ -54,24 +62,24 @@ interface NavUniProps {
 // NavUni component
 const NavUni: React.FC<NavUniProps> = ({ children }) => {
   const menuItems = [
-    { href: '/water', label: 'Woda' },
-    { href: 'https://oryginalnysok.pl/', label: 'Soki' },
-    { href: '/machines', label: 'Ekspresy' },
-    { href: '/dispenser', label: 'Dystrybutory' },
-    { href: '/coffee', label: 'Kawy' },
-    { href: '/chemistry', label: 'Chemia' },
+    { href: "/water", label: "Woda" },
+    { href: "https://oryginalnysok.pl/", label: "Soki" },
+    { href: "/machines", label: "Ekspresy" },
+    { href: "/dispenser", label: "Dystrybutory" },
+    { href: "/coffee", label: "Kawy" },
+    { href: "/chemistry", label: "Chemia" },
   ];
 
   const [scrollDirection, setScrollDirection] = useState(false);
   const [lastPageOffset, setLastPageOffset] = useState(0);
 
-const handleDirection = () => {
-  if(window.pageYOffset > lastPageOffset){
-    setScrollDirection(true);
-  }else if(window.pageYOffset < lastPageOffset){
-    setScrollDirection(false);
-  }
-};
+  const handleDirection = () => {
+    if (window.pageYOffset > lastPageOffset) {
+      setScrollDirection(true);
+    } else if (window.pageYOffset < lastPageOffset) {
+      setScrollDirection(false);
+    }
+  };
 
   const handleScroll = () => {
     handleDirection();
@@ -79,16 +87,22 @@ const handleDirection = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   });
 
   const pathname = usePathname();
   let defaultColor = "";
   let defaultLogo = null;
-  if (pathname === '/water' || pathname === '/dispenser' || pathname === '/' || pathname.includes('Waters') || pathname.includes('Dispensers')) {
+  if (
+    pathname === "/water" ||
+    pathname === "/dispenser" ||
+    pathname === "/" ||
+    pathname.includes("Waters") ||
+    pathname.includes("Dispensers")
+  ) {
     defaultColor = "text-nturkis";
     defaultLogo = logoturkis;
   } else {
@@ -97,10 +111,14 @@ const handleDirection = () => {
   }
 
   return (
-    <header className={` ${scrollDirection ? "-translate-y-48" : "translate-y-0" } bg-black md:bg-black/80 backdrop-blur fixed top-0 tran px-4 md:px-72 z-50 w-screen  h-14 flex items-center justify-between transition-all duration-1000`}>
-      <div>
-      <Link href="/" passHref>
-      <Image
+    <header
+      className={` ${
+        scrollDirection ? "-translate-y-48" : "translate-y-0"
+      } bg-black lg:bg-black/80 backdrop-blur fixed top-0  tran px-4 z-50 w-screen h-14 flex items-center justify-between transition-all duration-1000`}
+    >
+      <div className="basis-1/5">
+        <Link href="/" passHref>
+          <Image
             src={defaultLogo}
             width={100}
             height={100}
@@ -110,21 +128,27 @@ const handleDirection = () => {
           />
         </Link>
       </div>
-      <div>
+      <div className="basis-1/5 flex justify-end">
         <BurgerButton />
       </div>
-      <div className="hidden w-3/4 md:flex justify-evenly items-center text-m text-white tracking-wider">
+      <div className="hidden w-3/4 lg:flex justify-end gap-4 lg:gap-10 xl:gap-20 pr-4 xl:pr-20 items-center text-white tracking-wider">
         <DropdownMenu title="Napoje" items={menuItems.slice(0, 2)} />
         <DropdownMenu title="Kawa" items={menuItems.slice(4, 6)} />
         <DropdownMenu title="Urządzenia" items={menuItems.slice(2, 4)} />
         <Link href="/abouts" passHref>
-          <p className=" basis-20 text-center hover:text-nlila hover:scale-105 transition-all">O nas</p>
+          <p className=" basis-20 text-center hover:text-nlila hover:scale-105 transition-all">
+            O nas
+          </p>
         </Link>
         <Link href="/clients" passHref>
-          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">Partnerzy</p>
+          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">
+            Partnerzy
+          </p>
         </Link>
         <Link href="/contact" passHref>
-          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">Kontakt</p>
+          <p className="basis-20 text-center hover:text-nlila hover:scale-105 transition-all">
+            Kontakt
+          </p>
         </Link>
       </div>
       {children}
@@ -134,6 +158,5 @@ const handleDirection = () => {
 
 export default NavUni;
 function setIsOpen(arg0: boolean) {
-  throw new Error('Function not implemented.');
+  throw new Error("Function not implemented.");
 }
-

@@ -16,18 +16,18 @@ export default function BurgerButton() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isOpen]);
   return (
-    <nav className="relative md:hidden">
+    <nav className="relative lg:hidden">
       <button
         className="z-50 flex flex-col space-y-2 w-10 h-10 justify-center items-center group bg-transparent"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="block w-8 h-0.5 bg-white transition"></span>
-        <span className="block w-8 h-0.5 bg-white transition"></span>
-        <span className="block w-8 h-0.5 bg-white transition"></span>
+        <span className={`${isOpen ? "bg-norange rotate-45 translate-y-2.5" : "bg-white"} block w-8 h-0.5 transition duration-500`}></span>
+        <span className={`${isOpen ? "opacity-0" : "bg-white"} block w-8 h-0.5  transition duration-100`}></span>
+        <span className={`${isOpen ? "bg-norange -rotate-45 -translate-y-2 " : "bg-white"} block w-8 h-0.5 transition duration-500`}></span>
       </button>
 
       {isOpen && (
-        <div className="absolute top-full -right-4  w-[100vw] m-0 px-8 mt-2 py-2 text-2xl bg-black backdrop-blur shadow-xl transition transform origin-top-right">
+        <div className="absolute top-full -right-4  w-[100vw] m-0 px-8  py-2 text-2xl bg-black backdrop-blur shadow-xl transition transform origin-top-right">
           <a
             href="/coffee"
             className="block px-4 py-2 text-white  transition"

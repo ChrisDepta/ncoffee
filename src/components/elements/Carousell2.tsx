@@ -47,7 +47,7 @@ const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
   };
 
   return (
-    <div className="z-40 h-[100svh] w-full flex items-center justify-center mb-32">
+    <div className="z-40 h-[100svh] w-full flex items-center justify-center mb-56 shadow-2xl">
       <div className="grid place-items-center grid-cols-2 w-full mx-auto h-screen">
         <div className="w-full flex justify-center items-center gap-4 trasition-transform ease-in-out duration-500">
           {carouselItems.map((pic, idx) => (
