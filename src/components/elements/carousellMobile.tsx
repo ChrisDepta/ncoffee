@@ -36,14 +36,14 @@ const CarousellMobile: React.FC<CarousellProps> = ({ carouselItems }) => {
   }, [activeImage]);
 
   return (
-    <div className="z-40 h-[100svh] w-full flex items-center justify-center mb-56 shadow-2xl">
-      <div className="place-items-center w-full mx-auto h-screen">
+    <div className="z-40 h-screen w-screen flex items-center justify-center mb-56 shadow-2xl">
+      <div className="place-items-center w-screen mx-auto h-screen">
         <div className="w-full flex justify-center items-center gap-4 trasition-transform ease-in-out duration-500">
           {carouselItems.map((pic, idx) => (
             <div
               className={
                 idx === activeImage
-                  ? `relative flex items-center justify-end w-full h-[100svh] object-cover transition-all duration-500 ease-in-out`
+                  ? `relative flex items-center justify-end w-full h-[100dvh] object-cover transition-all duration-500 ease-in-out`
                   : "hidden"
               }
               key={idx}
@@ -54,7 +54,7 @@ const CarousellMobile: React.FC<CarousellProps> = ({ carouselItems }) => {
                 alt={pic.alt}
                 width={400}
                 height={400}
-                className="w-full h-full object-cover "
+                className="w-screen h-screen object-cover "
               />
               <div className="bg-white w-[90%] absolute bottom-24 h-28 flex justify-center items-center rounded-bl-2xl">
               <Image
