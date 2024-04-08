@@ -1,109 +1,91 @@
-'use client'
+"use client";
 // Import necessary dependencies
-import React, { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
-import db from '@/data/db.json'
+import React, { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import Description from "@/components/elements/Description";
 
-const carouselItems = db.carouselClients; // Użycie danych z db.json
+// Define the interface for each item in the carousel
+interface CarouselItem {
+  src: string;
+  alt: string;
+  logo: string;
+}
 
-const Carousel: React.FC = () => { 
-  const nextRef = useRef<HTMLButtonElement>(null);
-  const prevRef = useRef<HTMLButtonElement>(null);
-  const carouselRef = useRef<HTMLDivElement>(null);
-  const sliderRef = useRef<HTMLDivElement>(null);
-  const thumbnailBorderRef = useRef<HTMLDivElement>(null);
-  const timeRef = useRef<HTMLDivElement>(null);
+let time = 15000;
+// Define the props for the Carousell component
+interface CarousellProps {
+  carouselItems: CarouselItem[];
+}
 
+const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
+  const [activeImage, setActiveImage] = useState(0);
 
-
-  // State to manage the current index of the carousel
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Function to handle next and prev buttons
-  const handleButtonClick = (type: 'next' | 'prev') => {
-    setCurrentIndex(prevIndex => {
-      const newIndex = type === 'next'
-        ? (prevIndex + 1) % carouselItems.length
-        : (prevIndex - 1 + carouselItems.length) % carouselItems.length;
-
-      // Przewijanie miniatur
-      const thumbnailContainer = thumbnailBorderRef.current;
-      const newThumbnail = thumbnailContainer?.children[newIndex];
-      newThumbnail?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-      console.log(newIndex)
-      return newIndex;
-      
-    });
+  const clickNext = () => {
+    activeImage === carouselItems.length - 1
+      ? setActiveImage(0)
+      : setActiveImage(activeImage + 1);
   };
-  
 
-
-  // Effect for automatic sliding
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     handleButtonClick('next');
-  //   }, 7000);
-
-  //   // Cleanup interval on component unmount
-  //   return () => clearInterval(interval);
-  // // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
-
-  // Function to show slider
-  const showSliderChoose = (index: number) => {
-    setCurrentIndex(index);
-    
-    
-    const thumbnailContainer = thumbnailBorderRef.current;
-    const selectedThumbnail = thumbnailContainer?.children[index];
-    selectedThumbnail?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  const clickPrev = () => {
+    activeImage === 0
+      ? setActiveImage(carouselItems.length - 1)
+      : setActiveImage(activeImage - 1);
   };
-  console.log(currentIndex);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      clickNext();
+    }, time);
+    return () => {
+      clearTimeout(timer);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeImage]);
+
+  const clickActiveIdx = (index: number) => {
+    setActiveImage(index);
+  };
+
   return (
-    
-    <div className="carousel" ref={carouselRef}>
-      {/* Carousel items */}
-      <div className="list" ref={sliderRef}>
-        {carouselItems.map((item, index) => (
-          <div key={index} className={`item ${index === currentIndex ? 'active' : ''}`}>
-            <Image src={require(`@/../public/${item.src}.webp`)} alt={item.alt} />
-            <div className="content">
-              <div className="author">{item.logo}</div>
-              <div className="title">{item.title}</div>
-              <div className="topic">{item.topic}</div>
-              <div className="des">{item.des}</div>
+    <div className="z-40 h-[100svh] w-full flex items-center justify-center mb-56 shadow-2xl">
+      <div className="grid place-items-center grid-cols-2 w-full mx-auto h-screen">
+        <div className="w-full flex justify-center items-center gap-4 trasition-transform ease-in-out duration-500">
+          {carouselItems.map((pic, idx) => (
+            <div
+              className={
+                idx === activeImage
+                  ? `relative flex items-center justify-end w-full h-[100svh] object-cover transition-all duration-500 ease-in-out`
+                  : "hidden"
+              }
+              key={idx}
+            >
+              <Image
+                src={require(`@/../public/${pic.src}.webp`)}
+                alt={pic.alt}
+                width={400}
+                height={400}
+                className="w-full h-full object-cover "
+              />
+              <div className="bg-white w-[90%] absolute bottom-24 h-28 flex justify-center items-center rounded-bl-2xl">
+              <Image
+                src={require(`@/../public/${pic.logo}.webp`)}
+                alt={pic.alt}
+                className="object-fit h-[90%] w-auto"
+              />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <Description
+          activeImgIndex={activeImage}
+          clickNext={clickNext}
+          clickPrev={clickPrev}
+          carouselItems={carouselItems}
+          clickActiveIdx={clickActiveIdx}
+        />
       </div>
-
-      {/* Thumbnails */}
-      <div className="thumbnail" ref={thumbnailBorderRef}>
-        {carouselItems.map((item, index) => (
-          <div key={index} className={`item ${index === currentIndex ? 'active' : ''}`} onClick={() => showSliderChoose(index)}>
-            <Image src={require(`@/../public/${item.src}.webp`)} alt={item.alt} />
-            <div className="content">
-              <div className="title">{item.title}</div>
-              <div className="description">{item.des}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Next/Prev buttons */}
-      <div className="arrows">
-        <button id="prev" onClick={() => handleButtonClick('prev')} ref={prevRef}>
-          {'<'}
-        </button>
-        <button id="next" onClick={() => handleButtonClick('next')} ref={nextRef}>
-          {'>'}
-        </button>
-      </div>
-
-      {/* Time running */}
-      <div className="time" ref={timeRef}></div>
     </div>
   );
 };
 
-export default Carousel;
+export default Carousell;
