@@ -2,7 +2,7 @@
 // Import necessary dependencies
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Description from "@/components/elements/Description";
+import Description from "@/components/elements/description";
 
 // Define the interface for each item in the carousel
 interface CarouselItem {

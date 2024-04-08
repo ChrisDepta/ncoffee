@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Description from "@/components/elements/Description";
+import Description from "@/components/elements/description";
 
 interface Props {
   id: number;

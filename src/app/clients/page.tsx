@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/common/nav';
 import Footer from '@/components/common/footer';
-import Carousell from '@/components/elements/Carousell';
-import CarousellMobile from '@/components/elements/CarousellMobile';
+import Carousell from '@/components/elements/carousell';
+import CarousellMobile from '@/components/elements/carousellMobile';
 import db from '@/data/db.json';
 
 const Clients: React.FC = () => {
