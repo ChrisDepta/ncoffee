@@ -101,7 +101,7 @@ export default function ArticlePage({
   };
 
   return (
-    <div className="z-40 bg-white flex justify-center items-center w-full min-h-[100vh]">
+    <div className="z-40 mt-0 md:mt-16 bg-white flex justify-center items-center w-full min-h-[100vh]">
       <div className="mt-20 md:mt-0 flex flex-wrap md:flex-nowrap justify-center items-start ">
       {picture2 !== "" && (
         <div className=" scroll-smooth basis-screen md:basis-1/12 max-h-[30vw] flex flex-row md:flex-col justify-start items-center gap-12 mx-4 md:mx-0 mb-4 md:mr-12 overflow-y-scroll custom-scroll">

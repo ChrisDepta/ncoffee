@@ -131,7 +131,7 @@ const NavUni: React.FC<NavUniProps> = ({ children }) => {
       <div className="basis-1/5 flex justify-end">
         <BurgerButton />
       </div>
-      <div className="hidden w-3/4 lg:flex justify-end gap-4 lg:gap-10 xl:gap-20 pr-4 xl:pr-20 items-center text-white tracking-wider">
+      <div className="hidden w-3/4 lg:flex justify-end gap-4 md:gap-6 lg:gap-8 xl:gap-10 2xl:gap-20 pr-4 xl:pr-20 items-center text-white tracking-wider">
         <DropdownMenu title="Napoje" items={menuItems.slice(0, 2)} />
         <DropdownMenu title="Kawa" items={menuItems.slice(4, 6)} />
         <DropdownMenu title="Urządzenia" items={menuItems.slice(2, 4)} />

@@ -23,7 +23,7 @@ export const Description = ({
 }: Props) => {
   return (
     <div className="grid place-items-start w-full h-[100svh] bg-white relative">
-      <div className="absolute mt-20 right-6 text-2xl text-norange uppercase tracking-wider font-bold">
+      {/* <div className="absolute mt-20 right-6 text-2xl text-norange uppercase tracking-wider font-bold">
         <Image
           src={logoorange}
           width={150}
@@ -32,7 +32,7 @@ export const Description = ({
           priority
           alt={"ncoffee makes your day"}
         />
-      </div>
+      </div> */}
       {carouselItems.map(
         (
           pic: {
@@ -69,7 +69,7 @@ export const Description = ({
             key={idx}
             className={
               idx === activeImgIndex
-                ? `block w-3/4 h-screen px-12 pt-48 object-cover transition-all duration-500 ease-in-out`
+                ? `block w-3/4 h-screen px-12 pt-20 object-cover transition-all duration-500 ease-in-out`
                 : "hidden"
             }
           >

@@ -9,7 +9,7 @@ export default function ChemistryData() {
     <div className="z-10 mt-[70vh] bg-white flex flex-col justify-center md:justify-start items-center w-full pb-32">
       <div className="pt-12 flex flex-col justify-center md:justify-start items-center md:items-start w-full md:w-[80%]">
         <p className="text-center my-12 md:my-0 md:px-12 text-3xl md:text-5xl font-extrabold tracking-wider text-black">
-          Kawy rzemieślnicze
+          Środki czyszczące
         </p>
         <div className="overflow-x-hidden gap-0 md:gap-8 flex flex-wrap justify-start items-start md:px-12">
           {chemistries.map((item) => {
