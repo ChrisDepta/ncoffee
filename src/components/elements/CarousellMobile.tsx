@@ -16,7 +16,7 @@ interface CarousellProps {
   carouselItems: CarouselItem[];
 }
 
-const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
+const CarousellMobile: React.FC<CarousellProps> = ({ carouselItems }) => {
   const [activeImage, setActiveImage] = useState(0);
 
   const clickNext = () => {
@@ -71,4 +71,4 @@ const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
   );
 };
 
-export default Carousell;
+export default CarousellMobile;
