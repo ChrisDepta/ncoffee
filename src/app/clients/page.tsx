@@ -1,20 +1,33 @@
 'use client'
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "@/components/common/nav";
 import Footer from "@/components/common/footer";
 import { useMediaQuery } from 'react-responsive'; // Importujemy hook do obsługi mediów z react-responsive
 
-import Carousell from '@/components/elements/Carousell'
-import CarousellMobile from '@/components/elements/CarousellMobile'
+// dynamiczne importowanie komponentów Carousell i CarousellMobile
+const Carousell = React.lazy(() => import('@/components/elements/Carousell'));
+const CarousellMobile = React.lazy(() => import('@/components/elements/CarousellMobile'));
+
 import db from "@/data/db.json";
 
 export default function Clients() {
+  const [componentLoaded, setComponentLoaded] = useState(false);
   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' }); // Sprawdzamy, czy urządzenie jest w orientacji pionowej
+
+  useEffect(() => {
+    // Ustawienie stanu, gdy komponenty są załadowane
+    setComponentLoaded(true);
+  }, []);
 
   return (
     <>
       <Navbar />
-      {isPortrait ? <CarousellMobile carouselItems={db.carouselClients}/> : <Carousell carouselItems={db.carouselClients}/>}
+      {/* Warunek sprawdzający, czy komponenty są załadowane, zanim zostaną wyrenderowane */}
+      {componentLoaded && (
+        <React.Suspense fallback={<div>Loading...</div>}>
+          {isPortrait ? <CarousellMobile carouselItems={db.carouselClients}/> : <Carousell carouselItems={db.carouselClients}/>}
+        </React.Suspense>
+      )}
       <Footer />
     </>
   );

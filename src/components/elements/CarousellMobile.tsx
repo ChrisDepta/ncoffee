@@ -2,7 +2,6 @@
 // Import necessary dependencies
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Description from "@/components/elements/Description";
 
 // Define the interface for each item in the carousel
 interface CarouselItem {
@@ -26,12 +25,6 @@ const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
       : setActiveImage(activeImage + 1);
   };
 
-  const clickPrev = () => {
-    activeImage === 0
-      ? setActiveImage(carouselItems.length - 1)
-      : setActiveImage(activeImage - 1);
-  };
-
   useEffect(() => {
     const timer = setTimeout(() => {
       clickNext();
@@ -41,10 +34,6 @@ const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeImage]);
-
-  const clickActiveIdx = (index: number) => {
-    setActiveImage(index);
-  };
 
   return (
     <div className="z-40 h-[100svh] w-full flex items-center justify-center mb-56 shadow-2xl">
@@ -58,6 +47,7 @@ const Carousell: React.FC<CarousellProps> = ({ carouselItems }) => {
                   : "hidden"
               }
               key={idx}
+              onClick={clickNext}
             >
               <Image
                 src={require(`@/../public/${pic.src}.webp`)}
