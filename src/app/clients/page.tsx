@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "@/components/common/nav";
 import Footer from "@/components/common/footer";
-import { useMediaQuery } from 'react-responsive'; // Importujemy hook do obsługi mediów z react-responsive
+import { useMediaQuery } from 'react-responsive';// Importujemy hook do obsługi mediów z react-responsive
 
 // dynamiczne importowanie komponentów Carousell i CarousellMobile
 const Carousell = React.lazy(() => import('@/components/elements/Carousell'));

@@ -1,6 +1,6 @@
-"use client";
+'use client';
 // Import necessary dependencies
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 // Define the interface for each item in the carousel
