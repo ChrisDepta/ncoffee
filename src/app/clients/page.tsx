@@ -6,55 +6,36 @@ import Carousell from '@/components/elements/Carousell';
 import CarousellMobile from '@/components/elements/CarousellMobile';
 import db from '@/data/db.json';
 
-// Definicja typu dla elementów karuzeli, przy założeniu, że mamy odpowiedni format danych w db.json
-type CarouselItem = {
-  id: string;
-  imageUrl: string;
-  title: string;
-  description: string;
-};
-
-// Definicja typu dla stanu komponentu
-interface ClientsState {
-  componentLoaded: boolean;
-  isPortrait: boolean;
-}
-
 const Clients: React.FC = () => {
-  const [componentLoaded, setComponentLoaded] = useState<ClientsState['componentLoaded']>(false);
-  const [isPortrait, setIsPortrait] = useState<ClientsState['isPortrait']>(false);
+  const [isPortrait, setIsPortrait] = useState<boolean>(false);
 
   useEffect(() => {
-    // Ustawienie stanu, gdy komponenty są załadowane
-    setComponentLoaded(true);
-
-    // Funkcja sprawdzająca orientację ekranu
+    // Definicja funkcji jest wywoływana tylko po stronie klienta
     const handleOrientationChange = () => {
+      // Bezpieczne użycie window, ponieważ znajduje się w bloku, który wykonuje się tylko w przeglądarce
       setIsPortrait(window.matchMedia("(orientation: portrait)").matches);
     };
 
-    // Dodanie nasłuchiwacza na zmianę orientacji ekranu
-    window.addEventListener('resize', handleOrientationChange);
-    
-    // Sprawdzenie orientacji ekranu przy montowaniu komponentu
-    handleOrientationChange();
+    if (typeof window !== "undefined") {
+      window.addEventListener('resize', handleOrientationChange);
+      // Ustawienie początkowego stanu
+      handleOrientationChange();
 
-    // Oczyszczenie nasłuchiwacza
-    return () => window.removeEventListener('resize', handleOrientationChange);
+      // Czyszczenie event listenera przy odmontowywaniu komponentu
+      return () => window.removeEventListener('resize', handleOrientationChange);
+    }
   }, []);
 
   return (
     <>
       <Navbar />
-      {componentLoaded && (
-        <div className="flex justify-center items-center">
-          {isPortrait ? (
-            <CarousellMobile carouselItems={db.carouselClients} />
-          ) : (
-            <Carousell carouselItems={db.carouselClients} />
-          )}
-        </div>
-      )}
+      <div className="flex justify-center items-center">
+        {isPortrait ? (
+          <CarousellMobile carouselItems={db.carouselClients} />
+        ) : (
+          <Carousell carouselItems={db.carouselClients} />
+        )}
+      </div>
       <Footer />
     </>
   );

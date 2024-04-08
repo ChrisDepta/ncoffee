@@ -1,8 +1,7 @@
-import { autoAnswerTemplate } from '@/utils/autoAnswerTemplate';
-import Handlebars from 'handlebars';
-import { type NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
+import { autoAnswerTemplate } from '@/utils/autoAnswerTemplate';
 
 export async function POST(request: NextRequest) {
   const { email, name, message, to } = await request.json();
@@ -19,7 +18,7 @@ export async function POST(request: NextRequest) {
     from: process.env.MY_EMAIL,
     to,
     subject: `Automatyczna odpowiedź od NCOFFEE`,
-    html: compileTemplate(name, email, message),
+    html: autoAnswerTemplate({ name, email, message }),
   };
 
   const sendMailPromise = () =>
@@ -39,14 +38,4 @@ export async function POST(request: NextRequest) {
   } catch (err) {
     return NextResponse.json({ error: err }, { status: 500 });
   }
-}
-
-function compileTemplate(name: string, email: string, message: string): string {
-  const template = Handlebars.compile(autoAnswerTemplate);
-  console.log(template);
-  return template({
-    name: name,
-    email: email,
-    message: message,
-  });
 }

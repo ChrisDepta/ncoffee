@@ -46,7 +46,6 @@
   "devDependencies": {
     "@types/nodemailer": "^6.4.14",
     "@types/react-scroll": "^1.8.10",
-    "@types/react-slick": "^0.23.13",
-    "handlebars-loader": "^1.7.3"
+    "@types/react-slick": "^0.23.13"
   }
 }
