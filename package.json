@@ -18,6 +18,7 @@
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
     "framer-motion": "^11.0.3",
+    "fs-extra": "^11.2.0",
     "graphql": "^16.7.1",
     "handlebars": "^4.7.8",
     "hybrid": "^0.1.1",

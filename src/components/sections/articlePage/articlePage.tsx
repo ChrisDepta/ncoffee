@@ -6,8 +6,8 @@ import Description from "@/components/elements/description";
 interface Props {
   id: number;
   title: string;
-  par1?: string;
   subtitle?: string;
+  type?: string;
   li1?: string;
   li2?: string;
   li3?: string;
@@ -20,13 +20,11 @@ interface Props {
   li10?: string;
   li11?: string;
   price?: string;
-  value?: string;
   picture1: string;
   picture2: string;
   picture3: string;
   picture4: string;
-  technical?: string;
-  descriptions?: string;
+  description?: string;
   waterContainer?: string;
   coffeeContainer?: string;
   groundsContainer?: string;
@@ -43,8 +41,9 @@ export default function ArticlePage({
   id,
   folderName,
   path,
+  type,
   title,
-  par1,
+  description,
   subtitle,
   li1,
   li2,
@@ -58,13 +57,10 @@ export default function ArticlePage({
   li10,
   li11,
   price,
-  value,
   picture1,
   picture2,
   picture3,
   picture4,
-  technical,
-  descriptions,
   waterContainer,
   coffeeContainer,
   groundsContainer,
@@ -103,47 +99,47 @@ export default function ArticlePage({
   return (
     <div className="z-40 mt-0 md:mt-16 bg-white flex justify-center items-center w-full min-h-[100vh]">
       <div className="mt-20 md:mt-0 flex flex-wrap md:flex-nowrap justify-center items-start ">
-      {picture2 !== "" && (
-        <div className=" scroll-smooth basis-screen md:basis-1/12 max-h-[30vw] flex flex-row md:flex-col justify-start items-center gap-12 mx-4 md:mx-0 mb-4 md:mr-12 overflow-y-scroll custom-scroll">
-          <Image
-            onClick={changePicture(picture1)}
-            src={require(`@/../public/${folderName}/${picture1}.webp`)}
-            alt="title"
-            width={100}
-            height={200}
-            className=" bg-black/10 object-contain w-32 h-32 p-2 hover:scale-105 transition-all"
-          />
-          {picture2 !== "" && (
+        {picture2 !== "" && (
+          <div className=" scroll-smooth basis-screen md:basis-1/12 max-h-[30vw] flex flex-row md:flex-col justify-start items-center gap-12 mx-4 md:mx-0 mb-4 md:mr-12 overflow-y-scroll custom-scroll">
             <Image
-              onClick={changePicture(picture2)}
-              src={require(`@/../public/${folderName}/${picture2}.webp`)}
+              onClick={changePicture(picture1)}
+              src={require(`@/../public/${folderName}/${picture1}.webp`)}
               alt="title"
               width={100}
               height={200}
               className=" bg-black/10 object-contain w-32 h-32 p-2 hover:scale-105 transition-all"
             />
-          )}
-          {picture3 !== "" && (
-            <Image
-              onClick={changePicture(picture3)}
-              src={require(`@/../public/${folderName}/${picture3}.webp`)}
-              alt="title"
-              width={100}
-              height={200}
-              className=" bg-black/10 object-contain w-32 h-32 p-2 hover:scale-105 transition-all"
-            />
-          )}
-          {picture4 !== "" && (
-            <Image
-              onClick={changePicture(picture4)}
-              src={require(`@/../public/${folderName}/${picture4}.webp`)}
-              alt="title"
-              width={100}
-              height={200}
-              className=" bg-black/10 object-contain w-32 h-32 p-2 hover:scale-105 transition-all"
-            />
-          )}
-        </div>
+            {picture2 !== "" && (
+              <Image
+                onClick={changePicture(picture2)}
+                src={require(`@/../public/${folderName}/${picture2}.webp`)}
+                alt="title"
+                width={100}
+                height={200}
+                className=" bg-black/10 object-contain w-32 h-32 p-2 hover:scale-105 transition-all"
+              />
+            )}
+            {picture3 !== "" && (
+              <Image
+                onClick={changePicture(picture3)}
+                src={require(`@/../public/${folderName}/${picture3}.webp`)}
+                alt="title"
+                width={100}
+                height={200}
+                className=" bg-black/10 object-contain w-32 h-32 p-2 hover:scale-105 transition-all"
+              />
+            )}
+            {picture4 !== "" && (
+              <Image
+                onClick={changePicture(picture4)}
+                src={require(`@/../public/${folderName}/${picture4}.webp`)}
+                alt="title"
+                width={100}
+                height={200}
+                className=" bg-black/10 object-contain w-32 h-32 p-2 hover:scale-105 transition-all"
+              />
+            )}
+          </div>
         )}
         <div className=" basis-screen md:basis-[30vw] h-auto md:h-[30vw] bg-black/10 border flex items-center justify-center p-8 mx-0 md:mr-12">
           <Image
@@ -182,8 +178,8 @@ export default function ArticlePage({
             {title}
           </p>
           <p className="text-xl font-bold my-1">{subtitle}</p>
-          <p className="">{par1}</p>
-          <p className="my-2">{descriptions}</p>
+          <p className="">{description}</p>
+          <p className="my-2">{type}</p>
           <p className="">{li1}</p>
           <p className="">{li2}</p>
           <p className="">{li3}</p>
@@ -196,8 +192,8 @@ export default function ArticlePage({
           <p className="">{li10}</p>
           <p className="my-1 font-bold">{li11}</p>
           <p className="my-2">{price}</p>
-          <p className="my-2">{value}</p>
-          <p className="my-2">{technical}</p>
+          <p className="my-2">{li11}</p>
+          <p className="my-2">{description}</p>
         </div>
       </div>
     </div>
