@@ -1,16 +1,45 @@
-import React from "react"
-import NavUni from "@/components/common/nav"
-import Footer from "@/components/common/footer"
-import Carousell from '@/components/elements/carousell'
-import db from  '@/data/db.json'
+"use client";
+import React, { useState, useEffect } from "react";
+import Navbar from "@/components/common/nav";
+import Footer from "@/components/common/footer";
+import Carousell from "@/components/elements/carousell";
+import CarousellMobile from "@/components/elements/carousellMobile";
+import db from "@/data/db.json";
 
+const Abouts: React.FC = () => {
+  const [isPortrait, setIsPortrait] = useState<boolean>(false);
 
-export default function Aboutus() {
+  useEffect(() => {
+    // Definicja funkcji jest wywoływana tylko po stronie klienta
+    const handleOrientationChange = () => {
+      // Bezpieczne użycie window, ponieważ znajduje się w bloku, który wykonuje się tylko w przeglądarce
+      setIsPortrait(window.matchMedia("(orientation: portrait)").matches);
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleOrientationChange);
+      // Ustawienie początkowego stanu
+      handleOrientationChange();
+
+      // Czyszczenie event listenera przy odmontowywaniu komponentu
+      return () =>
+        window.removeEventListener("resize", handleOrientationChange);
+    }
+  }, []);
+
   return (
-  <div className="flex flex-col items-center">
-   <NavUni />
-   <Carousell carouselItems={db.carouselAbout}/>
-   <Footer />
-  </div>
-  )
-}
+    <>
+      <Navbar />
+      <div className="flex justify-center items-center">
+        {isPortrait ? (
+          <CarousellMobile carouselItems={db.carouselAbout} />
+        ) : (
+          <Carousell carouselItems={db.carouselAbout} />
+        )}
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default Abouts;
