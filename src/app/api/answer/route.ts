@@ -23,19 +23,23 @@ export async function POST(request: NextRequest) {
 
   const sendMailPromise = () =>
     new Promise<string>((resolve, reject) => {
-      transport.sendMail(mailOptions, function (err) {
+      transport.sendMail(mailOptions, function (err, info) {
         if (!err) {
+          console.log('E-mail wysłany:', info);
           resolve('Wysłana');
         } else {
+          console.error('Błąd wysyłania e-maila:', err);
           reject(err.message);
         }
       });
     });
-
+  
   try {
     await sendMailPromise();
-    return NextResponse.json({ message: 'Send' });
+    return NextResponse.json({ message: 'Wiadomość została wysłana' });
   } catch (err) {
-    return NextResponse.json({ error: err }, { status: 500 });
+    console.error('Błąd:', err);
+    return NextResponse.json({ error: `Nie udało się wysłać wiadomości: ${err}` }, { status: 500 });
   }
 }
+
