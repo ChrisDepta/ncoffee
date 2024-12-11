@@ -1,10 +1,14 @@
 interface AutoAnswerTemplateArgs {
-	name: string;
-	email: string;
-	message: string;
-  }
-  
-  export const autoAnswerTemplate = ({ name, email, message }: AutoAnswerTemplateArgs): string => `
+  name: string;
+  email: string;
+  message: string;
+}
+
+export const autoAnswerTemplate = ({
+  name,
+  email,
+  message,
+}: AutoAnswerTemplateArgs): string => `
   <!DOCTYPE html>
   <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="pl-PL">
   <head>
