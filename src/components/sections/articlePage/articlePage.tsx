@@ -193,7 +193,6 @@ export default function ArticlePage({
           <p className="my-1 font-bold">{li11}</p>
           <p className="my-2">{price}</p>
           <p className="my-2">{li11}</p>
-          <p className="my-2">{description}</p>
         </div>
       </div>
     </div>
