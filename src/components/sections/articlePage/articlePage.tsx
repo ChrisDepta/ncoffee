@@ -18,7 +18,7 @@ interface Props {
   li8?: string;
   li9?: string;
   li10?: string;
-  li11?: string;
+  pdf?: string;
   price?: string;
   picture1: string;
   picture2: string;
@@ -55,7 +55,7 @@ export default function ArticlePage({
   li8,
   li9,
   li10,
-  li11,
+  pdf,
   price,
   picture1,
   picture2,
@@ -190,8 +190,8 @@ export default function ArticlePage({
           <p className="">{li8}</p>
           <p className="">{li9}</p>
           <p className="">{li10}</p>
-          {li11 ? (
-            <a href={li11} download className="my-1 font-bold">
+          {pdf ? (
+            <a href={pdf} download className="my-1 font-bold">
               Pobierz kartę produktu
             </a>
           ) : (
