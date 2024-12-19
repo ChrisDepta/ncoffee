@@ -190,9 +190,14 @@ export default function ArticlePage({
           <p className="">{li8}</p>
           <p className="">{li9}</p>
           <p className="">{li10}</p>
-          <p className="my-1 font-bold">{li11}</p>
+          {li11 ? (
+            <a href={li11} download className="my-1 font-bold">
+              Pobierz kartę produktu
+            </a>
+          ) : (
+            ""
+          )}
           <p className="my-2">{price}</p>
-          <p className="my-2">{li11}</p>
         </div>
       </div>
     </div>
