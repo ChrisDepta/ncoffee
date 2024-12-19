@@ -17,7 +17,12 @@ export default function Footer() {
   let defaultColor = "";
   let defaultLogo = logoturkis;
   let defaultwave = waterwave;
-  if (pathname === "/water" || pathname === "/dispenser" || pathname.includes('Waters') || pathname.includes('Dispensers')) {
+  if (
+    pathname === "/water" ||
+    pathname === "/dispenser" ||
+    pathname.includes("Waters") ||
+    pathname.includes("Dispensers")
+  ) {
     defaultColor = "text-nturkis";
     defaultLogo = logoturkis;
     defaultwave = waterwave;
@@ -28,7 +33,7 @@ export default function Footer() {
   }
 
   return (
-    <>
+    <footer className="bg-black w-screen z-10 text-white">
       <Image
         src={defaultwave}
         width={800}
@@ -37,7 +42,7 @@ export default function Footer() {
         priority
         alt={"BgOffice"}
       />
-      <div className=" overflow-x-hidden z-10 text-white px-36 py-24 flex flex-wrap items-start justify-around w-screen bg-black">
+      <div className=" overflow-x-hidden   px-36 py-24 flex flex-wrap items-start justify-around w-screen ">
         <div className="flex flex-col items-end">
           <Image
             src={defaultLogo}
@@ -171,6 +176,15 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-    </>
+      <div className="w-screen flex justify-center items-center p-4">
+        <strong>designed by </strong>
+        <Link
+          href="https://www.deptachris.de/"
+          target="_blank"
+          className={` ${defaultColor} hover:scale-105 transition hover:text-[#00F7F7] pl-1`}>
+          <strong> deptachris.de</strong>
+        </Link>
+      </div>
+    </footer>
   );
 }
